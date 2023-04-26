@@ -14,7 +14,7 @@
     "nuxt": "^3.3.3",
     "rehype-katex": "^6.0.2",
     "remark-math": "^5.1.1",
-    "sass": "^1.61.0",
+    "sass": "^1.62.1",
     "sass-loader": "^13.2.2"
   }
 }
