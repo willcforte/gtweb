@@ -1,0 +1,83 @@
+.latex {
+    @import '~/assets/css/latex.scss';
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Roboto+Mono:wght@500;700&display=swap');
+
+$gray0: #333131;
+$gray1: #d8d8d8;
+$gray2: #3b3838;
+$green0: #064D2A;
+$green1: #038C3E;
+$green2: #27ce40;
+$highlight: #5a5a5a80;
+
+* {
+    font-family: 'Roboto', monospace;
+    font-weight: 500;
+}
+
+.robotomono {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+}
+
+.code {
+    font-family: 'Fira Code', monospace;
+    font-weight: 300;
+}
+
+header .router-link-exact-active {
+    color: $green1 !important;
+    font-weight: bold;
+}
+
+p a {
+    color: $green0;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-skip-ink: none;
+}
+
+.link a {
+    color: $green0;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-skip-ink: none;
+}
+
+h1 {
+    @apply text-6xl;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+}
+
+h2 {
+    @apply text-4xl;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+}
+
+h3 {
+    @apply text-2xl;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+h4 {
+    @apply text-lg;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+}
+
+h5 {
+    @apply text-base;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+}
+
+h6 {
+    @apply text-sm;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+}
