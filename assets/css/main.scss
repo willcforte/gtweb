@@ -46,6 +46,13 @@ p a {
     text-decoration-skip-ink: none;
 }
 
+.linkall {
+    color: $green0;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-skip-ink: none;
+}
+
 h1 {
     @apply text-6xl;
     margin-top: 0.67em;
@@ -80,4 +87,11 @@ h6 {
     @apply text-sm;
     margin-top: 2.33em;
     margin-bottom: 2.33em;
+}
+
+.fullimg {
+    width: 60em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

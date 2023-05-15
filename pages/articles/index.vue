@@ -10,6 +10,8 @@
 
     <h2>To Be Written</h2>
 
+    <h3>Check out the <NuxtLink to="/gallery" class="linkall">gallery</NuxtLink> for more recent updates!</h3>
+
     <ContentList path="\articles_todo" v-slot="{ list }">
         <div class="m-5" v-for="article in list" :key="article._path">
             <h3 class="link"><a :href="article._path">{{ article.title }}</a></h3>

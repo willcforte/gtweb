@@ -8,6 +8,7 @@
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     //import
+    @import '~/assets/css/main.scss';
 </style>

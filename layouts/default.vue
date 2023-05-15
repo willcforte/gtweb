@@ -1,5 +1,5 @@
 <template>
-    <div class="px-5">
+    <div class="px-5 mb-8">
         <header>
             <h2 class="grid place-items-center"><a href="/" class="href robotomono">wcf/GTWeb</a></h2>
             <nav class="grid place-items-center m-6">
@@ -9,6 +9,8 @@
                     <li class="float-left px-2 m-0"><NuxtLink to="/about"><h4>about</h4></NuxtLink></li>
                     <h4 class=""> | </h4>
                     <li class="float-left px-2 m-0"><NuxtLink to="/articles"><h4>articles</h4></NuxtLink></li>
+                    <h4 class=""> | </h4>
+                    <li class="float-left px-2 m-0"><NuxtLink to="/gallery"><h4>gallery</h4></NuxtLink></li>
                     <h4 class=""> | </h4>
                     <li class="float-left px-2 m-0"><NuxtLink to="/robotics"><h4>robotics & CAD</h4></NuxtLink></li>
                     <h4 class=""> | </h4>
