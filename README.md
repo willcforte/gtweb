@@ -1,3 +1,3 @@
 # gtweb
 
-Nuxt website for my GT independent study, engineering/robotics research, and other interests.
+Nuxt website for my independent study program in robotics, research, and other interests.
