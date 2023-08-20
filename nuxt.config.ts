@@ -19,4 +19,11 @@ export default defineNuxtConfig({
         // '@/assets/css/latex.scss',
         '@/assets/css/katex.scss',
     ],
+    vite: {
+        server: {
+            fs: {
+                allow: ["../../../node_modules"]
+            },
+        },
+    },
 })

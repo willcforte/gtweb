@@ -10,5 +10,5 @@
 
 <style lang="scss">
     //import
-    @import '~/assets/css/main.scss';
+    @import '../assets/css/main.scss';
 </style>
