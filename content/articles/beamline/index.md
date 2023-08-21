@@ -15,9 +15,11 @@ GRAPHS $\implies$ Graphene Rotational Acceleration Particle Hall Sensor
 ### Abstract:
 
 It has been established that graphene is an optimal material for solar
-sails [@GAUDENZI] due to its acute response to photon-induced movement
+sails<sup>\[3\]</sup> due to its acute response to photon-induced movement
 by radiation pressure. We were interested in investigating the use of
 this property to detect the presence of particles.
+
+<br>
 
 Our experiment seeks to determine the effect of particle collisions on
 graphene, both by photons (as in solar sails) and other particles.
