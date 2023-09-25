@@ -1,9 +1,9 @@
 ---
 title: "Home"
-description: "I'm William Forte, a HS junior interested in Engineering."
+description: "I'm William Forte, a HS senior interested in Engineering."
 ---
 
-# Hi! I'm William Forte, a HS junior interested in engineering
+# Hi! I'm William Forte, a HS senior interested in engineering
 
 ## Welcome to my ever-evolving website for self-study projects! <div class="link">[Take a look around.](/articles)</div>
 
