@@ -5,11 +5,15 @@ description: "Robotics and CAD Independent Study Log"
 
 ## Robotics & CAD
 
-### In the 2023-2024 school year, I will be beginning a Robotics & CAD independent study program, so stay tuned for new content!
+### This is a project log for my Robotics & CAD independent study program during the 2023-2024 school year!
 
 <br>
 
-Topics (subject to change):
+### <span class="link">[Fully-Actuated Quadruped](/robotics/quadruped)</span>
+
+<br>
+
+Topics of interest (subject to change):
 
 * $\bullet\:$FTC robotics competition
 * $\bullet\:$Locomotion controller

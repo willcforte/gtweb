@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
     modules: [
         '@nuxtjs/tailwindcss',
+        'nuxt-content-assets',
         '@nuxt/content'
     ],
     content: {
@@ -24,6 +25,15 @@ export default defineNuxtConfig({
             fs: {
                 allow: ["../../../node_modules"]
             },
+        },
+    },
+    app: {
+        head: {
+            charset: 'utf-8',
+            viewport: 'width=device-width, initial-scale=1',
+            link: [
+                {rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css",}
+            ],
         },
     },
 })

@@ -1,11 +1,11 @@
 ---
 title: "About"
-description: "About William Forte, engineering student"
+description: "About William C. Forte, engineering student"
 ---
 
 ## About me
 
-I'm William Forte, a high school junior who aspires to study engineering.
+I'm William C. Forte, a high school junior who aspires to study engineering.
 
 <br>
 
@@ -16,6 +16,21 @@ My interests are pretty diverse (perhaps excessively), so I have experience in t
 * $\bullet$ Technical writing ($\LaTeX$)
 * $\bullet$ 3D Simulation/Animation (Blender/PyMOL)
 * $\bullet$ Calculus
+
+<br>
+
+### Contact Me
+
+If you'd like to get an update on some of my projects or just say hello, please contact me at <span class="link">[willcforte@gmail.com](mailto:willcforte@gmail.com)</span>. I'm always looking for research opportunities and interesting things.
+
+<br>
+
+### Links
+
+* $\bullet$ <span class="link">[LinkedIn](https://www.linkedin.com/in/willcforte/)</span>
+* $\bullet$ <span class="link">[GitHub](https://github.com/willcforte)</span>
+* $\bullet$ <span class="link">[Instagram](https://www.instagram.com/willcforte/)</span> (Nothing Yet)
+* $\bullet$ <span class="link">[YouTube](https://www.youtube.com/@willcforte)</span> (Nothing Yet)
 
 ## About GTWeb
 
