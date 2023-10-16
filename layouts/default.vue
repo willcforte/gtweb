@@ -1,20 +1,20 @@
 <template>
-    <div class="px-5 mb-8">
+    <div class="px-5 xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm mb-8 ml-auto mr-auto">
         <header>
             <h2 class="grid place-items-center"><a href="/" class="href robotomono"><img src="~/assets/img/wcf_rast.svg" alt="wcf" class="inlinesvg">/GTWeb</a></h2>
             <nav class="grid place-items-center m-6">
-                <ul class="float-left flex">
-                    <li class="float-left px-2 m-0"><NuxtLink to="/"><h4>home</h4></NuxtLink></li>
-                    <h4 class=""> | </h4>
-                    <li class="float-left px-2 m-0"><NuxtLink to="/about"><h4>about</h4></NuxtLink></li>
-                    <h4 class=""> | </h4>
-                    <li class="float-left px-2 m-0"><NuxtLink to="/articles"><h4>articles</h4></NuxtLink></li>
-                    <h4 class=""> | </h4>
-                    <li class="float-left px-2 m-0"><NuxtLink to="/gallery"><h4>gallery</h4></NuxtLink></li>
-                    <h4 class=""> | </h4>
-                    <li class="float-left px-2 m-0"><NuxtLink to="/robotics"><h4>robotics & CAD</h4></NuxtLink></li>
-                    <h4 class=""> | </h4>
-                    <li class="float-left px-2 m-0"><NuxtLink to="/calculus"><h4>calculus</h4></NuxtLink></li>
+                <ul class="float-left flex flex-wrap flex-col md:flex-row text-3xl md:text-lg">
+                    <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/">home</NuxtLink></li>
+                    <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>
+                    <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/about">about</NuxtLink></li>
+                    <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>
+                    <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/articles">articles</NuxtLink></li>
+                    <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>
+                    <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/gallery">gallery</NuxtLink></li>
+                    <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>
+                    <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/robotics">robotics & CAD</NuxtLink></li>
+                    <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>
+                    <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/calculus">calculus</NuxtLink></li>
                 </ul>
             </nav>
         </header>
@@ -33,7 +33,7 @@
             <a href="https://www.youtube.com/@willcforte"><i class="fa-brands fa-youtube w-4 inline-block mx-1 text-white"></i></a>
         </div>
         <div class="mt-5 flex justify-center text-white italic">
-            Made by William C. Forte © 2023
+            Made from scratch by William C. Forte © 2023
         </div>
         <div class="mt-1 flex justify-center text-white italic whitespace-pre">
             Contact me @ <a href="mailto:willcforte@gmail.com" class="link">willcforte@gmail.com</a>

@@ -3,7 +3,7 @@ title: "Home"
 description: "I'm William Forte, a HS senior interested in Engineering."
 ---
 
-# Hi! I'm William Forte, a HS senior interested in engineering
+# Hi! I'm William Forte, a HS senior passionate about engineering
 
 ## Welcome to my ever-evolving website for self-study projects! <div class="link">[Take a look around.](/articles)</div>
 
@@ -11,7 +11,7 @@ description: "I'm William Forte, a HS senior interested in Engineering."
 
 ![Quadruped Beta Prototype](media/quadruped_v1.png){.img}
 
-<span class="centerelement">Over the summer, I began developing this robot with 12 servos, fully-actuated legs, and spare FTC parts from my teacher. It is in the process of being redesigned for lower weight and cable mess. Presently, there is no control system, but this will be implemented soon in Arduino C++, so keep posted.</span>
+#### <span class="centerelement">Over the summer, I began developing this robot with 12 servos, fully-actuated legs, and spare FTC parts from my teacher. It is in the process of being redesigned for lower weight and cable mess. Presently, there is no control system, but this will be implemented soon via communication with the MuJoCo physics engine, so keep posted.</span>
 
 <br>
 
