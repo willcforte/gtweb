@@ -22,7 +22,7 @@
             <slot />
         </content>
     </div>
-    <footer class="p-5">
+    <footer class="p-5 w-full">
         <div class="mb-2 flex justify-center">
             <span class="spacei footertext">wcf</span><span class="text-4xl footertext robotomono">/GTWeb</span>
         </div>

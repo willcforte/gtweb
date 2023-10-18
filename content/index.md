@@ -17,8 +17,8 @@ description: "I'm William Forte, a HS senior interested in Engineering."
 
 ### What you can expect to find on this website:
 
-### [$\bullet\:\text{Robotics \& CAD GT Program}$](/robotics)
+### - [Robotics \& CAD GT Program](/robotics)
 
-### [$\bullet\:\text{Calculus III}\:(\text{w/ }\LaTeX)$](/calculus)
+### - [Calculus III w/ $\LaTeX$](/calculus)
 
-### [$\bullet\:\text{Miscellaneous Articles}$](/articles)
+### - [Miscellaneous Articles](/articles)
