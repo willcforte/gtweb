@@ -14,7 +14,9 @@
                     <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>
                     <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/robotics">robotics & CAD</NuxtLink></li>
                     <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>
-                    <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/calculus">calculus</NuxtLink></li>
+                    <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/research">research</NuxtLink></li>
+                    <!-- <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>
+                    <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/calculus">calculus</NuxtLink></li> -->
                 </ul>
             </nav>
         </header>
@@ -33,7 +35,7 @@
             <a href="https://www.youtube.com/@willcforte"><i class="fa-brands fa-youtube w-4 inline-block mx-1 text-white"></i></a>
         </div>
         <div class="mt-5 flex justify-center text-white italic">
-            Made from scratch by William C. Forte © 2023
+            Made from scratch by Will C. Forte © 2023
         </div>
         <div class="mt-1 flex justify-center text-white italic whitespace-pre">
             Contact me @ <a href="mailto:willcforte@gmail.com" class="link">willcforte@gmail.com</a>

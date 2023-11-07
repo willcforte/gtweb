@@ -19,6 +19,7 @@ export default defineNuxtConfig({
         '@/assets/css/main.scss',
         // '@/assets/css/latex.scss',
         '@/assets/css/katex.scss',
+        '@/assets/css/tailwind.scss',
     ],
     vite: {
         server: {
@@ -32,7 +33,8 @@ export default defineNuxtConfig({
             charset: 'utf-8',
             viewport: 'width=device-width, initial-scale=1',
             link: [
-                {rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css",}
+                {rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css",},
+                {rel: "stylesheet", href: "https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css",},      
             ],
         },
     },

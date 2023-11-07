@@ -1,3 +1,9 @@
+---
+title: "locomotion test"
+description: "desc"
+date: "11/1/23"
+---
+
 # Notes on the Locomotion of Quadrupted Robots
 
 ## Raw Notes

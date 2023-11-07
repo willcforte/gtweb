@@ -14,7 +14,7 @@ $green1: #038C3E;
 $green2: #27ce40;
 $highlight: #5a5a5a80;
 
-* {
+:root {
     font-family: 'Roboto', monospace;
     font-weight: 500;
 }
@@ -73,6 +73,8 @@ p a {
     text-decoration-skip-ink: none;
 }
 
+@import 'tailwind.scss';
+
 h1 {
     @apply text-6xl;
     margin-top: 0.67em;
@@ -110,7 +112,7 @@ h6 {
 }
 
 .fullimg {
-    width: 60em;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -150,4 +152,8 @@ footer {
     display: flex;
     justify-content: center; 
     align-items: center;
+}
+
+.bg-gray0 {
+    background-color: $gray0;
 }
