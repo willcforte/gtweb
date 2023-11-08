@@ -1,12 +1,12 @@
-<!-- <template>
-    <div>
+<template>
+    <!-- <div>
         ROBOTICS LAYOUT
         <NuxtLink to="/robotics">BACK TO ROBOTICS PAGE</NuxtLink>
     </div>
 
     <div>
         <slot />
-    </div>
+    </div> -->
 </template>
 
 <script setup>
@@ -15,4 +15,4 @@
 
 <style lang="scss" scoped>
     
-</style> -->
+</style>
