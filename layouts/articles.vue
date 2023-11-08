@@ -1,11 +1,12 @@
 <template>
+    <!-- not implemented rn -->
     <div>
         ARTICLE FORMAT
         <NuxtLink to="/articles">BACK TO ARTICLES</NuxtLink>
     </div>
 
     <div>
-        <slot />
+        <NuxtPage />
     </div>
 </template>
 
