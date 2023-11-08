@@ -1,13 +1,14 @@
 <template>
     <!-- not implemented rn -->
-    <div>
+    <!-- <div>
         ROBOTICS LAYOUT
         <NuxtLink to="/robotics">BACK TO ROBOTICS PAGE</NuxtLink>
     </div>
 
     <div>
         <slot />
-    </div>
+    </div> -->
+    <slot />
 </template>
 
 <script setup>

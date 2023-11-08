@@ -1,13 +1,15 @@
 <template>
     <!-- not implemented rn -->
-    <div>
+    <!-- <div>
         ARTICLE FORMAT
         <NuxtLink to="/articles">BACK TO ARTICLES</NuxtLink>
     </div>
 
     <div>
         <NuxtPage />
-    </div>
+    </div> -->
+
+    <slot />
 </template>
 
 <script setup>

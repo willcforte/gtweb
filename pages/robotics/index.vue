@@ -29,7 +29,7 @@
 
     <h2>Recent Engineering Logs</h2>
 
-    <ContentList path="/robotics" :query="logQuery" v-slot="{ list }">
+    <ContentList path="/robotics/logs" :query="logQuery" v-slot="{ list }">
         <div class="m-5" v-for="log in list.slice().reverse()" :key="log.date">
             <h3 class="link"><a :href="log._path">{{ log.title }}</a></h3>
             <p>{{ log.description }} {{ log.date }}</p>
@@ -55,5 +55,5 @@
 </script>
 
 <style lang="scss" scoped>
-    @import '../../assets/css/main.scss';
+
 </style>
