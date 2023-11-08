@@ -29,7 +29,7 @@
 
     <h2>Recent Engineering Logs</h2>
 
-    <ContentList path="/robotics/logs" v-slot="{ list }">
+    <ContentList path="/robotics" :query="logQuery" v-slot="{ list }">
         <div class="m-5" v-for="log in list.slice().reverse()" :key="log.date">
             <h3 class="link"><a :href="log._path">{{ log.title }}</a></h3>
             <p>{{ log.description }} {{ log.date }}</p>
@@ -51,6 +51,7 @@
 <script setup lang="ts">
     import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types';
     const doneQuery: QueryBuilderParams = { path: '/robotics', where: [{ status: 'done' }] };
+    const logQuery: QueryBuilderParams = { path: '/robotics/logs', where: [{_path: { $contains: '/logs' }}] };
 </script>
 
 <style lang="scss" scoped>
