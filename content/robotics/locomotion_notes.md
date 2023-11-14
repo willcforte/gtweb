@@ -1,6 +1,6 @@
 ---
 title: "locomotion test"
-description: "desc"
+description: ""
 date: "11/1/23"
 ---
 
