@@ -3,7 +3,7 @@ title: "Home"
 description: "I'm William Forte, a HS senior interested in Engineering."
 ---
 
-# Hi! I'm William Forte, a HS senior passionate about engineering
+# Hi! I'm William Forte, a HS senior passionate about robotic engineering
 
 ## Welcome to my ever-evolving website for self-study projects!
 
