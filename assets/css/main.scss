@@ -13,10 +13,12 @@ $green0: #064D2A;
 $green1: #038C3E;
 $green2: #27ce40;
 $highlight: #5a5a5a80;
+$cream: #E0D2BD;
 
 :root {
     font-family: 'Roboto', monospace;
     font-weight: 500;
+    background-color: $cream;
 }
 
 .robotomono {
@@ -50,6 +52,7 @@ $highlight: #5a5a5a80;
 header .router-link-exact-active {
     color: $green1 !important;
     font-weight: bold;
+    font-style: italic;
 }
 
 p a {
@@ -79,18 +82,27 @@ h1 {
     @apply text-6xl;
     margin-top: 0.67em;
     margin-bottom: 0.67em;
+
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
 }
 
 h2 {
     @apply text-4xl;
     margin-top: 0.83em;
     margin-bottom: 0.83em;
+
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
 }
 
 h3 {
     @apply text-2xl;
     margin-top: 0.1em;
     margin-bottom: 0.1em;
+
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
 }
 
 h4 {
