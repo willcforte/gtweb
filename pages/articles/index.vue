@@ -1,5 +1,5 @@
 <template>
-    <h2 class="mb-0">General Articles</h2>
+    <h2 class="mb-0">Articles</h2>
 
     <h4>Visit the <span class="link"><a href="/robotics">robotics page</a></span> for robotics engineering logs.</h4>
 

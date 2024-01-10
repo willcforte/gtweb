@@ -5,7 +5,7 @@ description: "About William C. Forte, engineering student"
 
 ## About me
 
-I'm William C. Forte, a high school junior who aspires to study engineering.
+I'm Will C. Forte, a high school senior passionate about robotic engineering.
 
 <br>
 
@@ -34,7 +34,7 @@ If you'd like to get an update on some of my projects or just say hello, please 
 
 ## About GTWeb
 
-The idea for my website, GTWeb, started as a place to put the log for the Robotics Gifted & Talented program that I will be taking next year. I now intend for it to serve as a platform to share what I am passionate about and pursue in all of my extracurricular studies. I hope to use it to connect and collaborate with like-minded peers, post fun projects, and develop a portfolio.
+The idea for my website, GTWeb, started as a place to put the log for my senior-year Robotics Gifted & Talented program. I now intend for it to serve as a platform to share what I am passionate about and pursue in all of my extracurricular studies. I hope to use it to connect and collaborate with like-minded peers, post fun projects, and develop a portfolio.
 
 <br>
 

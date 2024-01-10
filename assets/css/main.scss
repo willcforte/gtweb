@@ -16,8 +16,8 @@ $highlight: #5a5a5a80;
 $cream: #E0D2BD;
 
 :root {
-    font-family: 'Roboto', monospace;
-    font-weight: 500;
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
     background-color: $cream;
 }
 
@@ -55,6 +55,11 @@ header .router-link-exact-active {
     font-style: italic;
 }
 
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 p a {
     color: $green0;
     text-decoration: underline;
@@ -81,16 +86,21 @@ p a {
 h1 {
     @apply text-6xl;
     margin-top: 0.67em;
-    margin-bottom: 0.67em;
+    /* margin-bottom reduced from 0.67em */
+    margin-bottom: 0.335em;
 
     font-family: 'Space Mono', monospace;
     font-weight: 600;
+
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h2 {
     @apply text-4xl;
     margin-top: 0.83em;
-    margin-bottom: 0.83em;
+    /* margin-bottom reduced from 0.83em */
+    margin-bottom: 0.415em;
 
     font-family: 'Space Mono', monospace;
     font-weight: 600;
@@ -98,8 +108,9 @@ h2 {
 
 h3 {
     @apply text-2xl;
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
+    margin-top: 0.5em;
+    /* margin-bottom reduced from 0.5em */
+    margin-bottom: 0.5em;
 
     font-family: 'Space Mono', monospace;
     font-weight: 600;
@@ -107,20 +118,32 @@ h3 {
 
 h4 {
     @apply text-lg;
-    margin-top: 1.33em;
-    margin-bottom: 1.33em;
+    margin-top: 0.666em;
+    /* margin-bottom reduced from 1.33em */
+    margin-bottom: 0.666em;
+    
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
 }
 
 h5 {
     @apply text-base;
     margin-top: 1.67em;
-    margin-bottom: 1.67em;
+    /* margin-bottom reduced from 1.67em */
+    margin-bottom: 0.835em;
+        
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
 }
 
 h6 {
     @apply text-sm;
     margin-top: 2.33em;
-    margin-bottom: 2.33em;
+    /* margin-bottom reduced from 2.33em */
+    margin-bottom: 1.165em;
+        
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
 }
 
 .fullimg {

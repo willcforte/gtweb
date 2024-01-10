@@ -1,11 +1,33 @@
 ---
 title: "Home"
-description: "I'm William Forte, a HS senior interested in Engineering."
+description: "I'm Will C. Forte, a HS senior interested in Engineering."
 ---
 
-# Hi! I'm William Forte, a HS senior passionate about robotic engineering
+# <h1 class="mt-8">Hi! I'm Will C. Forte, a HS senior passionate about robotic engineering</h1>
 
 ## Welcome to my ever-evolving website for self-study projects!
+
+<div class="flex flex-col-2 mt-4 mb-10 centerelement">
+        <div class="flex flex-col">
+            <h3><span class="link"><a href="/robotics/quadruped">Featured Project: DIY Quadruped Prototype</a></span></h3>
+            <h4>LCFAQ: Low-Cost Fully-Actuated quadruped (prototype v3)</h4>
+            <p>The LCFAQ is a low-cost quadrupedal robot intended to increase the accessibility of advanced robotics to high school educators and students already participating in FTC Robotics.</p>
+            <a href="/robotics/quadruped"><div class="bg-black text-white pl-4 pr-4 py-2 w-fit text-2xl shadow-xl mb-5 m-auto mt-5 self-center" style="color: #E0D2BD">View Project <i  class="fa-sharp fa-solid fa-chevron-right"></i></div></a>
+        </div>
+        <div class="ml-8">
+            <a href="/robotics/quadruped">
+                <img src="media/quadruped_v1.png" alt="Quadruped Beta Prototype" class="img border-black border-r-8 border-b-8" style="width: 75em;">
+            </a>
+        </div>
+    </div>
+
+<!-- ### <span class="link centerelement">[Featured Project: DIY Quadruped Prototype](/robotics/quadruped) -->
+
+<!-- <a href="/robotics/quadruped">![Quadruped Beta Prototype](media/quadruped_v1.png){.img .border-black .border-r-8 .border-b-8}</a> -->
+
+#### <span class="centerelement">Over the summer of '23, I began developing this robot with 12 servos, fully-actuated legs, and spare FTC parts from my teacher. It is in the process of being redesigned for lower weight and cable mess. Presently, there is no control system, but this will be implemented soon via communication with the MuJoCo physics engine, so keep posted.</span>
+
+<br>
 
 <div class="bg-black text-white pl-4 py-2 w-fit text-2xl shadow-xl mb-5 spacei">
     <a href="/articles" class="nounderline">
@@ -23,18 +45,10 @@ description: "I'm William Forte, a HS senior interested in Engineering."
     </a>
 </div>
 
-### <span class="link centerelement">[Featured Project: DIY Quadruped Prototype](/robotics/quadruped)
-
-<a href="/robotics/quadruped">![Quadruped Beta Prototype](media/quadruped_v1.png){.img}</a>
-
-#### <span class="centerelement">Over the summer of '23, I began developing this robot with 12 servos, fully-actuated legs, and spare FTC parts from my teacher. It is in the process of being redesigned for lower weight and cable mess. Presently, there is no control system, but this will be implemented soon via communication with the MuJoCo physics engine, so keep posted.</span>
-
-<br>
-
 ### What you can expect to find on this website:
 
 ### - [Robotics \& CAD GT Program](/robotics)
 
-### - [Calculus III w/ $\LaTeX$](/calculus)
+### - [Math w/ $\LaTeX$](/calculus)
 
 ### - [Miscellaneous Articles](/articles)
