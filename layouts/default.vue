@@ -1,7 +1,7 @@
 <template>
     <div class="px-5 xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm mb-8 ml-auto mr-auto">
         <header>
-            <h1 class="grid place-items-center text-7xl mb-6 mt-8"><a href="/" class="href robotomono"><img src="~/assets/img/wcf_rast.svg" alt="wcf" class="inlinesvg">/GTWeb</a></h1>
+            <h1 class="grid place-items-center text-7xl mb-6 mt-8"><a href="/" class="href robotomono"><img src="~/assets/img/wcf_rast_c.svg" alt="wcf" class="inlinesvg">/GTWeb</a></h1>
             <nav class="grid place-items-center">
                 <ul class="float-left flex flex-wrap flex-col md:flex-row text-3xl md:text-lg space">
                     <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/">home</NuxtLink></li>

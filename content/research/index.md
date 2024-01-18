@@ -9,11 +9,15 @@ description: "Published research"
 
 ### <span class="link text-2xl">[Toroidal and Uneven Blade Aeroacoustic Analysis](https://tubaa.dev/)</span>
 
-Nikhil Vijay\*, **William Forte**\*, Syon Gupta\*, Ishan Gajjar\*, Sahil Shah\*, Sarvesh Patham\*, Prathamesh Trivedi\*, Rishit Arora\*, Undisclosed Until Publication†
+Nikhil Vijay\*, **William Forte**\*, Syon Gupta\*, Ishan Gajjar\*, Sahil Shah\*, Sarvesh Patham\*, Prathamesh Trivedi\*, Rishit Arora\*
+
+<span class="space">Mentors: </span>Gao Jun Wu†, Seongkyu Lee‡
 
 *The Academy for Math, Science, and Engineering——Rockaway, NJ
 
 †<span class="link">[Flow Physics & Aeroacoustics Laboratory](https://fpal.stanford.edu/)</span>, Stanford University——Stanford, CA
+
+‡<span class="link">[Computational Flow Physics and Aeroacoustics Laboratory](https://faculty.engineering.ucdavis.edu/slee/research/)</span>, UC Davis——CA, USA
 
 <div class="bg-black px-2 py-1 text-l text-white inline-block">In progress since June 2023</div>
 
