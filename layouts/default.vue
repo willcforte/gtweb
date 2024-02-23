@@ -3,7 +3,7 @@
         <header>
             <h1 class="grid place-items-center text-7xl mb-6 mt-8"><a href="/" class="href robotomono"><img src="~/assets/img/wcf_rast_c.svg" alt="wcf" class="inlinesvg">/GTWeb</a></h1>
             <nav class="grid place-items-center">
-                <ul class="float-left flex flex-wrap flex-col md:flex-row text-3xl md:text-lg space">
+                <ul class="float-left flex flex-wrap flex-col md:flex-row text-3xl md:text-lg space list-none">
                     <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/">home</NuxtLink></li>
                     <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>
                     <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/about">about</NuxtLink></li>

@@ -16,7 +16,7 @@ description: "I'm Will C. Forte, a HS senior interested in Engineering."
         </div>
         <div class="ml-8">
             <a href="/robotics/quadruped">
-                <img src="media/quadruped_v1.png" alt="Quadruped Beta Prototype" class="img border-black border-r-8 border-b-8" style="width: 75em;">
+                <img src="media/quad_canon_prone.JPG" alt="Quadruped Prototype v4 in Isometric Standing View" class="img border-black border-r-8 border-b-8" style="width: 75em;">
             </a>
         </div>
     </div>

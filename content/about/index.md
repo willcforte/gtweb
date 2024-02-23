@@ -11,11 +11,11 @@ I'm Will C. Forte, a high school senior passionate about robotic engineering.
 
 My interests are pretty diverse (perhaps excessively), so I have experience in the following subjects:
 
-* $\bullet$ Robotics via CAD (Onshape/Fusion360)
-* $\bullet$ Programming and mobile/web development (Java/C++, Flutter)
-* $\bullet$ Technical writing ($\LaTeX$)
-* $\bullet$ 3D Simulation/Animation (Blender/PyMOL)
-* $\bullet$ Calculus
+* Robotics via CAD (Onshape/Fusion360)
+* Programming and mobile/web development (Java/C++, Flutter)
+* Technical writing ($\LaTeX$)
+* 3D Simulation/Animation (Blender/PyMOL)
+* Calculus
 
 <br>
 
@@ -27,10 +27,10 @@ If you'd like to get an update on some of my projects or just say hello, please 
 
 ### Links
 
-* $\bullet$ <span class="link">[LinkedIn](https://www.linkedin.com/in/willcforte/)</span>
-* $\bullet$ <span class="link">[GitHub](https://github.com/willcforte)</span>
-* $\bullet$ <span class="link">[Instagram](https://www.instagram.com/willcforte/)</span> (Nothing Yet)
-* $\bullet$ <span class="link">[YouTube](https://www.youtube.com/@willcforte)</span> (Nothing Yet)
+* <span class="link">[LinkedIn](https://www.linkedin.com/in/willcforte/)</span>
+* <span class="link">[GitHub](https://github.com/willcforte)</span>
+* <span class="link">[Instagram](https://www.instagram.com/willcforte/)</span> (Nothing Yet)
+* <span class="link">[YouTube](https://www.youtube.com/@willcforte)</span> (Nothing Yet)
 
 ## About GTWeb
 

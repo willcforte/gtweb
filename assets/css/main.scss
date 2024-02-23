@@ -192,3 +192,7 @@ footer {
 .bg-gray0 {
     background-color: $gray0;
 }
+
+ul:not(.list-none) {
+    @apply list-disc;
+}
