@@ -74,6 +74,13 @@ p a {
     text-decoration-skip-ink: none;
 }
 
+.nuxt-link-exact-active {
+    color: $green0;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-skip-ink: none;
+}
+
 .linkall {
     color: $green0;
     text-decoration: underline;

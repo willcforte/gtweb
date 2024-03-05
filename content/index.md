@@ -49,6 +49,8 @@ description: "I'm Will C. Forte, a HS senior interested in Engineering."
 
 ### - [Robotics \& CAD GT Program](/robotics)
 
-### - [Math w/ $\LaTeX$](/calculus)
+<!-- ### - [Math w/ $\LaTeX$](/calculus) -->
 
 ### - [Miscellaneous Articles](/articles)
+### - [Self-study log](/self-study) (nothing yet)
+### - [Photography](/photography)

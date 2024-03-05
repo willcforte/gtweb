@@ -19,6 +19,10 @@ My interests are pretty diverse (perhaps excessively), so I have experience in t
 
 <br>
 
+View my <span class="link">[self-study](/self-study)</span> page to see what I'm attempting to learn going forward.
+
+<br>
+
 ### Contact Me
 
 If you'd like to get an update on some of my projects or just say hello, please contact me at <span class="link">[willcforte@gmail.com](mailto:willcforte@gmail.com)</span>. I'm always looking for research opportunities and interesting things.
