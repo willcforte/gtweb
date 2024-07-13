@@ -45,12 +45,12 @@ description: "I'm Will C. Forte, a HS senior interested in Engineering."
     </a>
 </div>
 
-### What you can expect to find on this website:
+#### What you can expect to find on this website:
 
-### - [Robotics \& CAD GT Program](/robotics)
+- [Robotics \& CAD GT Program](/robotics)
 
 <!-- ### - [Math w/ $\LaTeX$](/calculus) -->
 
-### - [Miscellaneous Articles](/articles)
-### - [Self-study log](/self-study) (nothing yet)
-### - [Photography](/photography)
+- [Miscellaneous Articles](/articles)
+- [Self-study log](/self-study) (nothing yet)
+- [Photography](/photography)

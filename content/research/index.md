@@ -19,8 +19,8 @@ Nikhil Vijay\*, **William Forte**\*, Syon Gupta\*, Ishan Gajjar\*, Sahil Shah\*,
 
 ‡<span class="link">[Computational Flow Physics and Aeroacoustics Laboratory](https://faculty.engineering.ucdavis.edu/slee/research/)</span>, UC Davis——CA, USA
 
-<div class="bg-black px-2 py-1 text-l text-white inline-block">In progress since June 2023</div>
+<div class="bg-black px-2 py-1 text-l text-white inline-block">Rejected from MIT URTC 2023</div>
 
-We conducted an aeroacoustic performance of 3D printed drone propellers using experiments to quantify sound annoyance. Acoustics are compared to CFD simulation to detect sources of noise. A cost function is used to compare different propellers.
+We conducted an aeroacoustic performance of 3D printed drone propellers using experiments to quantify sound annoyance. Acoustics are compared to CFD simulation to detect sources of noise. The propellers are qualitatively compared.
 
 </div>

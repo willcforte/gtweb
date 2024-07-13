@@ -5,17 +5,18 @@ description: "About William C. Forte, engineering student"
 
 ## About me
 
-I'm Will C. Forte, a high school senior passionate about robotic engineering.
+I'm Will C. Forte, an incoming college freshman passionate about robotic engineering.
 
 <br>
 
 My interests are pretty diverse (perhaps excessively), so I have experience in the following subjects:
 
-* Robotics via CAD (Onshape/Fusion360)
-* Programming and mobile/web development (Java/C++, Flutter)
+<br>
+
+* Robotic simulation (MuJoCo)
+* CAD (Onshape/Fusion360)
+* Programming and web dev. (Java/C++, Flutter)
 * Technical writing ($\LaTeX$)
-* 3D Simulation/Animation (Blender/PyMOL)
-* Calculus
 
 <br>
 

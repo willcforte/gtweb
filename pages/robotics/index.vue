@@ -1,8 +1,6 @@
 <template>
 
-    <h2 class="mb-0">Robotics & CAD Engineering Log</h2>
-
-    <h4>This is a project log for my Robotics & CAD independent study program during the 2023-2024 school year!</h4>
+    <h2 class="mb-0">Engineering Project Reports</h2>
 
     <div class="flex flex-col-2 centerelement mt-4 mb-4">
         <div>

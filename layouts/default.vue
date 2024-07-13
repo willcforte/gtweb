@@ -8,11 +8,11 @@
                     <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>
                     <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/about">about</NuxtLink></li>
                     <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>
-                    <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/articles">articles</NuxtLink></li>
+                    <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/robotics">engineering</NuxtLink></li>
                     <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>
                     <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/gallery">gallery</NuxtLink></li>
                     <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>
-                    <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/robotics">robotics & CAD</NuxtLink></li>
+                    <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/articles">blog</NuxtLink></li>
                     <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>
                     <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/research">research</NuxtLink></li>
                     <!-- <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>

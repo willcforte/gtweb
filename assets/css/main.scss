@@ -56,8 +56,9 @@ header .router-link-exact-active {
 }
 
 p {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding: 0.5rem 0 0.5rem 0;
 }
 
 p a {
@@ -86,6 +87,11 @@ p a {
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-skip-ink: none;
+}
+
+blockquote {
+    padding-left: 2rem;
+    text-indent: 1.5rem;
 }
 
 @import 'tailwind.scss';

@@ -1,7 +1,7 @@
 ---
 title: "GRAPHS Particle Detector"
 description: "Our proposal of a graphene-based detector of radiation pressure for the 2023 CERN Beamline for Schools physics competition, written in LaTeX."
-date: "4/12/23"
+date: "Apr. 12, 2023"
 type: "physics"
 status: "done"
 ---

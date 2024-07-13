@@ -13,6 +13,9 @@ export default defineNuxtConfig({
             rehypePlugins: [
                 ['rehype-katex', { output: 'html' }],
             ],
+            anchorLinks: {
+                depth: 3,
+            },
         },
     },
     css: [

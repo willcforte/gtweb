@@ -1,7 +1,7 @@
 ---
 title: "Gibberellin Signal Transduction Animation"
 description: "A 3D animation displaying the signal transduction pathway of gibberellin, a ligand important in plant growth. Molecular models are extracted from x-ray crystallography in PyMOL."
-date: "2/17/23"
+date: "Feb. 17, 2023"
 type: "biology"
 status: "done"
 ---
