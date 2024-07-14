@@ -159,6 +159,14 @@ h6 {
     font-weight: 600;
 }
 
+.text-md {
+    @apply text-base;
+}
+
+.zeromt {
+    margin-top: 0 !important;
+}
+
 .fullimg {
     width: 100%;
     display: block;
@@ -208,4 +216,9 @@ footer {
 
 ul:not(.list-none) {
     @apply list-disc;
+    @apply list-inside;
+}
+
+li p {
+    display: inline;
 }

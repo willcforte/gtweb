@@ -1,13 +1,36 @@
 ---
 title: "Home"
-description: "I'm Will C. Forte, a HS senior interested in Engineering."
+description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 ---
 
-# <h1 class="mt-8">Hi! I'm Will C. Forte, a HS senior passionate about robotic engineering</h1>
+<div class="flex flex-col-2 mt-10 mb-0 centerelement px-20">
 
-## Welcome to my ever-evolving website for self-study projects!
+<img src="/img/will.png" alt="Profile picture" class="img border-black border-r-8 border-b-8" style="width: 12em;">
 
-<div class="flex flex-col-2 mt-4 mb-10 centerelement">
+<div class="ml-8 mt-0" style="margin-top: -2em">
+
+## <h2 class="mt-0 mb-0 zeromt">Hi! I'm Will C. Forte, an incoming freshman and aspiring roboticist</h2>
+
+### <h3 class="my-0 mb-4">*Welcome to my self-coded project site!*</h3>
+
+<div class="inline-flex">
+    <a href="/about"><div class="bg-black text-white pl-4 pr-4 py-2 w-fit text-md shadow-xl mt-0 mr-2 self-center" style="color: #E0D2BD"><i  class="fa-regular fa-folder-open"></i> About Me</div></a>
+    <a href="https://www.linkedin.com/in/willcforte/"><div class="bg-black text-white pl-4 pr-4 py-2 w-fit text-md shadow-xl mt-0 mr-2 self-center" style="color: #E0D2BD"><i  class="fa-brands fa-linkedin"></i> Profile</div></a>
+    <a href="mailto:willcforte@gmail.com"><div class="bg-black text-white pl-4 pr-4 py-2 w-fit text-md shadow-xl mt-0 mr-2 self-center" style="color: #E0D2BD"><i  class="fa-solid fa-paper-plane"></i> Email Me</div></a>
+    <a href="/articles"><div class="bg-black text-white pl-4 pr-4 py-2 w-fit text-md shadow-xl mt-0 mr-2 self-center" style="color: #E0D2BD"><i  class="fa-solid fa-square-rss"></i> Blog (W.I.P.)</div></a>
+</div>
+
+</div>
+
+</div>
+
+<div class="lg:px-20 md:px-0 sm:px-0 centerelement">
+
+#### I study MechE at Rutgers University, where I currently intern at the <div class="link inline"><a href="https://www.laurentburlion.com/">Advanced Controls Lab</a></div>.
+
+</div>
+
+<div class="flex flex-col-2 mt-20 mb-10 centerelement">
         <div class="flex flex-col">
             <h3><span class="link"><a href="/robotics/quadruped">Featured Project: DIY Quadruped Prototype</a></span></h3>
             <h4>LCFAQ: Low-Cost Fully-Actuated quadruped (prototype v3)</h4>
@@ -31,7 +54,7 @@ description: "I'm Will C. Forte, a HS senior interested in Engineering."
 
 <div class="bg-black text-white pl-4 py-2 w-fit text-2xl shadow-xl mb-5 spacei">
     <a href="/articles" class="nounderline">
-        View all articles
+        View all blog posts
         <i class="fa-regular fa-file-lines text-white mr-2"></i>
         <div class="inline text-white px-6 py-2 w-fit font-bold hover:bg-white hover:text-black transition ease-in-out duration-700 not-italic font-bold text-md"> <i class="fa-solid fa-arrow-right"></i> </div>
     </a>

@@ -5,6 +5,8 @@ description: "Published research"
 
 ## Research
 
+(including the failures)
+
 <div class="px-2 py-2 my-5">
 
 ### <span class="link text-2xl">[Toroidal and Uneven Blade Aeroacoustic Analysis](https://tubaa.dev/)</span>
