@@ -6,6 +6,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 <div class="flex flex-col-2 mt-10 mb-0 centerelement px-20">
 
 <img src="/img/will.png" alt="Profile picture" class="img border-black border-r-8 border-b-8" style="width: 12em;">
+<!-- visible sm:invisible sm:w-0 sm:h-0 sm:border-r-0 sm:border-b-0 -->
 
 <div class="ml-8 mt-0" style="margin-top: -2em">
 
@@ -48,7 +49,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
 <!-- <a href="/robotics/quadruped">![Quadruped Beta Prototype](media/quadruped_v1.png){.img .border-black .border-r-8 .border-b-8}</a> -->
 
-#### <span class="centerelement">Over the summer of '23, I began developing this robot with 12 servos, fully-actuated legs, and spare FTC parts from my teacher. It is in the process of being redesigned for lower weight and cable mess. Presently, there is no control system, but this will be implemented soon via communication with the MuJoCo physics engine, so keep posted.</span>
+<span class="centerelement">Over the summer of '23, I developed this robot with 12 servos, fully-actuated legs, and spare FTC parts from my teacher. It is controlled with the MuJoCo physics simulator.</span>
 
 <br>
 
