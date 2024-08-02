@@ -3,9 +3,9 @@ title: "Gallery"
 description: "Robotics and engineering gallery"
 ---
 
-## Gallery
+# Gallery
 
-#### Recently, I got an 11-year-old DSLR to learn <span class="link">[photography](/photography)</span>.
+### Recently, I got an 11-year-old DSLR to learn <span class="link">[photography](/photography)</span>.
 
 <div class="fullimg m-5 text-center">
     <!-- <img src="media/quadruped_v3.jpg" alt="Quadrupedal Robot v4"> -->

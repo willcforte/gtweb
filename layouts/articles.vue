@@ -9,7 +9,9 @@
         <NuxtPage />
     </div> -->
 
-    <slot />
+    <div class="mt-10">
+        <slot />
+    </div>
 </template>
 
 <script setup>

@@ -22,9 +22,9 @@
                 </ul>
             </nav>
         </header>
-        <content>
+        <div class="mt-10">
             <slot />
-        </content>
+        </div>
     </div>
     <footer class="p-5 w-full">
         <div class="mb-2 flex justify-center">

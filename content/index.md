@@ -3,7 +3,7 @@ title: "Home"
 description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 ---
 
-<div class="flex flex-col-2 mt-10 mb-0 centerelement px-20">
+<div class="flex flex-col-2 mb-0 centerelement px-20">
 
 <img src="/img/will.png" alt="Profile picture" class="img border-black border-r-8 border-b-8" style="width: 12em;">
 <!-- visible sm:invisible sm:w-0 sm:h-0 sm:border-r-0 sm:border-b-0 -->

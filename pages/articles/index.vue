@@ -1,7 +1,7 @@
 <template>
-    <h2 class="mb-4">Blog</h2>
+    <h1 class="mb-4">Blog</h1>
 
-    Here are some random trains of thought and/or irrationality.
+    Here are some random trains of thought and/or irrationality.  <span class="link"><a href="/feed.rss">RSS Feed</a></span>
 
     <h4>View my finished projects <span class="link"><a href="/robotics">here</a></span>.</h4>
 

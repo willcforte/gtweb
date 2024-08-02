@@ -1,6 +1,6 @@
 <template>
 
-    <h2 class="mb-0">Engineering Project Reports</h2>
+    <h1 class="mb-0 mt-10">Engineering Project Reports</h1>
 
     <div class="flex flex-col-2 centerelement mt-4 mb-4">
         <div>

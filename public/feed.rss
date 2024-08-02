@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>wcf/GTWeb</title>
+        <link></link>
+        <description>Will's blog of robotics and random trains of thought.</description>
+        <language>en-us</language>
+        <item>
+            <title>Why Write a Blog?</title>
+            <link>https://willcforte.com/articles/why_blog</link>
+            <pubDate>Thu, 01 Aug 2024 15:02:27 +0000</pubDate>
+            <description>Developing your communication skills one poorly-written work at a time.</description>
+            <category>meta</category>
+        </item>
+        <item>
+            <title>Gluon Color Charges</title>
+            <link>https://willcforte.com/articles/gluons</link>
+            <pubDate>Sun, 17 Mar 2024 00:00:00 +0000</pubDate>
+            <description></description>
+            <category>physics</category>
+        </item>
+        <item>
+            <title>Gibberellin Signal Transduction Animation</title>
+            <link>https://willcforte.com/articles/gibberellin</link>
+            <pubDate>Fri, 17 Feb 2023 00:00:00 +0000</pubDate>
+            <description></description>
+            <category>biology</category>
+        </item>
+        <item>
+            <title>GRAPHS Particle Detector</title>
+            <link>https://willcforte.com/articles/beamline</link>
+            <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
+            <description></description>
+            <category>physics</category>
+        </item>
+    </channel>
+</rss>
