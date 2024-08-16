@@ -1,8 +1,8 @@
 ---
-title: "Gluon Color Charges"
+title: "Presentation on Gluon Color Charges"
 description: "A presentation on gluons, the Pauli exclusion principle, quantum chromodynamics, and their application to the nucleus that I delivered in my school's Physics Club."
 date: "Mar. 17, 2023"
-type: "physics"
+type: "modern physics"
 status: "done"
 ---
 

@@ -10,14 +10,14 @@
             <link>https://willcforte.com/articles/why_blog</link>
             <pubDate>Thu, 01 Aug 2024 15:02:27 +0000</pubDate>
             <description>Developing your communication skills one poorly-written work at a time.</description>
-            <category>meta</category>
+            <category>metascience</category>
         </item>
         <item>
             <title>Gluon Color Charges</title>
             <link>https://willcforte.com/articles/gluons</link>
             <pubDate>Sun, 17 Mar 2024 00:00:00 +0000</pubDate>
             <description></description>
-            <category>physics</category>
+            <category>modern physics</category>
         </item>
         <item>
             <title>Gibberellin Signal Transduction Animation</title>
@@ -31,7 +31,7 @@
             <link>https://willcforte.com/articles/beamline</link>
             <pubDate>Wed, 12 Apr 2023 00:00:00 +0000</pubDate>
             <description></description>
-            <category>physics</category>
+            <category>modern physics</category>
         </item>
     </channel>
 </rss>

@@ -1,7 +1,7 @@
 <template>
     <h1 class="mb-4">Blog</h1>
 
-    Here are some random trains of thought and/or irrationality.  <span class="link"><a href="/feed.rss">RSS Feed</a></span>
+    Here are some work-in-progress engineering projects and trains of thought.  <span class="link"><a href="/feed.rss">RSS Feed</a></span>
 
     <h4>View my finished projects <span class="link"><a href="/robotics">here</a></span>.</h4>
 
@@ -9,7 +9,7 @@
         <div class="mb-3" v-for="article in list.slice().reverse()" :key="article.date">
             <h3 class="link mb-0"><a :href="article._path">{{ article.title }}</a></h3>
             <p class="text-sm">{{ article.date }} • {{ article.type }}</p>
-            <p>{{ article.description }}</p>
+            <!-- <p>{{ article.description }}</p> -->
         </div>
     </ContentList>
 
@@ -21,6 +21,7 @@
             <p>{{ article.description }} {{ article.date }}</p>
         </div>
     </ContentList> -->
+
 </template>
 
 <script setup lang="ts">

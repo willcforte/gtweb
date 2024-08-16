@@ -14,12 +14,13 @@ $green0: #064D2A;
 $green1: #038C3E;
 $green2: #27ce40;
 $highlight: #5a5a5a80;
-$cream: #E0D2BD;
+$cream: #e3ceae; // prev E0D2BD
 
 :root {
     font-family: 'Fira Code', monospace;
     font-weight: 500;
     background-color: $cream;
+    box-sizing: border-box;
 }
 
 .robotomono {
@@ -217,6 +218,11 @@ footer {
 
 ul:not(.list-none) {
     @apply list-disc;
+    @apply list-inside;
+}
+
+ol:not(.list-none) {
+    @apply list-decimal;
     @apply list-inside;
 }
 
