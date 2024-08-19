@@ -63,7 +63,7 @@ p {
     padding: 0.5rem 0 0.5rem 0;
 }
 
-p a {
+p a, ol a, ul a, table a, th a, td a {
     color: $green0;
     text-decoration: underline;
     text-decoration-style: dotted;
@@ -94,6 +94,15 @@ p a {
 blockquote {
     padding-left: 2rem;
     text-indent: 1.5rem;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 @import 'tailwind.scss';
@@ -169,15 +178,22 @@ h6 {
     margin-top: 0 !important;
 }
 
-.fullimg {
-    width: 100%;
+.img {
+    width: 40em;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.img {
-    width: 40em;
+.largeimg {
+    width: 65em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fullimg {
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;

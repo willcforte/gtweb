@@ -2,6 +2,7 @@
 title: "Why write a blog?"
 description: "Developing your communication skills one poorly-written work at a time."
 date: "July 31, 2024"
+unix: "1722384000"
 type: "metascience"
 status: "done"
 ---
@@ -40,7 +41,11 @@ This is to avoid the trap of infinite revision. You're not giving expert advice,
 
 The hardest part is overcoming the mental barrier to begin. This must be done regardless of skill: we know that our first works will be terrible--there's no way around it. Write and the skill will follow.
 
-This barrier can be minimized with Matt Might's suggestions for [low-cost academic blogging](https://matt.might.net/articles/how-to-blog-as-an-academic/), which suggests harnessing material that you're already writing for some other purpose (e.g. class assignment, project, email).
+[Louis Rossman](https://www.youtube.com/watch?v=-LF3Cy5hZbc&t=61s) puts this rather elegantly:
+
+> "You are going to suck when you first start at anything. ... You have to get out the suck before you can get to the part that's good."
+
+You can also minimize the ideation barrier with Matt Might's [technique](https://matt.might.net/articles/how-to-blog-as-an-academic/) of harnessing material that you're already writing for some other purpose (e.g. class assignment, personal project, email).
 
 ## Tangent: With great communication comes great responsibility
 

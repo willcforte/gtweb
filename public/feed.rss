@@ -6,6 +6,13 @@
         <description>Will's blog of robotics and random trains of thought.</description>
         <language>en-us</language>
         <item>
+            <title>Inverted Pendulum Project Log #1 -- CAD & Tolerancing</title>
+            <link>http://localhost:3000/articles/inverted_pendulum_1</link>
+            <pubDate>Sat, 17 Aug 2024 20:09:33 +0000</pubDate>
+            <description>Embarking upon developing a 3D-printed, Simulink-controlled inverted pendulum.</description>
+            <category>engineering</category>
+        </item>
+        <item>
             <title>Why Write a Blog?</title>
             <link>https://willcforte.com/articles/why_blog</link>
             <pubDate>Thu, 01 Aug 2024 15:02:27 +0000</pubDate>
