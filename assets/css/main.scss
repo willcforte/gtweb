@@ -21,6 +21,7 @@ $cream: #e3ceae; // prev E0D2BD
     font-weight: 500;
     background-color: $cream;
     box-sizing: border-box;
+    @apply text-lg;
 }
 
 .robotomono {
@@ -49,6 +50,10 @@ $cream: #e3ceae; // prev E0D2BD
     line-height: 1;
     display: inline-block;
     vertical-align: middle;
+}
+
+.text-cream {
+    color: $cream;
 }
 
 header .router-link-exact-active {
@@ -226,6 +231,11 @@ footer {
     display: flex;
     justify-content: center; 
     align-items: center;
+}
+
+.centerelement2 {
+    display: flex;
+    justify-content: center;
 }
 
 .bg-gray0 {

@@ -1,5 +1,5 @@
 <template>
-    <div class="xl:px-48 lg:px-48 md:px-28 sm:px-16 px-10 w-full mb-10">
+    <div class="xl:px-48 lg:px-48 md:px-32 sm:px-24 px-10 w-full mb-10">
         <header>
             <h1 class="flex text-center  justify-center text-7xl mb-6 mt-8"><a href="/" class="href robotomono"><img src="~/assets/img/wcf_rast_c.svg" alt="wcf" class="inlinesvg">/GTWeb</a></h1>
             <nav class="grid place-items-center">

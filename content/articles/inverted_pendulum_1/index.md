@@ -35,7 +35,7 @@ For inspiration on how to make this happen, I looked to others' previous attempt
         <th>Link</th>
     </tr>
     <tr>
-        <td>42x42x23mm Nema 17 Stepper Motor</td>
+        <td>42x42x23mm Nema 17 Stepper Motor (17HS08-1004S)</td>
         <td>1</td>
         <td><a href="https://www.amazon.com/dp/B07PMWQ21T">Amazon</a></td>
     </tr>

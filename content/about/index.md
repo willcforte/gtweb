@@ -5,7 +5,7 @@ description: "About William C. Forte, engineering student"
 
 # About me
 
-I'm Will C. Forte, an incoming college freshman passionate about robotic engineering.
+I'm Will C. Forte, a mechanical engineering student and undergraduate researcher.
 
 <br>
 
