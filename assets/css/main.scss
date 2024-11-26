@@ -80,6 +80,11 @@ p a, ol a, ul a, table a, th a, td a {
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-skip-ink: none;
+    hover:text-blue-700
+}
+
+.link a:hover {
+    color: $green1;
 }
 
 .nuxt-link-exact-active {
@@ -185,6 +190,13 @@ h6 {
 
 .img {
     width: 40em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.smallimg {
+    width: 20em;
     display: block;
     margin-left: auto;
     margin-right: auto;

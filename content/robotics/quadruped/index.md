@@ -1,6 +1,6 @@
 ---
 title: "Fully-Actuated Quadruped"
-description: "A fully-actuated low-cost quadruped that I'm working on."
+description: "A fully-actuated, low-cost quadruped that I made in high school."
 ---
 
 ## Fully-Actuated Quadruped
