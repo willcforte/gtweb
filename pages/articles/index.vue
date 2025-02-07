@@ -7,8 +7,8 @@
 
     <ContentList path="\articles" :query="doneQuery" v-slot="{ list }">
         <div class="mb-3" v-for="article in list.slice().reverse().sort((a, b) => (a.unix < b.unix) ? 1 : -1)" :key="article.unix">
-            <h3 class="link mb-0"><a :href="article._path">{{ article.title }}</a></h3>
-            <p class="text-sm">{{ article.date }} • {{ article.type }}</p>
+            <h4 class="link mb-0"><a :href="article._path">{{ article.title }}</a></h4>
+            <p class="text-sm pt-0">{{ article.date }} • {{ article.type }}</p>
             <!-- <p>{{ article.description }}</p> -->
         </div>
     </ContentList>

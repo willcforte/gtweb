@@ -43,5 +43,11 @@ export default defineNuxtConfig({
     },
     // image: {
     //     dir: '@/assets/img',
-    // },
+    // },'
+    nitro: {
+        routeRules: {
+            // '/content/research/**': { headers: { 'Content-Type': 'application/pdf' } },
+            '/public/**': { headers: { 'Content-Type': 'application/pdf' } },
+        },
+    },
 })

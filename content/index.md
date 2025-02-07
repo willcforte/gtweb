@@ -130,6 +130,8 @@ Engineering Honors Academy Scholar
 <br>
 
 <!-- CALLS TO ACTION -->
+If you want to ask about my projects or talk robotics, email me at willcforte@gmail.com.
+
 <div class="text-center my-10">
   <a href="/articles" class="bg-black text-white px-6 py-3 text-xl space italic shadow-xl hover:bg-gray-800 inline-block mb-4">
     View all blog posts <i class="fa-solid fa-arrow-right"></i>
