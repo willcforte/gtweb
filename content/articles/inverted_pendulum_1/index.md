@@ -1,5 +1,5 @@
 ---
-title: "Inverted Pendulum Project Log #1 - CAD & Tolerancing"
+title: "Inverted Pendulum Project Log (WIP)"
 description: "Creating a Fusion 360 assembly and bill of materials for my inverted pendulum project."
 date: "Aug. 17, 2024"
 unix: "1723925373"

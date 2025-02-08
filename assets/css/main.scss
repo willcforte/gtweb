@@ -15,6 +15,8 @@ $green1: #038C3E;
 $green2: #27ce40;
 $highlight: #5a5a5a80;
 $cream: #e3ceae; // prev E0D2BD
+$creamlight: #ebd8bf;
+
 
 :root {
     font-family: 'Fira Code', monospace;
@@ -54,6 +56,14 @@ $cream: #e3ceae; // prev E0D2BD
 
 .text-cream {
     color: $cream;
+}
+
+.text-creamlight {
+    color: $creamlight;
+}
+
+.fa-vertalign {
+    vertical-align: middle;
 }
 
 header .router-link-exact-active {
@@ -131,7 +141,7 @@ h1 {
 }
 
 h2 {
-    @apply text-4xl;
+    @apply text-3xl;
     margin-top: 0.83em;
     /* margin-bottom reduced from 0.83em */
     margin-bottom: 0.415em;
@@ -252,6 +262,14 @@ footer {
 
 .bg-gray0 {
     background-color: $gray0;
+}
+
+.bg-cream {
+    background-color: $cream;
+}
+
+.bg-cream-dark-accent {
+    background-color: $creamlight;
 }
 
 ul:not(.list-none) {
