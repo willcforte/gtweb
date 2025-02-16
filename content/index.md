@@ -44,7 +44,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 <!-- SMALL DESCRIPTION -->
 <div class="px-4 sm:px-20 text-center sm:text-left my-8">
   <h3 class="text-lg">
-    I study at Rutgers Univ., where I am a member of the Robotics, Automation, & Mechatronics Lab under 
+    I am a robotics researcher at Rutgers University under Prof.
     <span class="link"><a href="https://coewww.rutgers.edu/~jgyi/">Jingang Yi</a></span>.
   </h3>
 </div>
@@ -52,29 +52,11 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 <!-- FEATURED PROJECTS -->
 <div class="px-4 sm:px-20 my-8">
 
-<h3 class="mb-4"><span class="link"><a href="/robotics/quadruped">Featured Project: DIY 12-Motor Quadruped</a></span></h3>
-
-<div class="flex flex-col lg:flex-row gap-8 items-center">
-    <a href="/robotics/quadruped">
-        <img src="media/quad_gif.gif" alt="Quadruped Prototype" class="w-full sm:w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 max-w-6xl min-w-[28rem] border-black border-r-8 border-b-8">
-    </a>
-    <div>
-        <p class="text-lg mb-6">
-        The summer after junior year of HS, I built a low-cost, 12-motor quadrupedal robot intended to increase the accessibility of advanced robotics to educators and students already participating in FTC Robotics.
-        </p>
-        <a href="/robotics/quadruped" class="bg-black text-cream px-4 py-2 text-2xl shadow-xl hover:bg-green-900 ml-0 md:ml-2 whitespace-nowrap">
-        View Project <i class="fa-sharp fa-solid fa-chevron-right"></i>
-        </a>
-    </div>
-</div>
-
-<br>
-
 <h3 class="mb-4"><span class="link"><a href="/robotics/cufflink">Cuff-Link: An Electromyographic Input Device</a></span></h3>
 
 <div class="flex flex-col lg:flex-row gap-8 items-center">
     <a href="/robotics/cufflink">
-        <img src="media/cufflink.jpg" alt="CuffLink Prototype" class="w-full sm:w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 max-w-6xl min-w-[28rem] border-black border-r-8 border-b-8">
+        <img src="media/lowres_cufflinkgif.gif" alt="CuffLink Prototype" class="w-full sm:w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 max-w-6xl min-w-[28rem] border-black border-r-8 border-b-8">
     </a>
     <div>
         <p class="text-lg mb-6">
@@ -85,6 +67,24 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
         </p>
         <a href="/robotics/cufflink" class="bg-black text-cream px-4 py-2 text-2xl shadow-xl hover:bg-green-900 ml-0 md:ml-2 whitespace-nowrap">
         Read the Proposal <i class="fa-sharp fa-solid fa-chevron-right"></i>
+        </a>
+    </div>
+</div>
+
+<br>
+
+<h3 class="mb-4"><span class="link"><a href="/robotics/quadruped">LCFAQ: A Low-Cost, Fully-Actuated Quadruped</a></span></h3>
+
+<div class="flex flex-col lg:flex-row gap-8 items-center">
+    <a href="/robotics/quadruped">
+        <img src="media/quad_gif.gif" alt="Quadruped Prototype" class="w-full sm:w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 max-w-6xl min-w-[28rem] border-black border-r-8 border-b-8">
+    </a>
+    <div>
+        <p class="text-lg mb-6">
+        The summer after junior year of HS, I used spare parts to built a low-cost (≈$500), 12-motor quadrupedal robot intended to increase the accessibility of advanced robotics to educators and students already participating in FTC Robotics.
+        </p>
+        <a href="/robotics/quadruped" class="bg-black text-cream px-4 py-2 text-2xl shadow-xl hover:bg-green-900 ml-0 md:ml-2 whitespace-nowrap">
+        View Project <i class="fa-sharp fa-solid fa-chevron-right"></i>
         </a>
     </div>
 </div>
@@ -127,10 +127,9 @@ Engineering Honors Academy Scholar
 
 <br>
 <br>
-<br>
 
 <!-- CALLS TO ACTION -->
-If you want to ask about my projects or talk robotics, email me at willcforte@gmail.com.
+If you want to say hi or talk robotics, email me at willcforte@gmail.com.
 
 <div class="text-center my-10">
   <a href="/articles" class="bg-black text-white px-6 py-3 text-xl space italic shadow-xl hover:bg-gray-800 inline-block mb-4">

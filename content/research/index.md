@@ -49,7 +49,9 @@ GRAPHS is an experimental proposal to CERN to test the feasibility of graphene s
 
 _Introduction to the MuJoCo Simulator_, Rutgers University, [N2E Robotics Club](https://www.youtube.com/channel/UCnmMsOfnAggqPvigcjnvIjg), February 2025
 
-<!-- <a href="" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-video fa-vertalign"></i> Watch Video</div></a> <a href="" target="_blank"><div class="bg-black ml-1 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-chalkboard fa-vertalign"></i> View Slides</div></a> <a href="" target="_blank"><div class="bg-black ml-1 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-code fa-vertalign"></i> View Code</div></a> -->
+<!-- <a href="" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-video fa-vertalign"></i> Watch Video</div></a> -->
+
+<a href="https://willcforte.com/pdf/mujoco_intro_workshop.pdf" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-chalkboard fa-vertalign"></i> View Slides</div></a> <a href="https://github.com/willcforte/Introduction-to-MuJoCo-Workshop" target="_blank"><div class="bg-black ml-1 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-code fa-vertalign"></i> View Code</div></a>
 
 </div>
 
@@ -59,7 +61,7 @@ _Introduction to the MuJoCo Simulator_, Rutgers University, [N2E Robotics Club](
 
 _The Cuff-Link Electromyographic Input Device_, The Academy for Math, Science, and Engineering, Academy Senior Showcase, May 2024
 
-<!-- <a href="" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-video fa-vertalign"></i> Watch Video</div></a> -->
+<a href="https://drive.google.com/file/d/1SJNabj0U9kuphewD90xxaf7NGrvliWLt/view" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-video fa-vertalign"></i> Watch Video</div></a> <a href="https://willcforte.com/pdf/Blue Team - Cuff-Link Final Presentation (Milestone #6).pdf" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-chalkboard fa-vertalign"></i> View Slides</div></a>
 
 </div>
 

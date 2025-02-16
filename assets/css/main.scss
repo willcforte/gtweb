@@ -152,12 +152,22 @@ h2 {
 
 h3 {
     @apply text-2xl;
+    margin-top: 0.66em;
+    /* margin-bottom reduced from 0.5em */
+    margin-bottom: 0em;
+
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+}
+
+h3-f {
+    @apply text-lg;
     margin-top: 0.5em;
     /* margin-bottom reduced from 0.5em */
     margin-bottom: 0.5em;
 
-    font-family: 'Space Mono', monospace;
-    font-weight: 600;
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
 }
 
 h4 {
@@ -166,8 +176,9 @@ h4 {
     /* margin-bottom reduced from 1.33em */
     margin-bottom: 0.666em;
     
-    font-family: 'Space Mono', monospace;
-    font-weight: 600;
+    font-family: 'Fira Code', monospace;
+    /* fira code starts to be part of the p rather than a header */
+    font-weight: 500; /* 500 p, 600 headers */
 }
 
 h5 {
@@ -200,6 +211,13 @@ h6 {
 
 .img {
     width: 40em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.medimg {
+    width: 30em;
     display: block;
     margin-left: auto;
     margin-right: auto;

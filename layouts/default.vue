@@ -37,7 +37,7 @@
             <a href="https://www.youtube.com/@willcforte"><i class="fa-brands fa-youtube w-4 inline-block mx-1 text-white"></i></a>
         </div>
         <div class="mt-5 flex justify-center text-white italic">
-            Made from scratch by Will C. Forte © 2023
+            Made from scratch by Will C. Forte © 2025
         </div>
         <div class="mt-1 flex justify-center text-white italic whitespace-pre">
             Contact me @ <a href="mailto:willcforte@gmail.com" class="link">willcforte@gmail.com</a>
