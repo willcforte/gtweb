@@ -11,7 +11,7 @@ description: "About Will C. Forte, engineering student"
 
 I'm Will C. Forte, a mechanical engineering student and undergraduate researcher.
 
-![Me with quadruped robot](me_with_quadruped.jpg){.medimg}
+![Me with quadruped robot](/img/me/me_with_quadruped.jpg){.medimg}
 
 <!-- ![Me drilling carbon fiber](DSC09626.jpg){.smallimg} -->
 
@@ -147,7 +147,7 @@ The text of the website, written in [Markdown](https://en.wikipedia.org/wiki/Mar
 
 <h4 class="centerelement flex-col">
 
-![Me drilling carbon fiber](DSC09626.jpg){.medimg .aspect-auto}
+![Me drilling carbon fiber](/img/me/DSC09626.jpg){.medimg .aspect-auto}
 
 @ <a href="https://aiaa.rutgers.edu/ruautonomous.html">RUAutonomous</a>, drilling carbon fiber plates<br>(photo by Will Carney)
 

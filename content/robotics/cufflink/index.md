@@ -34,8 +34,6 @@ Check out the personal website of my good friend [Nikhil Vijay](https://nkve.dev
 
 _The Cuff-Link Electromyographic Input Device_, The Academy for Math, Science, and Engineering, Academy Senior Showcase, May 2024
 
-<a href="https://drive.google.com/file/d/1SJNabj0U9kuphewD90xxaf7NGrvliWLt/view" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-video fa-vertalign"></i> Watch Video</div></a>
-
-https://willcforte.com/pdf/Blue Team - Cuff-Link Final Presentation (Milestone #6).pdf
+<a href="https://drive.google.com/file/d/1SJNabj0U9kuphewD90xxaf7NGrvliWLt/view" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-video fa-vertalign"></i> Watch Video</div></a> <a href="https://willcforte.com/pdf/Blue Team - Cuff-Link Final Presentation (Milestone #6).pdf" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-chalkboard fa-vertalign"></i> View Slides</div></a>
 
 </div>
