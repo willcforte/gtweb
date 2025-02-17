@@ -32,9 +32,10 @@
         </div>
         <div class="mt-5 flex justify-center">
             <a href="https://www.linkedin.com/in/willcforte/"><i class="fa-brands fa-linkedin w-4 inline-block mx-1 text-white"></i></a>
-            <a href="https://github.com/willcforte"><i class="fa-brands fa-github w-4 inline-block mx-1 text-white"></i></a>
-            <a href="https://www.instagram.com/willcforte/"><i class="fa-brands fa-instagram w-4 inline-block mx-1 text-white"></i></a>
             <a href="https://www.youtube.com/@willcforte"><i class="fa-brands fa-youtube w-4 inline-block mx-1 text-white"></i></a>
+            <a href="https://github.com/willcforte"><i class="fa-brands fa-github w-4 inline-block mx-1 text-white"></i></a>
+            <a href="https://bsky.app/profile/willcforte.com"><i class="fa-brands fa-bluesky w-4 inline-block mx-1 text-white"></i></a>
+            <!-- <a href="https://www.instagram.com/willcforte/"><i class="fa-brands fa-instagram w-4 inline-block mx-1 text-white"></i></a> -->
         </div>
         <div class="mt-5 flex justify-center text-white italic">
             Made from scratch by Will C. Forte © 2025
