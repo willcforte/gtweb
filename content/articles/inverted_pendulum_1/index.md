@@ -4,7 +4,7 @@ description: "Creating a Fusion 360 assembly and bill of materials for my invert
 date: "Aug. 17, 2024"
 unix: "1723925373"
 type: "engineering"
-status: "done"
+status: "not done"
 ---
 
 # Inverted Pendulum Project Log #1

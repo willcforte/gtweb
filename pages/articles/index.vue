@@ -1,5 +1,5 @@
 <template>
-    <h1 class="mb-4">Blog</h1>
+    <h1 class="mb-4">Logs</h1>
 
     Here are some work-in-progress engineering projects and trains of thought.  <span class="link"><a href="/feed.rss">RSS Feed</a></span>
 
@@ -7,8 +7,8 @@
 
     <ContentList path="\articles" :query="doneQuery" v-slot="{ list }">
         <div class="mb-3" v-for="article in list.slice().reverse().sort((a, b) => (a.unix < b.unix) ? 1 : -1)" :key="article.unix">
-            <h3 class="link mb-0"><a :href="article._path">{{ article.title }}</a></h3>
-            <p class="text-sm pt-0">{{ article.date }} • {{ article.type }}</p>
+            <h3 class="link my-0 py-0 text-xl"><a :href="article._path">{{ article.title }}</a></h3>
+            <p class="text-xs pt-0 my-0 py-0">{{ article.date }} • {{ article.bytes }} • {{ article.type }}</p>
             <!-- <p>{{ article.description }}</p> -->
         </div>
     </ContentList>
