@@ -51,8 +51,8 @@ export default defineNuxtConfig({
             // '/content/research/**': { headers: { 'Content-Type': 'application/pdf' } },
             '/public/**': { headers: { 'Content-Type': 'application/pdf' } },
         },
-        prerender: {
-            routes: ['/rss.xml'],
-        },
+        // prerender: {
+        //     routes: ['/rss.xml'],
+        // },
     },
 })
