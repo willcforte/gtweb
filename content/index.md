@@ -49,6 +49,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 <div class="px-4 sm:px-20 text-center sm:text-left my-8">
   <h3 class="text-lg">
     I am a robotics researcher at Rutgers University under Prof.
+    <span class="link"><a href="https://pracsys.cs.rutgers.edu/">Kostas Bekris</a></span> and Prof.
     <span class="link"><a href="https://coewww.rutgers.edu/~jgyi/">Jingang Yi</a></span>.
   </h3>
 </div>
@@ -123,7 +124,7 @@ Rutgers University—New Brunswick, c.o. '27
 <br>
 <i>B.S. Mechanical Engineering</i>
 <br>
-<i>Minor in Mathematics</i>
+<i>Minors in Computer Science & Mathematics</i>
 <br>
 Engineering Honors Academy Scholar
 </div>

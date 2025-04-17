@@ -27,6 +27,8 @@ Nikhil Vijay\*, **Will C. Forte**\*, Ishan Gajjar\*, Sarvesh Patham\*, Syon Gupt
 
 We conducted an aeroacoustic performance of 3D printed drone propellers using experiments to quantify sound annoyance. Acoustics are compared to CFD simulation to detect sources of noise. The propellers are qualitatively compared.
 
+Will be submitted to the arXiv soon.
+
 </div>
 
 <div class="bg-cream-dark-accent border-4 border-black px-3 py-2">
