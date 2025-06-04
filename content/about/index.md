@@ -17,6 +17,10 @@ I'm Will C. Forte, a mechanical engineering student and undergraduate researcher
 
 Since high school, I've been learning the mechanical, electrical, CS, and mathematical principles of robotic systems. The interdisciplinary nature of the field is a great motivator—you can apply almost anything!
 
+<h3 class="text-lg">
+    <span class="link"><a href="/self-study">Self-study plan</a></span>
+</h3>
+
 </div>
 
 ## Contact Me
