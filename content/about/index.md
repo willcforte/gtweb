@@ -46,7 +46,7 @@ Since high school, I've been learning the mechanical, electrical, CS, and mathem
 
 <!-- Rutgers Robotics Intern -->
 <div class="bg-cream-dark-accent border-4 border-black px-3 py-2 mb-6">
-    <h2 class="text-2xl font-semibold inline link">Research Intern, <a href="https://coewww.rutgers.edu/~jgyi/">Rutgers Robotics, Automation, & Mechatronics Lab</a></h2>
+    <h2 class="text-2xl font-semibold inline link">Research Intern, <a href="https://coewww.rutgers.edu/~jgyi/" class="yesh">Rutgers Robotics, Automation, & Mechatronics Lab</a></h2>
     <p class="italic">October 2024 - Present</p>
     <ul class="pl-5 mt-2 space-y-1">
         <li>Conducted literature review on approximating regions of attraction of high-dim. dynamical systems.</li>
@@ -57,7 +57,7 @@ Since high school, I've been learning the mechanical, electrical, CS, and mathem
 
 <!-- Rutgers Advanced Controls Intern -->
 <div class="bg-cream-dark-accent border-4 border-black px-3 py-2 mb-6">
-    <h2 class="text-2xl font-semibold inline link">Research Intern, <a href="https://www.laurentburlion.com/">Rutgers Advanced Controls Lab</a></h2>
+    <h2 class="text-2xl font-semibold inline link">Research Intern, <a href="https://www.laurentburlion.com/" class="yesh">Rutgers Advanced Controls Lab</a></h2>
     <p class="italic">June 2024 - October 2024</p>
     <ul class="pl-5 mt-2 space-y-1">
         <li>Developed low-level quadcopter control architecture in ROS for PX4-MAVROS-Gazebo SITL simulator.</li>
@@ -68,7 +68,7 @@ Since high school, I've been learning the mechanical, electrical, CS, and mathem
 
 <!-- NJIT Intern -->
 <div class="bg-cream-dark-accent border-4 border-black px-3 py-2 mb-6">
-    <h2 class="text-2xl font-semibold inline link">Research Intern, <a href="https://innovative-robotics.github.io/">NJIT Swissler Innovative Robotics Lab</a></h2>
+    <h2 class="text-2xl font-semibold inline link">Research Intern, <a href="https://innovative-robotics.github.io/" class="yesh">NJIT Swissler Innovative Robotics Lab</a></h2>
     <p class="italic">June 2023 - June 2024</p>
     <ul class="pl-5 mt-2 space-y-1">
         <li>Developed a robotic arm simulation in MuJoCo (Python) using Jacobian inverse kinematics.</li>

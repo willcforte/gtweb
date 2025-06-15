@@ -22,42 +22,44 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
     <div class="flex flex-wrap gap-3 sm:gap-4 mt-4 justify-start">
         <!-- Buttons -->
         <a href="https://willcforte.com/pdf/cv25.pdf" 
-           class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap">
+           class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-solid fa-file-pdf"></i> CV
         </a>
         <a href="https://www.linkedin.com/in/willcforte/" 
-           class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap">
+           class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-brands fa-linkedin"></i>
         </a>
         <a href="https://bsky.app/profile/willcforte.com" 
-           class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap">
+           class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-brands fa-bluesky"></i>
         </a>
         <a href="mailto:willcforte@gmail.com" 
-           class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap">
+           class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-solid fa-paper-plane"></i> Contact me!
         </a>
         <a href="/articles" 
-           class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap">
+           class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-solid fa-square-rss"></i> Blog
         </a>
     </div>
   </div>
 </div>
 
-<!-- SMALL DESCRIPTION -->
-<div class="px-4 sm:px-20 text-center sm:text-left my-8">
-  <h3 class="text-lg">
-    I am a robotics researcher at Rutgers University under Prof.
-    <span class="link"><a href="https://pracsys.cs.rutgers.edu/">Kostas Bekris</a></span> and Prof.
-    <span class="link"><a href="https://coewww.rutgers.edu/~jgyi/">Jingang Yi</a></span>.
-  </h3>
+<div class="flex flex-col sm:flex-row px-4 sm:px-20 items-center sm:items-start justify-center sm:justify-between my-10">
+  <img src="/img/ru_shield.svg" alt="Description of SVG" width="100vh" class="my-auto">
+
+  <!-- SMALL DESCRIPTION -->
+  <div class="px-10 text-center sm:text-left">
+    <h3 class="text-lg">
+      I am an undergrad robotics + AI researcher and Aresty Fellow at Rutgers University under <a href="https://pracsys.cs.rutgers.edu/" class="yesh">Prof. Kostas Bekris</a>. I am pursuing a B.S. in MechE, self-studying computational robotics, and am a member of NASA NPWEE.
+    </h3>
+  </div>
 </div>
 
 <!-- FEATURED PROJECTS -->
 <div class="px-4 sm:px-20 my-8">
 
-<h3 class="mb-4"><span class="link"><a href="/robotics/quadruped">LCFAQ: A Low-Cost, Fully-Actuated Quadruped</a></span></h3>
+<h3 class="mb-4"><span class="link"><a href="/robotics/quadruped" class="yesh">LCFAQ: A Low-Cost, Fully-Actuated Quadruped</a></span></h3>
 
 <div class="flex flex-col lg:flex-row gap-8 items-center">
     <a href="/robotics/quadruped">
@@ -67,7 +69,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
         <p class="text-lg mb-6">
         The summer after junior year of HS, I used spare parts to built a low-cost (≈$500), 12-motor quadrupedal robot intended to increase the accessibility of advanced robotics to educators and students already participating in FTC Robotics.
         </p>
-        <a href="/robotics/quadruped" class="bg-black text-cream px-4 py-2 text-2xl shadow-xl hover:bg-green-900 ml-0 md:ml-2 whitespace-nowrap">
+        <a href="/robotics/quadruped" class="bg-black text-cream px-4 py-2 text-2xl shadow-xl hover:bg-green-900 ml-0 md:ml-2 whitespace-nowrap noh">
         View Project <i class="fa-sharp fa-solid fa-chevron-right"></i>
         </a>
     </div>
@@ -75,7 +77,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
 <br>
 
-<h3 class="mb-4"><span class="link"><a href="/robotics/cufflink">Cuff-Link: An Electromyographic Input Device</a></span></h3>
+<h3 class="mb-4"><a href="/robotics/cufflink" class="yesh">Cuff-Link: An Electromyographic Input Device</a></h3>
 
 <div class="flex flex-col lg:flex-row gap-8 items-center">
     <a href="/robotics/cufflink">
@@ -83,12 +85,12 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
     </a>
     <div>
         <p class="text-lg mb-6">
-        The Cuff-Link™ allows amputees and those suffering from nerve damage to control a computer using nothing but the muscles in their arm. A similar design cost Meta <span class="link"><a href="https://www.theverge.com/2019/9/23/20881032/facebook-ctrl-labs-acquisition-neural-interface-armband-ar-vr-deal">$500 million</a></span>. It cost us $150.
+        The Cuff-Link™ allows amputees and those suffering from nerve damage to control a computer using nothing but the muscles in their arm. A similar design cost Meta <a href="https://www.theverge.com/2019/9/23/20881032/facebook-ctrl-labs-acquisition-neural-interface-armband-ar-vr-deal">$500 million</a>. It cost us $150.
         <br>
         <br>
         We presented the project in front of a crowd of 200+ at the Academy of Math, Science, & Engineering 2024 Showcase.
         </p>
-        <a href="/robotics/cufflink" class="bg-black text-cream px-4 py-2 text-2xl shadow-xl hover:bg-green-900 ml-0 md:ml-2 whitespace-nowrap">
+        <a href="/robotics/cufflink" class="bg-black text-cream px-4 py-2 text-2xl shadow-xl hover:bg-green-900 ml-0 md:ml-2 whitespace-nowrap noh">
         Read the Proposal <i class="fa-sharp fa-solid fa-chevron-right"></i>
         </a>
     </div>
@@ -96,7 +98,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
 <br>
 
-<h3 class="mb-4"><span class="link"><a href="https://tubaa.dev/">TUBAA: Aeroacoustic Analysis of the MIT Toroidal Propeller</a></span></h3>
+<h3 class="mb-4"><a href="https://tubaa.dev/" class="yesh">TUBAA: Aeroacoustic Analysis of the MIT Toroidal Propeller</a></h3>
 
 <div class="flex flex-col lg:flex-row gap-8 items-center">
     <a href="https://tubaa.dev/">
@@ -104,9 +106,9 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
     </a>
     <div>
         <p class="text-lg mb-6">
-        I was the CFD lead of a large undergraduate research project in which we compared the aeroacoustics of the MIT Lincoln Lab toroidal propeller against traditional alternatives using ANSYS Fluent and FFT spectra. We are planning to submit the manuscript for conference publication.
+        I was the CFD lead of a large undergraduate research project in which we compared the aeroacoustics of the MIT Lincoln Lab toroidal propeller against traditional alternatives using ANSYS Fluent and FFT spectra. The manuscript is available on arXiv.
         </p>
-        <a href="https://tubaa.dev/" class="bg-black text-cream px-4 py-2 text-2xl shadow-xl hover:bg-green-900 ml-0 md:ml-2 whitespace-nowrap">
+        <a href="https://tubaa.dev/" class="bg-black text-cream px-4 py-2 text-2xl shadow-xl hover:bg-green-900 ml-0 md:ml-2 whitespace-nowrap noh">
         Visit Our Website <i class="fa-sharp fa-solid fa-chevron-right"></i>
         </a>
     </div>
@@ -137,11 +139,11 @@ Engineering Honors Academy Scholar
 If you want to say hi or talk robotics, email me at willcforte@gmail.com.
 
 <div class="text-center my-10">
-  <a href="/articles" class="bg-black text-white px-6 py-3 text-xl space italic shadow-xl hover:bg-gray-800 inline-block mb-4">
+  <a href="/articles" class="bg-black text-white px-6 py-3 text-xl space italic shadow-xl hover:bg-gray-800 inline-block mb-4 noh">
     View all blog posts <i class="fa-solid fa-arrow-right"></i>
   </a>
   <br>
-  <a href="/robotics" class="bg-black text-white px-6 py-3 text-xl space italic shadow-xl hover:bg-gray-800 inline-block">
+  <a href="/robotics" class="bg-black text-white px-6 py-3 text-xl space italic shadow-xl hover:bg-gray-800 inline-block noh">
     Robotics engineering logs <i class="fa-solid fa-arrow-right"></i>
   </a>
 </div>

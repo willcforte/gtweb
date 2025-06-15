@@ -85,15 +85,35 @@ p a, ol a, ul a, table a, th a, td a {
     text-decoration-skip-ink: none;
 }
 
-.link a {
+.noh { // no highlight
+    text-decoration: none;
+}
+
+.yesh { // yes highlight
     color: $green0;
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-skip-ink: none;
-    hover:text-blue-700
+    hover:text-blue-700;
 }
 
-.link a:hover {
+// .link a {
+a:not(.noh) .yesh,
+h1 a .yesh,
+h2 a .yesh,
+h3 a .yesh {
+    color: $green0;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-skip-ink: none;
+    hover:text-blue-700;
+}
+
+// .link a:hover {
+a:not(.noh):hover .yesh,
+h1 a .yesh:hover,
+h2 a .yesh:hover,
+h3 a .yesh:hover {
     color: $green1;
 }
 

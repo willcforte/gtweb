@@ -1,7 +1,7 @@
 <template>
     <div class="xl:px-64 lg:px-64 md:px-24 px-0 w-full mb-10">
         <header>
-            <h1 class="flex text-center  justify-center text-7xl mb-6 mt-8"><a href="/" class="href robotomono"><img src="~/assets/img/wcf_rast_c.svg" alt="wcf" class="inlinesvg">/GTWeb</a></h1>
+            <h1 class="flex text-center  justify-center text-7xl mb-6 mt-8"><a href="/" class="robotomono noh"><img src="~/assets/img/wcf_rast_c.svg" alt="wcf" class="inlinesvg">/GTWeb</a></h1>
             <nav class="grid place-items-center">
                 <ul class="float-left flex flex-wrap flex-col md:flex-row text-3xl md:text-lg space list-none whitespace-nowrap">
                     <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/">home</NuxtLink></li>
@@ -15,8 +15,8 @@
                     <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/articles">logs</NuxtLink></li>
                     <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>
                     <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/research">research</NuxtLink></li>
-                    <!-- <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>
-                    <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/self-study">self-study</NuxtLink></li> -->
+                    <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>
+                    <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/self-study">self-study</NuxtLink></li>
                     <!-- <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>
                     <li class="float-left px-1 lg:px-2 m-0"><NuxtLink to="/calculus">calculus</NuxtLink></li> -->
                 </ul>
@@ -28,7 +28,7 @@
     </div>
     <footer class="p-5 w-full">
         <div class="mb-2 flex justify-center">
-            <span class="spacei footertext">wcf</span><span class="text-4xl footertext robotomono">/GTWeb</span>
+            <span class="spacei footertext">wcf</span><span class="text-4xl footertext robotomono noh">/GTWeb</span>
         </div>
         <div class="mt-5 flex justify-center">
             <a href="https://www.linkedin.com/in/willcforte/"><i class="fa-brands fa-linkedin w-4 inline-block mx-1 text-white"></i></a>
@@ -41,7 +41,7 @@
             Made from scratch by Will C. Forte © 2025
         </div>
         <div class="mt-1 flex justify-center text-white italic whitespace-pre">
-            Contact me @ <a href="mailto:willcforte@gmail.com" class="link">willcforte@gmail.com</a>
+            Contact me @ <a href="mailto:willcforte@gmail.com" class="link noh">willcforte@gmail.com</a>
         </div>
     </footer>
 </template>
