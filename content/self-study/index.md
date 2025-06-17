@@ -13,15 +13,16 @@ Here are some of my favorite resources in my quest of assembling a solid mechatr
 
 ## $\LaTeX$ Course Notes
 
-Not all lectures are complete as I occasionally write paper notes.
+Not all lectures are complete as I occasionally switch to paper notes.
 
-| Link to my notes                                                                               |  Lecture Progress  |
-|------------------------------------------------------------------------------------------------|--------------------|
-| [Stanford CS229 Au. '18](self-study/courses/cs229.md) |         02/20  |
-| [MIT Underactuated Robotics Sp. '24](self-study/courses/uar.md)                          |              01/24  |
-| [DeepMind x UCL RL '21](self-study/courses/uclrl.md) |          00/13  |
-| [MIT OCW Diff. Eq. 18.03SC Fa. '11](self-study/courses/ocwdiffeq.md) |  00/33  |
-| [MIT CS 6.S184 FM & Diffusion Sp. '25](self-study/courses/mitdiffusion.md)                      |              00/06  |
+| Link to my notes                                                                |  Lecture Progress  |
+|---------------------------------------------------------------------------------|--------------------|
+| [Stanford CS229 Au. '18](self-study/courses/cs229.md)                           |             02/20  |
+| [MIT Underactuated Robotics Sp. '24](self-study/courses/uar.md)                 |             01/24  |
+| [DeepMind x UCL RL '21](self-study/courses/uclrl.md)                            |             00/13  |
+| [MIT OCW Diff. Eq. 18.03SC Fa. '11](self-study/courses/ocwdiffeq.md)            |             00/33  |
+| [MIT CS 6.S184 FM & Diffusion '25](self-study/courses/mitdiffusion.md)          |             00/06  |
+| [The Art and Science of PCB Design '25](self-study/courses/mitpcb.md)           |             00/19  |
 
 <br>
 
@@ -57,11 +58,9 @@ Programs
 
 ## Past Success
 
-* <span class="link">[HKUST ELEC5660: Introduction to Aerial Robots](https://gaowenliang.github.io/HKUST-ELEC5660-Introduction-to-Aerial-Robots/)</span>
+* <span class="link">[HKUST ELEC5660: Introduction to Aerial Robots](https://gaowenliang.github.io/HKUST-ELEC5660-Introduction-to-Aerial-Robots/)</span> (lost notes)
 
 <br>
-
-I don't know where I'll find the time to do all this stuff, but it can't hurt to try.
 
 ## Class Plan
 

@@ -7,3 +7,9 @@ description: ""
 
 [Course link](https://diffusion.csail.mit.edu/)
 
+## LaTeX Notes
+
+|  Lecture                      |  Notes             |
+|-------------------------------|--------------------|
+|  [Lecture 1](cs229/lect1)     |  todo                  |
+|                               |                    |

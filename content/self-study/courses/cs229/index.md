@@ -9,6 +9,8 @@ description: ""
 
 ## LaTeX Notes
 
-[Lecture 1](cs229/lect1)
+|  Lecture                      |  Notes             |
+|-------------------------------|--------------------|
+|  [Lecture 1](cs229/lect1)     |                    |
+|  [Lecture 2](cs229/lect2)     | incomplete, rest done on paper         |
 
-[Lecture 2](cs229/lect2)

@@ -51,7 +51,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
   <!-- SMALL DESCRIPTION -->
   <div class="px-10 text-center sm:text-left">
     <h3 class="text-lg">
-      I am an undergrad robotics + AI researcher and Aresty Fellow at Rutgers University under <a href="https://pracsys.cs.rutgers.edu/" class="yesh">Prof. Kostas Bekris</a>. I am pursuing a B.S. in MechE, self-studying computational robotics, and am a member of NASA NPWEE.
+      I am an undergrad robotics + AI researcher and Aresty Fellow at Rutgers University under <a href="https://pracsys.cs.rutgers.edu/" class="yesh">Prof. Kostas Bekris</a>. I am pursuing a B.S. in MechE, self-studying computational robotics, and am a member of <a href="https://www.lspace.asu.edu/" class="yesh">NASA NPWEE</a>.
     </h3>
   </div>
 </div>
@@ -110,6 +110,29 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
         </p>
         <a href="https://tubaa.dev/" class="bg-black text-cream px-4 py-2 text-2xl shadow-xl hover:bg-green-900 ml-0 md:ml-2 whitespace-nowrap noh">
         Visit Our Website <i class="fa-sharp fa-solid fa-chevron-right"></i>
+        </a>
+    </div>
+</div>
+
+<br>
+
+<h3 class="mb-4"><a href="https://www.youtube.com/embed/h3W5pSzrWO8" class="yesh">MuJoCo Simulator Tutorial</a></h3>
+
+<div class="flex flex-col lg:flex-row gap-8 items-center">
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/h3W5pSzrWO8" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen
+        class="w-full sm:w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 max-w-6xl min-w-[28rem] border-black border-r-8 border-b-8">
+    </iframe>
+    <div>
+        <p class="text-lg mb-6">
+        I gave a workshop at the Rutgers University <a href="https://robotics.rutgers.edu/pages/n2e_robotics.html" class="yesh">N2E Robotics Club</a> to share my enthusiasm for the MuJoCo simulator and help people build and control a 2R manipulator using PID control. Currently at 643 views!
+        </p>
+        <a href="https://www.youtube.com/embed/h3W5pSzrWO8" class="bg-black text-cream px-4 py-2 text-2xl shadow-xl hover:bg-green-900 ml-0 md:ml-2 whitespace-nowrap noh">
+        Watch Video <i class="fa-sharp fa-solid fa-chevron-right"></i>
         </a>
     </div>
 </div>

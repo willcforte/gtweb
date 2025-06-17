@@ -1,15 +1,16 @@
 ---
-title: "DeepMind x UCL RL '21"
+title: "MIT PCB"
 description: ""
 ---
 
-# DeepMind x UCL RL '21
+# MIT The Art and Science of PCB Design
 
-[Course link](https://www.youtube.com/playlist?list=PLqYmG7hTraZDVH599EItlEWsUOsJbAodm)
+[Course link](https://diffusion.csail.mit.edu/) IAP 2025
 
 ## LaTeX Notes
 
 |  Lecture                      |  Notes             |
 |-------------------------------|--------------------|
-|  [Lecture 1](cs229/lect1)     |  todo                  |
+|  [Lecture 1](mitpcb/lect1)    |  TODO              |
 |                               |                    |
+
