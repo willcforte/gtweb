@@ -14,10 +14,10 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
     <h2 class="mt-0 mb-4 text-2xl sm:text-4xl lg:text-4xl font-bold leading-snug">
       I'm 
       <span class="text-cream px-3 leading-tight italic bg-black hover:bg-green-900">Will C. Forte</span>, 
-      a mechanical engineer and roboticist.
+      a mechanical & computational roboticist.
     </h2>
     <h3 class="text-lg sm:text-xl lg:text-2xl font-semibold my-2 leading-normal">
-      <i>Welcome to my self-coded project site!</i>
+      <i>Welcome to my self-coded website!</i>
     </h3>
     <div class="flex flex-wrap gap-3 sm:gap-4 mt-4 justify-start">
         <!-- Buttons -->
@@ -51,7 +51,9 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
   <!-- SMALL DESCRIPTION -->
   <div class="px-10 text-center sm:text-left">
     <h3 class="text-lg">
-      I am an undergrad robotics + AI researcher and Aresty Fellow at Rutgers University under <a href="https://pracsys.cs.rutgers.edu/" class="yesh">Prof. Kostas Bekris</a>. I am pursuing a B.S. in MechE, self-studying computational robotics, and am a member of <a href="https://www.lspace.asu.edu/" class="yesh">NASA NPWEE</a>.
+      I'm an undergrad robotics + AI researcher & Aresty Fellow at Rutgers University's Honors College under <a href="https://pracsys.cs.rutgers.edu/" class="yesh">Prof. Kostas Bekris</a>.
+      <br>
+      Aside from my B.S. in MechE, I'm a PI in <a href="https://www.lspace.asu.edu/proposal-writing-academy" class="yesh">NASA NPWEE</a> and <a href="https://ccbr-humanoid.github.io/wiki/docs/home/" class="yesh">democratizing legged robotics</a> with friends from Caltech, Columbia, and Berkeley.
     </h3>
   </div>
 </div>
@@ -145,7 +147,8 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 mt-10 centerelement">
 <img src="media/RENGHON_V_RED_BLACK.svg" class="w-32 sm:w-32 mb-4 sm:mb-0 mr-6 centerelement">
 <div class="text-center sm:text-left">
-Rutgers University—New Brunswick, c.o. '27
+<!-- Rutgers University—New Brunswick, c.o. '27 -->
+Rutgers University—New Brunswick
 <br>
 <i>B.S. Mechanical Engineering</i>
 <br>
@@ -161,7 +164,7 @@ Engineering Honors Academy Scholar
 <!-- CALLS TO ACTION -->
 If you want to say hi or talk robotics, email me at willcforte@gmail.com.
 
-<div class="text-center my-10">
+<!-- <div class="text-center my-10">
   <a href="/articles" class="bg-black text-white px-6 py-3 text-xl space italic shadow-xl hover:bg-gray-800 inline-block mb-4 noh">
     View all blog posts <i class="fa-solid fa-arrow-right"></i>
   </a>
@@ -169,7 +172,7 @@ If you want to say hi or talk robotics, email me at willcforte@gmail.com.
   <a href="/robotics" class="bg-black text-white px-6 py-3 text-xl space italic shadow-xl hover:bg-gray-800 inline-block noh">
     Robotics engineering logs <i class="fa-solid fa-arrow-right"></i>
   </a>
-</div>
+</div> -->
 
 <br>
 

@@ -38,10 +38,10 @@
             <!-- <a href="https://www.instagram.com/willcforte/"><i class="fa-brands fa-instagram w-4 inline-block mx-1 text-white"></i></a> -->
         </div>
         <div class="mt-5 flex justify-center text-white italic">
-            Made from scratch by Will C. Forte © 2025
+            MADE FROM SCRATCH / Will C. Forte © 2025
         </div>
         <div class="mt-1 flex justify-center text-white italic whitespace-pre">
-            Contact me @ <a href="mailto:willcforte@gmail.com" class="link noh">willcforte@gmail.com</a>
+            CONTACT @ <a href="mailto:willcforte@gmail.com" class="link noh">willcforte@gmail.com</a>
         </div>
     </footer>
 </template>

@@ -15,3 +15,6 @@ This is my self-coded Nuxt website for my projects and research in robotics. I'v
 ### [Blog](https://willcforte.com/articles)
 
 ### [Research](https://willcforte.com/research)
+
+node.js `v16.14.2`, npm `v8.5.0`
+Switch node version using `nvm use 16.14.2`

@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 $black: #000000;
 $gray0: #333131;
@@ -18,8 +19,16 @@ $cream: #e3ceae; // prev E0D2BD
 $creamlight: #ebd8bf;
 
 
+// :root {
+//     font-family: 'Fira Code', monospace;
+//     font-weight: 400;
+//     background-color: $cream;
+//     box-sizing: border-box;
+//     @apply text-lg;
+// }
+
 :root {
-    font-family: 'Fira Code', monospace;
+    font-family: 'IBM Plex Mono', monospace;
     font-weight: 500;
     background-color: $cream;
     box-sizing: border-box;
