@@ -2,7 +2,7 @@
 title: "Ruthless Capitalism or Effective Altruism?"
 description: "What effective altriusm may justify."
 date: "Mar. 19, 2025"
-bytes: "4.66K"
+bytes: "4.66KB"
 unix: "1742409551"
 type: "ethics"
 status: "done"
@@ -14,8 +14,7 @@ But due to the financial resources and economic productivity of workers in devel
 
 This line of thought puts way too much trust in the fallible rich (sort of like those who believe Elon Musk is our savior).
 
-This concern is echoed by New York Times writer Gideon Lewis-Kraus, who wrote a wonderful portrait of William MacAskill, the de-facto founder of the Effective Altruism movement.
-This concern is echoed by New York Times writer Gideon Lewis-Kraus, who wrote a wonderful [portrait of William MacAskill](), the de-facto founder of the Effective Altruism movement.
+This concern is echoed by New York Times writer Gideon Lewis-Kraus, who wrote a wonderful [portrait of William MacAskill](https://www.newyorker.com/magazine/2022/08/15/the-reluctant-prophet-of-effective-altruism), the de-facto founder of the Effective Altruism movement.
 
 >Nick Beckstead, the philosopher at the helm of the Future Fund, remarked in his 2013 dissertation, “Richer countries have substantially more innovation, and their workers are much more economically productive. By ordinary standards—at least by ordinary enlightened humanitarian standards—saving and improving lives in rich countries is about equally as important as saving and improving lives in poor countries, provided lives are improved by roughly comparable amounts. But it now seems more plausible to me that saving a life in a rich country is substantially more important than saving a life in a poor country.”
 

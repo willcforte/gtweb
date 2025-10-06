@@ -46,14 +46,37 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 </div>
 
 <div class="flex flex-col sm:flex-row px-4 sm:px-20 items-center sm:items-start justify-center sm:justify-between my-10">
+  <img src="/img/bair.svg" alt="Description of SVG" width="100vh" class="my-auto">
+
+  <!-- SMALL DESCRIPTION -->
+  <div class="px-10 text-center sm:text-left">
+    <h3 class="text-lg">
+      I recently started an internship at <a href="https://bair.berkeley.edu/" class="yesh">Berkeley AI Research (BAIR)</a> under <a href="https://people.eecs.berkeley.edu/~pabbeel/" class="yesh">Prof. Pieter Abbeel</a>, working with <a href="https://geng-haoran.github.io/" class="yesh">Haoran Geng</a>!
+    </h3>
+  </div>
+</div>
+
+<div class="flex flex-col sm:flex-row px-4 sm:px-20 items-center sm:items-start justify-center sm:justify-between my-10">
+  <img src="/img/rud.png" alt="Description of SVG" width="100vh" class="my-auto">
+
+  <!-- SMALL DESCRIPTION -->
+  <div class="px-10 text-center sm:text-left">
+    <h3 class="text-lg">
+      I'm the President & Founder of <a href="https://rudynamics.vercel.app/" class="yesh">Rutgers Dynamics</a>, an extremely-ambitious student-run robot dog & humanoid lab.
+      Part of a collaboration <a href="https://ccbr-humanoid.github.io/wiki/docs/home/" class="yesh">democratizing legged robotics</a> with friends from Caltech, Columbia, Rutgers, and Berkeley.
+    </h3>
+  </div>
+</div>
+
+<div class="flex flex-col sm:flex-row px-4 sm:px-20 items-center sm:items-start justify-center sm:justify-between my-10">
   <img src="/img/ru_shield.svg" alt="Description of SVG" width="100vh" class="my-auto">
 
   <!-- SMALL DESCRIPTION -->
   <div class="px-10 text-center sm:text-left">
     <h3 class="text-lg">
-      I'm an undergrad robotics + AI researcher & Aresty Fellow at Rutgers University's Honors College under <a href="https://pracsys.cs.rutgers.edu/" class="yesh">Prof. Kostas Bekris</a>.
+      I'm an undergrad robotics + AI researcher & Aresty Fellow at Rutgers' Honors College under <a href="https://pracsys.cs.rutgers.edu/" class="yesh">Prof. Kostas Bekris</a>.
       <br>
-      Aside from my B.S. in MechE, I'm a PI in <a href="https://www.lspace.asu.edu/proposal-writing-academy" class="yesh">NASA NPWEE</a> and <a href="https://ccbr-humanoid.github.io/wiki/docs/home/" class="yesh">democratizing legged robotics</a> with friends from Caltech, Columbia, and Berkeley.
+      Aside from my B.S. in MechE, I was a PI on a <a href="https://www.lspace.asu.edu/proposal-writing-academy" class="yesh">NASA NPWEE</a> grant proposal.
     </h3>
   </div>
 </div>
@@ -61,7 +84,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 <!-- FEATURED PROJECTS -->
 <div class="px-4 sm:px-20 my-8">
 
-<h3 class="mb-4"><span class="link"><a href="/robotics/quadruped" class="yesh">LCFAQ: A Low-Cost, Fully-Actuated Quadruped</a></span></h3>
+<h3 class="mb-4"><span class="link"><a href="/robotics/quadruped" class="yesh">LCFAQ: A Low-Cost, Fully-Actuated Quadruped</a></span> (2023)</h3>
 
 <div class="flex flex-col lg:flex-row gap-8 items-center">
     <a href="/robotics/quadruped">
@@ -79,7 +102,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
 <br>
 
-<h3 class="mb-4"><a href="/robotics/cufflink" class="yesh">Cuff-Link: An Electromyographic Input Device</a></h3>
+<h3 class="mb-4"><a href="/robotics/cufflink" class="yesh">Cuff-Link: An Electromyographic Input Device</a> (2024)</h3>
 
 <div class="flex flex-col lg:flex-row gap-8 items-center">
     <a href="/robotics/cufflink">
@@ -100,7 +123,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
 <br>
 
-<h3 class="mb-4"><a href="https://tubaa.dev/" class="yesh">TUBAA: Aeroacoustic Analysis of the MIT Toroidal Propeller</a></h3>
+<h3 class="mb-4"><a href="https://tubaa.dev/" class="yesh">TUBAA: Aeroacoustic Analysis of the MIT Toroidal Propeller</a> (2023)</h3>
 
 <div class="flex flex-col lg:flex-row gap-8 items-center">
     <a href="https://tubaa.dev/">
@@ -131,7 +154,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
     </iframe>
     <div>
         <p class="text-lg mb-6">
-        I gave a workshop at the Rutgers University <a href="https://robotics.rutgers.edu/pages/n2e_robotics.html" class="yesh">N2E Robotics Club</a> to share my enthusiasm for the MuJoCo simulator and help people build and control a 2R manipulator using PID control. Currently at 643 views!
+        I gave a workshop at the Rutgers University <a href="https://robotics.rutgers.edu/pages/n2e_robotics.html" class="yesh">N2E Robotics Club</a> to share my enthusiasm for the MuJoCo simulator and help people build and control a 2R manipulator using PID control.
         </p>
         <a href="https://www.youtube.com/embed/h3W5pSzrWO8" class="bg-black text-cream px-4 py-2 text-2xl shadow-xl hover:bg-green-900 ml-0 md:ml-2 whitespace-nowrap noh">
         Watch Video <i class="fa-sharp fa-solid fa-chevron-right"></i>

@@ -41,7 +41,7 @@
             MADE FROM SCRATCH / Will C. Forte © 2025
         </div>
         <div class="mt-1 flex justify-center text-white italic whitespace-pre">
-            CONTACT @ <a href="mailto:willcforte@gmail.com" class="link noh">willcforte@gmail.com</a>
+            CONTACT @ <a href="mailto:willcforte@gmail.com" class="link noh">willcforte (at) gmail.com</a>
         </div>
     </footer>
 </template>

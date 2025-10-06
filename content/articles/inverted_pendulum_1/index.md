@@ -5,6 +5,7 @@ date: "Aug. 17, 2024"
 unix: "1723925373"
 type: "engineering"
 status: "not done"
+image: "/media/articles/inverted_pendulum_parts.jpg"
 ---
 
 # Inverted Pendulum Project Log #1

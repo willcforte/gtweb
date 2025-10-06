@@ -3,11 +3,12 @@
 
     Here are some work-in-progress engineering projects and trains of thought.  <span class="link"><a href="/feed.rss">RSS Feed</a></span>
 
-    <h4>View my finished projects <span class="link"><a href="/robotics">here</a></span>.</h4>
+    <h4>View my finished projects <span class="link"><a href="/robotics" class="yesh">here</a></span>.</h4>
 
     <ContentList path="\articles" :query="doneQuery" v-slot="{ list }">
         <div class="mb-3" v-for="article in list.slice().reverse().sort((a, b) => (a.unix < b.unix) ? 1 : -1)" :key="article.unix">
-            <h3 class="link my-0 py-0 text-xl"><a :href="article._path">{{ article.title }}</a></h3>
+            <a :href="article._path"><img v-if="article.image" class="medarticleimg" :src="article.image" alt="Cover Image" /></a>
+            <h2 class="link my-0 py-0 text-3xl"><a :href="article._path">{{ article.title }}</a></h2>
             <p class="text-xs pt-0 my-0 py-0">{{ article.date }} • {{ article.bytes }} • {{ article.type }}</p>
             <!-- <p>{{ article.description }}</p> -->
         </div>

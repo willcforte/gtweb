@@ -245,6 +245,13 @@ h6 {
     margin-right: auto;
 }
 
+.smallimg {
+    width: 20em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .medimg {
     width: 30em;
     display: block;
@@ -252,11 +259,14 @@ h6 {
     margin-right: auto;
 }
 
-.smallimg {
-    width: 20em;
+.medarticleimg {
+    width: 30em;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.medlgarticleimg {
+    width: 45em;
+    display: block;
 }
 
 .largeimg {

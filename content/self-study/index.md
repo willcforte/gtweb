@@ -11,7 +11,7 @@ Here are some of my favorite resources in my quest of assembling a solid mechatr
 
 [Compendium on Robotic Actuators](self-study/motors/index.md)
 
-[Open-Source Hardware Bible](self-study/hardware/index.md)
+[Open-Source Hardware Bible (WIP)](self-study/hardware/index.md)
 
 ## $\LaTeX$ Course Notes
 

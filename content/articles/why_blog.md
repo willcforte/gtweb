@@ -2,7 +2,7 @@
 title: "Why write a blog?"
 description: "Developing your communication skills one poorly-written work at a time."
 date: "July 31, 2024"
-bytes: "3.76K"
+bytes: "3.76KB"
 unix: "1722384000"
 type: "metascience"
 status: "done"
