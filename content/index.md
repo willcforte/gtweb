@@ -46,17 +46,6 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 </div>
 
 <div class="flex flex-col sm:flex-row px-4 sm:px-20 items-center sm:items-start justify-center sm:justify-between my-10">
-  <img src="/img/bair.svg" alt="Description of SVG" width="100vh" class="my-auto">
-
-  <!-- SMALL DESCRIPTION -->
-  <div class="px-10 text-center sm:text-left">
-    <h3 class="text-lg">
-      I recently started an internship at <a href="https://bair.berkeley.edu/" class="yesh">Berkeley AI Research (BAIR)</a> under <a href="https://people.eecs.berkeley.edu/~pabbeel/" class="yesh">Prof. Pieter Abbeel</a>, working with <a href="https://geng-haoran.github.io/" class="yesh">Haoran Geng</a>!
-    </h3>
-  </div>
-</div>
-
-<div class="flex flex-col sm:flex-row px-4 sm:px-20 items-center sm:items-start justify-center sm:justify-between my-10">
   <img src="/img/rud.png" alt="Description of SVG" width="100vh" class="my-auto">
 
   <!-- SMALL DESCRIPTION -->
