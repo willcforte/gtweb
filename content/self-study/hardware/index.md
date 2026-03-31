@@ -16,4 +16,17 @@ Avoiding these pitfalls requires [open standards](https://en.wikipedia.org/wiki/
 
 For bearings, extrusions, belts, gears, etc., here are my opinionated recommendations, based on [ISO](https://www.iso.org/standards.html), [ANSI](https://www.ansi.org/about/introduction), [ASTM](https://en.wikipedia.org/wiki/ASTM_International), [CEN](https://www.cencenelec.eu/european-standardization/european-standards/), and [UTS](https://en.wikipedia.org/wiki/Unified_Thread_Standard) standards for common mechatronics components.
 
+### Fasteners:
+
+- DIN 912 TODO
+- ISO 7380-1 TODO
+
+### Extrusion:
+
+- [Extrusion T-Nuts](https://us.misumi-ec.com/pdf/fa/2010/p2261.pdf)
+
+### Lab Storage:
+
+- [Durham Component Box](./item/durham)
+
 <p class="spacei">WORK IN PROGRESS</p>
