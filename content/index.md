@@ -6,8 +6,8 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 <!-- HERO -->
 <div class="flex flex-col sm:flex-row px-4 sm:px-20 items-center sm:items-start justify-center sm:justify-between">
   <img 
-    src="/img/will.png" 
-    alt="Profile picture" 
+    src="/img/will_quad_sq.png" 
+    alt="Profile picture"
     class="w-40 sm:w-48 lg:w-52 border-black border-r-8 border-b-8 mb-4 sm:mb-0 mt-4 sm:mt-0"
   >
   <div class="sm:ml-8 flex-grow sm:basis-2/3">
