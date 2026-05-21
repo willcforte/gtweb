@@ -11,6 +11,6 @@ description: ""
 
 |  Lecture                      |  Notes             |
 |-------------------------------|--------------------|
-|  [Lecture 1](mitpcb/lect1)    |  TODO              |
+|  Lecture 1                    |  TODO              |
 |                               |                    |
 

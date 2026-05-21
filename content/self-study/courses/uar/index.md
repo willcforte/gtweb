@@ -13,4 +13,4 @@ description: ""
 |-------------------------------|--------------------|
 |  [Lecture 1](uar/lect1)       |                    |
 |  [Lecture 2](uar/lect2)       |                    |
-|  [Lecture 3](uar/lect3)       |  TODO              |
+|  Lecture 3                    |  TODO              |
