@@ -1,0 +1,128 @@
+---
+import { Image } from 'astro:assets'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { SITE, SOCIAL } from '../consts'
+import willPortrait from '../assets/img/will.png'
+
+const wanted = ['github', 'linkedin', 'bluesky']
+const links = wanted
+    .map((label) => SOCIAL.find((s) => s.label === label))
+    .filter((s): s is (typeof SOCIAL)[number] => Boolean(s))
+---
+
+<BaseLayout title={SITE.title} description={SITE.description} bare={true} noindex={true}>
+    <div class="card">
+        <Image
+            class="portrait"
+            src={willPortrait}
+            alt="Will C. Forte"
+            widths={[200, 400]}
+            sizes="160px"
+        />
+
+        <h1>Will C. Forte</h1>
+        <p class="role">Mechanical &amp; computational roboticist</p>
+        <p class="working-on">
+            Currently a research intern at the Rutgers Robotics, Automation, &amp; Mechatronics
+            Lab, and President &amp; Founder of Rutgers Dynamics, a student-run robot dog &amp;
+            humanoid lab.
+        </p>
+
+        <div class="targets">
+            <a class="target primary" href="/willcforte.vcf" download>Save contact</a>
+            <a class="target" href={`mailto:${SITE.email}`}>Email</a>
+            {
+                links.map((s) => (
+                    <a class="target" href={s.href} rel={'rel' in s ? s.rel : undefined}>
+                        {s.label[0].toUpperCase() + s.label.slice(1)}
+                    </a>
+                ))
+            }
+            <a class="target" href="/pdf/cv25.pdf">CV (PDF)</a>
+        </div>
+    </div>
+</BaseLayout>
+
+<style>
+    :global(body) {
+        background: var(--bg);
+    }
+
+    .card {
+        min-block-size: 100svh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-xs);
+        padding: var(--space-l) var(--space-m);
+        text-align: center;
+    }
+
+    .portrait {
+        inline-size: min(38vw, 160px);
+        block-size: auto;
+        border-radius: 50%;
+        border: 3px solid var(--fg);
+        margin-block-end: var(--space-xs);
+    }
+
+    h1 {
+        font-family: var(--font-ui);
+        font-size: var(--step-3);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+    }
+
+    .role {
+        font-family: var(--font-prose);
+        font-style: italic;
+        font-size: var(--step-1);
+        color: var(--fg-muted);
+    }
+
+    .working-on {
+        font-family: var(--font-prose);
+        font-size: var(--step-0);
+        max-inline-size: 40ch;
+        margin-block-start: var(--space-xs);
+        text-wrap: pretty;
+    }
+
+    .targets {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-xs);
+        inline-size: 100%;
+        max-inline-size: 24rem;
+        margin-block-start: var(--space-l);
+    }
+
+    .target {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-block-size: 3rem;
+        padding: var(--space-xs) var(--space-s);
+        background: var(--inverse-bg);
+        color: var(--inverse-fg);
+        text-decoration: none;
+        font-family: var(--font-ui);
+        font-weight: 600;
+        font-size: var(--step-0);
+    }
+
+    .target:hover {
+        background: var(--link-hover);
+        color: var(--inverse-fg);
+    }
+
+    .target.primary {
+        grid-column: 1 / -1;
+        background: var(--link);
+    }
+
+    .target.primary:hover {
+        background: var(--link-hover);
+    }
+</style>

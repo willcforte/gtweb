@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { allTags, tagUrl } from '../../utils/posts'
+
+const tags = await allTags()
+---
+
+<BaseLayout title="Tags" description="Every tag used across posts on this site, with post counts.">
+    <div class="wrap-narrow stack">
+        <header>
+            <h1>Tags</h1>
+            <p class="lede">Every topic tag used on the site, sorted by how often it appears.</p>
+        </header>
+
+        {
+            tags.length === 0 ? (
+                <p class="empty">No tags yet.</p>
+            ) : (
+                <ul role="list" class="tags">
+                    {tags.map(({ tag, count }) => (
+                        <li>
+                            <a href={tagUrl(tag)}>#{tag}</a>
+                            <span class="count label">{count}</span>
+                        </li>
+                    ))}
+                </ul>
+            )
+        }
+    </div>
+</BaseLayout>
+
+<style>
+    header {
+        padding-block: var(--space-xl) var(--space-l);
+    }
+
+    h1 {
+        font-family: var(--font-ui);
+        font-size: var(--step-4);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+    }
+
+    .lede {
+        font-family: var(--font-prose);
+        font-size: var(--step-1);
+        color: var(--fg-muted);
+        margin-block-start: var(--space-s);
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-s) var(--space-m);
+        padding: 0;
+        margin-block-end: var(--space-2xl);
+        font-family: var(--font-ui);
+    }
+
+    .tags li {
+        display: flex;
+        align-items: baseline;
+        gap: var(--space-2xs);
+        border: 1px solid var(--rule);
+        padding: var(--space-2xs) var(--space-s);
+    }
+
+    .tags a {
+        color: var(--fg);
+        text-decoration: none;
+    }
+
+    .tags a:hover {
+        color: var(--link-hover);
+    }
+
+    .count {
+        color: var(--fg-muted);
+    }
+
+    .empty {
+        font-family: var(--font-prose);
+        color: var(--fg-muted);
+        font-style: italic;
+        padding-block: var(--space-l);
+    }
+</style>

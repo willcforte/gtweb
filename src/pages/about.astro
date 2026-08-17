@@ -1,0 +1,193 @@
+---
+import { Image } from 'astro:assets'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { SITE } from '../consts'
+import meWithQuadruped from '../assets/img/me/me_with_quadruped.jpg'
+import dsc09626 from '../assets/img/me/DSC09626.jpg'
+
+const experience = [
+    {
+        role: 'Research Intern',
+        lab: 'Rutgers Robotics, Automation, & Mechatronics Lab',
+        href: 'https://coewww.rutgers.edu/~jgyi/',
+        dates: 'October 2024 – Present',
+        bullets: [
+            'Conducted literature review on approximating regions of attraction of high-dim. dynamical systems.',
+            "Designed and fabricated the first all-metal chassis for Rutgers' two-legged robot.",
+            'Reproduced CMU Lidar-based ROS SLAM stack for autonomous quadruped exploration & obstacle avoidance.',
+        ],
+    },
+    {
+        role: 'Research Intern',
+        lab: 'Rutgers Advanced Controls Lab',
+        href: 'https://www.laurentburlion.com/',
+        dates: 'June 2024 – October 2024',
+        bullets: [
+            'Developed low-level quadcopter control architecture in ROS for PX4-MAVROS-Gazebo SITL simulator.',
+            'Created C++ PX4 library with CMake for controlling servos on a tiltrotor quadcopter.',
+            'Self-studied HKUST ELEC5660 course on UAV control theory; assembled UAV platforms.',
+        ],
+    },
+    {
+        role: 'Research Intern',
+        lab: 'NJIT Swissler Innovative Robotics Lab',
+        href: 'https://innovative-robotics.github.io/',
+        dates: 'June 2023 – June 2024',
+        bullets: [
+            'Developed a robotic arm simulation in MuJoCo (Python) using Jacobian inverse kinematics.',
+            'Programmed ESP32 microcontrollers with ESP-IDF (C++) to run onboard computer vision (OpenCV).',
+        ],
+    },
+]
+---
+
+<BaseLayout title="About" description="About Will C. Forte, engineering student">
+    <article class="prose wrap-narrow page">
+        <h1>About me</h1>
+
+        <p>I'm Will C. Forte, a mechanical engineering student and undergraduate researcher.</p>
+
+        <figure class="full">
+            <Image
+                src={meWithQuadruped}
+                alt="Me with quadruped robot"
+                widths={[400, 800, 1200]}
+                sizes="(min-width: 60ch) 60ch, 100vw"
+                loading="lazy"
+            />
+        </figure>
+
+        <p>
+            Since high school, I've been learning the mechanical, electrical, CS, and
+            mathematical principles of robotic systems. The interdisciplinary nature of the field
+            is a great motivator&mdash;you can apply almost anything!
+        </p>
+
+        <h2>Contact me</h2>
+        <p>
+            If you'd like to discuss any of my projects or just say hello, please contact me at
+            <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. I'm very open to research
+            opportunities and collaboration. My <a href="/pdf/cv25.pdf">CV</a> is available as a
+            PDF.
+        </p>
+
+        <h2>Experience</h2>
+        <div class="experience-list">
+            {
+                experience.map((job) => (
+                    <div class="job">
+                        <h3>
+                            {job.role}, <a href={job.href}>{job.lab}</a>
+                        </h3>
+                        <p class="dates">{job.dates}</p>
+                        <ul role="list">
+                            {job.bullets.map((b) => (
+                                <li>{b}</li>
+                            ))}
+                        </ul>
+                    </div>
+                ))
+            }
+        </div>
+
+        <h2>Education</h2>
+        <div class="edu-list">
+            <div class="edu">
+                <p>
+                    Rutgers University&mdash;New Brunswick, projected '27<br />
+                    <em>B.S. Mechanical Engineering</em><br />
+                    <em>Minor in Mathematics</em><br />
+                    Engineering Honors Academy Scholar
+                </p>
+            </div>
+            <div class="edu">
+                <p>
+                    Academy for Math, Science, &amp; Eng., c.o. '24<br />
+                    <em>High School Diploma</em><br />
+                    4-Year CAD/Engineering Curriculum<br />
+                    Adv. Robotics Independent Study Program
+                </p>
+            </div>
+        </div>
+
+        <h2>About GTWeb</h2>
+        <p>
+            My website GTWeb started as a log for my senior-year high school robotics program.
+            Now, it's a platform to share my passions and work on fun projects.
+        </p>
+
+        <figure class="full">
+            <Image
+                src={dsc09626}
+                alt="Me drilling carbon fiber"
+                widths={[400, 800, 1200]}
+                sizes="(min-width: 60ch) 60ch, 100vw"
+                loading="lazy"
+            />
+            <figcaption>
+                @ <a href="https://aiaa.rutgers.edu/ruautonomous.html">RUAutonomous</a>, drilling
+                carbon fiber plates (photo by Will Carney)
+            </figcaption>
+        </figure>
+    </article>
+</BaseLayout>
+
+<style>
+    .page {
+        padding-block: var(--space-xl) var(--space-2xl);
+    }
+
+    .full img {
+        inline-size: 100%;
+        block-size: auto;
+        border: 1px solid var(--rule);
+    }
+
+    figcaption {
+        font-family: var(--font-ui);
+        font-size: var(--step--1);
+        color: var(--fg-muted);
+        margin-block-start: var(--space-2xs);
+        text-align: center;
+    }
+
+    .experience-list,
+    .edu-list {
+        display: grid;
+        gap: var(--space-m);
+    }
+
+    .job {
+        padding: var(--space-m);
+        background: var(--bg-raised);
+        border: 1px solid var(--rule);
+    }
+
+    .job h3 {
+        font-family: var(--font-ui);
+        font-size: var(--step-0);
+        font-weight: 600;
+    }
+
+    .dates {
+        font-family: var(--font-ui);
+        font-size: var(--step--1);
+        font-style: italic;
+        color: var(--fg-muted);
+        margin-block-start: var(--space-2xs);
+    }
+
+    .job ul {
+        margin-block-start: var(--space-xs);
+        padding-inline-start: 1.25em;
+    }
+
+    .job li + li {
+        margin-block-start: var(--space-2xs);
+    }
+
+    .edu {
+        padding: var(--space-m);
+        border: 1px solid var(--rule);
+    }
+</style>

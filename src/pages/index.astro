@@ -1,0 +1,215 @@
+---
+import { Image } from 'astro:assets'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import PostCard from '../components/PostCard.astro'
+import { SITE } from '../consts'
+import { allPosts, postsOfType, writingTypes } from '../utils/posts'
+import willQuadSq from '../assets/img/will_quad_sq.png'
+
+const writing = (await postsOfType(...writingTypes)).slice(0, 3)
+const projects = (await postsOfType('project')).slice(0, 3)
+const notes = (await postsOfType('note')).slice(0, 3)
+---
+
+<BaseLayout title={SITE.title} description={SITE.description}>
+    <section class="hero">
+        <div class="wrap hero-inner">
+            <Image
+                src={willQuadSq}
+                alt="Will C. Forte"
+                widths={[400, 800, 1200]}
+                sizes="(min-width: 40em) 220px, 60vw"
+                class="portrait"
+            />
+            <div class="hero-text">
+                <h1>Will C. Forte</h1>
+                <p class="tagline">a mechanical &amp; computational roboticist</p>
+                <p class="lede">
+                    I've been learning the mechanical, electrical, CS, and mathematical
+                    principles of robotic systems since high school &mdash; the interdisciplinary
+                    nature of the field is a great motivator, since you can apply almost
+                    anything. I'm the President &amp; Founder of
+                    <a href="https://rudynamics.vercel.app/">Rutgers Dynamics</a>, a student-run
+                    robot dog &amp; humanoid lab, and an undergraduate robotics &amp; AI
+                    researcher and Aresty Fellow at Rutgers' Honors College under
+                    <a href="https://pracsys.cs.rutgers.edu/">Prof. Kostas Bekris</a>.
+                </p>
+                <div class="cta-row">
+                    <a class="cta" href="/pdf/cv25.pdf">CV</a>
+                    <a class="cta" href="https://www.linkedin.com/in/willcforte/">LinkedIn</a>
+                    <a class="cta" href="https://bsky.app/profile/willcforte.com">Bluesky</a>
+                    <a class="cta" href={`mailto:${SITE.email}`}>Contact me</a>
+                    <a class="cta" href="/writing">Writing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap post-section">
+        <div class="section-head">
+            <h2>Recent writing</h2>
+            <a href="/writing" class="see-all">See all &rarr;</a>
+        </div>
+        <div class="card-grid">
+            {writing.map((post) => <PostCard post={post} />)}
+        </div>
+    </section>
+
+    <section class="wrap post-section">
+        <div class="section-head">
+            <h2>Projects</h2>
+            <a href="/projects" class="see-all">See all &rarr;</a>
+        </div>
+        <div class="card-grid">
+            {projects.map((post) => <PostCard post={post} />)}
+        </div>
+    </section>
+
+    <section class="wrap post-section">
+        <div class="section-head">
+            <h2>Recent notes</h2>
+            <a href="/notes" class="see-all">See all &rarr;</a>
+        </div>
+        <div class="card-grid">
+            {notes.map((post) => <PostCard post={post} />)}
+        </div>
+    </section>
+
+    <section class="wrap-narrow contact-cta">
+        <p>
+            If you want to say hi or talk robotics, email me at
+            <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+        </p>
+    </section>
+</BaseLayout>
+
+<style>
+    .hero {
+        padding-block: var(--space-xl) var(--space-l);
+    }
+
+    .hero-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-l);
+        text-align: center;
+    }
+
+    .portrait {
+        inline-size: min(60vw, 220px);
+        block-size: auto;
+        border: var(--border-heavy) solid var(--fg);
+        border-inline-start-width: 0;
+        border-block-start-width: 0;
+    }
+
+    .hero-text h1 {
+        font-family: var(--font-ui);
+        font-size: var(--step-4);
+        font-weight: 700;
+        line-height: var(--leading-tight);
+        letter-spacing: -0.03em;
+    }
+
+    .tagline {
+        font-family: var(--font-prose);
+        font-style: italic;
+        font-size: var(--step-1);
+        color: var(--fg-muted);
+        margin-block-start: var(--space-2xs);
+    }
+
+    .lede {
+        font-family: var(--font-prose);
+        font-size: var(--step-0);
+        line-height: var(--leading);
+        max-inline-size: var(--measure);
+        margin-inline: auto;
+        margin-block-start: var(--space-m);
+        text-wrap: pretty;
+    }
+
+    .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--space-xs);
+        margin-block-start: var(--space-m);
+    }
+
+    .cta {
+        display: inline-block;
+        padding: var(--space-xs) var(--space-m);
+        background: var(--inverse-bg);
+        color: var(--inverse-fg);
+        text-decoration: none;
+        font-family: var(--font-ui);
+        font-weight: 600;
+        font-size: var(--step--1);
+    }
+
+    .cta:hover {
+        background: var(--link-hover);
+        color: var(--inverse-fg);
+    }
+
+    .post-section {
+        padding-block: var(--space-l);
+        border-block-start: 1px solid var(--rule);
+    }
+
+    .section-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: var(--space-m);
+        margin-block-end: var(--space-m);
+    }
+
+    .section-head h2 {
+        font-family: var(--font-ui);
+        font-size: var(--step-2);
+        font-weight: 700;
+    }
+
+    .see-all {
+        font-family: var(--font-ui);
+        font-size: var(--step--1);
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    .see-all:hover {
+        text-decoration: underline;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 22ch), 1fr));
+        gap: var(--space-l);
+    }
+
+    .contact-cta {
+        padding-block: var(--space-xl);
+        text-align: center;
+        font-family: var(--font-prose);
+        font-size: var(--step-1);
+    }
+
+    @media (min-width: 40em) {
+        .hero-inner {
+            flex-direction: row;
+            align-items: flex-start;
+            text-align: start;
+        }
+
+        .lede {
+            margin-inline: 0;
+        }
+
+        .cta-row {
+            justify-content: flex-start;
+        }
+    }
+</style>

@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+
+<BaseLayout
+    title="Photography"
+    description="I've been attempting to learn photography since February 2024."
+>
+    <article class="prose wrap-narrow page">
+        <h1>Photography</h1>
+
+        <p>For non-engineering photos.</p>
+
+        <p>Nothing here yet.</p>
+
+        <p>I'm still sorting through photos from:</p>
+
+        <ul role="list">
+            <li>Pennsylvania</li>
+            <li>New Jersey</li>
+            <li>Vermont</li>
+        </ul>
+
+        <p>
+            One forgets the burden of crossing the boundary between completing work and making it
+            accessible.
+        </p>
+    </article>
+</BaseLayout>
+
+<style>
+    .page {
+        padding-block: var(--space-xl) var(--space-2xl);
+    }
+
+    ul[role='list'] {
+        padding-inline-start: 1.25em;
+        list-style: disc;
+    }
+
+    ul[role='list'] li {
+        margin-block-start: var(--space-2xs);
+    }
+</style>

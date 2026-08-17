@@ -1,0 +1,146 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import PostCard from '../../components/PostCard.astro'
+import { postsOfType } from '../../utils/posts'
+import type { Post } from '../../utils/posts'
+
+const posts = await postsOfType('note')
+
+/* Group by series (oldest-first, since course notes read in order). Posts
+ * without a series fall into their own ungrouped bucket, shown last. */
+const bySeries = new Map<string, Post[]>()
+const ungrouped: Post[] = []
+
+for (const post of posts) {
+    const series = post.data.series
+    if (!series) {
+        ungrouped.push(post)
+        continue
+    }
+    const group = bySeries.get(series) ?? []
+    group.push(post)
+    bySeries.set(series, group)
+}
+
+for (const group of bySeries.values()) {
+    group.sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf())
+}
+
+/* Order series groups by their most recent post, newest series first. */
+const seriesGroups = [...bySeries.entries()].sort(([, a], [, b]) => {
+    const newestA = Math.max(...a.map((p) => p.data.date.valueOf()))
+    const newestB = Math.max(...b.map((p) => p.data.date.valueOf()))
+    return newestB - newestA
+})
+---
+
+<BaseLayout
+    title="Notes"
+    description="Notes taken from external material — courses, books, papers, and other people's work."
+>
+    <div class="wrap-narrow stack">
+        <header>
+            <h1>Notes</h1>
+            <p class="lede">
+                Notes taken from someone else's material — courses, papers, catalogs — always
+                citing the source, grouped into a series where they read as a course would.
+            </p>
+        </header>
+
+        {
+            posts.length === 0 ? (
+                <p class="empty">Nothing published yet.</p>
+            ) : (
+                <div class="groups">
+                    {seriesGroups.map(([series, group]) => (
+                        <section class="group">
+                            <h2 class="label">{series}</h2>
+                            <ul role="list" class="posts">
+                                {group.map((post) => (
+                                    <li>
+                                        <PostCard post={post} />
+                                        {post.data.source && (
+                                            <p class="source label">Source: {post.data.source}</p>
+                                        )}
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+                    ))}
+
+                    {ungrouped.length > 0 && (
+                        <section class="group">
+                            {seriesGroups.length > 0 && <h2 class="label">Other</h2>}
+                            <ul role="list" class="posts">
+                                {ungrouped.map((post) => (
+                                    <li>
+                                        <PostCard post={post} />
+                                        {post.data.source && (
+                                            <p class="source label">Source: {post.data.source}</p>
+                                        )}
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+                    )}
+                </div>
+            )
+        }
+    </div>
+</BaseLayout>
+
+<style>
+    header {
+        padding-block: var(--space-xl) var(--space-l);
+    }
+
+    h1 {
+        font-family: var(--font-ui);
+        font-size: var(--step-4);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+    }
+
+    .lede {
+        font-family: var(--font-prose);
+        font-size: var(--step-1);
+        color: var(--fg-muted);
+        margin-block-start: var(--space-s);
+    }
+
+    .groups {
+        margin-block-end: var(--space-2xl);
+    }
+
+    .group + .group {
+        margin-block-start: var(--space-xl);
+    }
+
+    .group h2 {
+        padding-block-end: var(--space-xs);
+        border-block-end: 1px solid var(--rule);
+    }
+
+    .posts {
+        padding: 0;
+        margin-block-start: var(--space-m);
+    }
+
+    .posts li {
+        padding-block: var(--space-m);
+        border-block-end: 1px solid var(--rule-faint);
+    }
+
+    .source {
+        margin-block-start: var(--space-2xs);
+        text-transform: none;
+        letter-spacing: 0;
+    }
+
+    .empty {
+        font-family: var(--font-prose);
+        color: var(--fg-muted);
+        font-style: italic;
+        padding-block: var(--space-l);
+    }
+</style>

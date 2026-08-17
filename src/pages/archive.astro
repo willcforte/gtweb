@@ -1,0 +1,129 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { allPosts, postUrl, formatDateShort } from '../utils/posts'
+import type { Post } from '../utils/posts'
+
+const posts = await allPosts()
+
+const byYear = new Map<number, Post[]>()
+for (const post of posts) {
+    const year = post.data.date.getUTCFullYear()
+    const group = byYear.get(year) ?? []
+    group.push(post)
+    byYear.set(year, group)
+}
+
+const years = [...byYear.entries()].sort(([a], [b]) => b - a)
+---
+
+<BaseLayout title="Archive" description="Every post on this site, newest first, grouped by year.">
+    <div class="wrap-narrow stack">
+        <header>
+            <h1>Archive</h1>
+            <p class="lede">Everything published here, in one list, newest first.</p>
+        </header>
+
+        {
+            posts.length === 0 ? (
+                <p class="empty">Nothing published yet.</p>
+            ) : (
+                <div class="years">
+                    {years.map(([year, group]) => (
+                        <section class="year">
+                            <h2 class="label">{year}</h2>
+                            <ul role="list" class="rows">
+                                {group.map((post) => (
+                                    <li>
+                                        <time datetime={post.data.date.toISOString()}>
+                                            {formatDateShort(post.data.date)}
+                                        </time>
+                                        <a href={postUrl(post)}>{post.data.title}</a>
+                                        <span class="type label">{post.data.type}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+                    ))}
+                </div>
+            )
+        }
+    </div>
+</BaseLayout>
+
+<style>
+    header {
+        padding-block: var(--space-xl) var(--space-l);
+    }
+
+    h1 {
+        font-family: var(--font-ui);
+        font-size: var(--step-4);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+    }
+
+    .lede {
+        font-family: var(--font-prose);
+        font-size: var(--step-1);
+        color: var(--fg-muted);
+        margin-block-start: var(--space-s);
+    }
+
+    .years {
+        margin-block-end: var(--space-2xl);
+    }
+
+    .year + .year {
+        margin-block-start: var(--space-l);
+    }
+
+    .year h2 {
+        padding-block-end: var(--space-xs);
+        border-block-end: 1px solid var(--rule);
+    }
+
+    .rows {
+        padding: 0;
+        margin-block-start: var(--space-xs);
+        font-family: var(--font-ui);
+        font-size: var(--step--1);
+    }
+
+    .rows li {
+        display: flex;
+        align-items: baseline;
+        gap: var(--space-s);
+        padding-block: var(--space-2xs);
+        border-block-end: 1px solid var(--rule-faint);
+    }
+
+    .rows time {
+        color: var(--fg-muted);
+        flex-shrink: 0;
+    }
+
+    .rows a {
+        color: var(--fg);
+        text-decoration: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .rows a:hover {
+        color: var(--link-hover);
+        text-decoration: underline;
+    }
+
+    .type {
+        margin-inline-start: auto;
+        flex-shrink: 0;
+    }
+
+    .empty {
+        font-family: var(--font-prose);
+        color: var(--fg-muted);
+        font-style: italic;
+        padding-block: var(--space-l);
+    }
+</style>
