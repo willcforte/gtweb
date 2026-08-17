@@ -1,0 +1,82 @@
+---
+import { SITE, SOCIAL } from '../consts'
+
+const year = new Date().getFullYear()
+---
+
+<footer class="site-footer">
+    <div class="wrap">
+        <p class="mark"><em>wcf</em><span>/GTWeb</span></p>
+
+        <nav aria-label="Elsewhere">
+            <ul role="list" class="links">
+                {
+                    SOCIAL.map((s) => (
+                        <li>
+                            <a href={s.href} rel={'rel' in s ? s.rel : undefined}>
+                                {s.label}
+                            </a>
+                        </li>
+                    ))
+                }
+                <li><a href="/rss.xml">rss</a></li>
+                <li><a href="/archive">archive</a></li>
+            </ul>
+        </nav>
+
+        <p class="fine">Made from scratch / {SITE.author} © {year}</p>
+        <p class="fine">
+            Contact @ <a href={`mailto:${SITE.email}`}>{SITE.email.replace('@', ' (at) ')}</a>
+        </p>
+    </div>
+</footer>
+
+<style>
+    .site-footer {
+        margin-block-start: var(--space-2xl);
+        padding-block: var(--space-xl);
+        background: var(--inverse-bg);
+        color: var(--inverse-fg);
+        text-align: center;
+    }
+
+    .mark {
+        font-size: var(--step-3);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+    }
+
+    .mark em {
+        font-style: italic;
+        font-size: 0.6em;
+        vertical-align: 0.35em;
+        margin-inline-end: 0.1em;
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--space-xs) var(--space-m);
+        margin-block: var(--space-m);
+        padding: 0;
+        font-size: var(--step--1);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    .site-footer a {
+        color: var(--inverse-fg);
+        text-underline-offset: 0.2em;
+    }
+
+    .site-footer a:hover {
+        color: var(--c-green-2);
+    }
+
+    .fine {
+        font-size: var(--step--1);
+        font-style: italic;
+        color: color-mix(in srgb, var(--inverse-fg) 78%, transparent);
+    }
+</style>

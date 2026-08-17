@@ -1,0 +1,88 @@
+---
+import { NAV } from '../consts'
+import logo from '../assets/img/brand/wcf_rast_c.svg'
+
+const path = Astro.url.pathname
+const isCurrent = (href: string) =>
+    href === '/' ? path === '/' : path === href || path.startsWith(`${href}/`)
+---
+
+<header class="site-header">
+    <div class="wrap">
+        <a href="/" class="mark" aria-label="Home">
+            <img src={logo.src} alt="" class="mark-logo" width="370" height="200" />
+            <span><span class="mark-slash">/</span>GTWeb</span>
+        </a>
+        <nav aria-label="Primary">
+            <ul role="list">
+                {
+                    NAV.map((item) => (
+                        <li>
+                            <a
+                                href={item.href}
+                                aria-current={isCurrent(item.href) ? 'page' : undefined}
+                            >
+                                {item.label}
+                            </a>
+                        </li>
+                    ))
+                }
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<style>
+    .site-header {
+        padding-block: var(--space-l) var(--space-m);
+        border-block-end: 1px solid var(--rule);
+    }
+
+    .mark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.12em;
+        font-size: var(--step-4);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        text-decoration: none;
+        color: var(--fg);
+    }
+
+    .mark-logo {
+        block-size: 0.78em;
+        inline-size: auto;
+    }
+
+    .mark-slash {
+        color: var(--link);
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--space-xs) var(--space-m);
+        margin-block-start: var(--space-m);
+        padding: 0;
+    }
+
+    nav a {
+        color: var(--fg);
+        text-decoration: none;
+        font-size: var(--step-0);
+        padding-block-end: 2px;
+        border-block-end: 2px solid transparent;
+    }
+
+    nav a:hover {
+        color: var(--link-hover);
+        border-block-end-color: var(--link-hover);
+    }
+
+    nav a[aria-current='page'] {
+        color: var(--link);
+        border-block-end-color: var(--link);
+    }
+</style>

@@ -1,0 +1,71 @@
+---
+import type { Post } from '../utils/posts'
+import { formatDate, readTime, tagUrl } from '../utils/posts'
+
+interface Props {
+    post: Post
+}
+
+const { post } = Astro.props
+const { data } = post
+---
+
+<div class="meta label">
+    <span class="type">{data.type}</span>
+    <span aria-hidden="true">·</span>
+    <time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>
+    <span aria-hidden="true">·</span>
+    <span>{readTime(post)}</span>
+    {data.status === 'wip' && <span class="wip">work in progress</span>}
+</div>
+
+{
+    data.tags.length > 0 && (
+        <ul role="list" class="tags">
+            {data.tags.map((tag) => (
+                <li>
+                    <a href={tagUrl(tag)}>#{tag}</a>
+                </li>
+            ))}
+        </ul>
+    )
+}
+
+<style>
+    .meta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--space-xs);
+    }
+
+    .type {
+        color: var(--link);
+        font-weight: 600;
+    }
+
+    .wip {
+        border: 1px solid var(--rule);
+        padding: 0 0.4em;
+        letter-spacing: 0.04em;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-xs) var(--space-s);
+        margin-block-start: var(--space-xs);
+        padding: 0;
+        font-family: var(--font-ui);
+        font-size: var(--step--1);
+    }
+
+    .tags a {
+        text-decoration: none;
+        color: var(--fg-muted);
+    }
+
+    .tags a:hover {
+        color: var(--link-hover);
+    }
+</style>
