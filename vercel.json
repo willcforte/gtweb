@@ -1,0 +1,181 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/articles",
+      "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/articles/beamline",
+      "destination": "/posts/beamline/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/eacc",
+      "destination": "/posts/eacc/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/gibberellin",
+      "destination": "/posts/gibberellin/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/gluons",
+      "destination": "/posts/gluons/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/icra2025",
+      "destination": "/posts/icra2025/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/inverted_pendulum_1",
+      "destination": "/posts/inverted-pendulum-1/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/learning_pytorch",
+      "destination": "/posts/learning-pytorch/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/motors",
+      "destination": "/posts/motors/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/quadruped",
+      "destination": "/posts/quadruped-log/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/why_blog",
+      "destination": "/posts/why-blog/",
+      "permanent": true
+    },
+    {
+      "source": "/feed.rss",
+      "destination": "/rss.xml",
+      "permanent": true
+    },
+    {
+      "source": "/robotics",
+      "destination": "/projects",
+      "permanent": true
+    },
+    {
+      "source": "/robotics/cufflink",
+      "destination": "/posts/cufflink/",
+      "permanent": true
+    },
+    {
+      "source": "/robotics/locomotion_notes",
+      "destination": "/posts/locomotion-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/robotics/mujoco",
+      "destination": "/posts/mujoco/",
+      "permanent": true
+    },
+    {
+      "source": "/robotics/quadruped",
+      "destination": "/posts/quadruped/",
+      "permanent": true
+    },
+    {
+      "source": "/robotics/tubaa",
+      "destination": "/posts/tubaa/",
+      "permanent": true
+    },
+    {
+      "source": "/self-study",
+      "destination": "/notes",
+      "permanent": true
+    },
+    {
+      "source": "/self-study/courses",
+      "destination": "/notes",
+      "permanent": true
+    },
+    {
+      "source": "/self-study/courses/cs229",
+      "destination": "/posts/cs229/",
+      "permanent": true
+    },
+    {
+      "source": "/self-study/courses/cs229/lect1",
+      "destination": "/posts/cs229-lect1/",
+      "permanent": true
+    },
+    {
+      "source": "/self-study/courses/cs229/lect2",
+      "destination": "/posts/cs229-lect2/",
+      "permanent": true
+    },
+    {
+      "source": "/self-study/courses/mitdiffusion",
+      "destination": "/posts/mitdiffusion/",
+      "permanent": true
+    },
+    {
+      "source": "/self-study/courses/mitpcb",
+      "destination": "/posts/mitpcb/",
+      "permanent": true
+    },
+    {
+      "source": "/self-study/courses/ocwdiffeq",
+      "destination": "/posts/ocwdiffeq/",
+      "permanent": true
+    },
+    {
+      "source": "/self-study/courses/uar",
+      "destination": "/posts/uar/",
+      "permanent": true
+    },
+    {
+      "source": "/self-study/courses/uar/lect1",
+      "destination": "/posts/uar-lect1/",
+      "permanent": true
+    },
+    {
+      "source": "/self-study/courses/uar/lect2",
+      "destination": "/posts/uar-lect2/",
+      "permanent": true
+    },
+    {
+      "source": "/self-study/courses/uar/lectn",
+      "destination": "/posts/uar-lectn/",
+      "permanent": true
+    },
+    {
+      "source": "/self-study/courses/uclrl",
+      "destination": "/posts/uclrl/",
+      "permanent": true
+    },
+    {
+      "source": "/self-study/hardware",
+      "destination": "/posts/hardware/",
+      "permanent": true
+    },
+    {
+      "source": "/self-study/hardware/item/durham",
+      "destination": "/posts/durham/",
+      "permanent": true
+    },
+    {
+      "source": "/self-study/locomotion",
+      "destination": "/posts/locomotion/",
+      "permanent": true
+    },
+    {
+      "source": "/self-study/motors",
+      "destination": "/posts/motors-notes/",
+      "permanent": true
+    }
+  ]
+}
