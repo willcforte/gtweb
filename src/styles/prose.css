@@ -1,0 +1,234 @@
+/*
+ * The typesetting layer. Applied once to rendered Markdown so that a plain .md
+ * file produces correctly-set pages with no per-page classes and no raw HTML.
+ * Rules are element-scoped on purpose: there is nothing to opt into and nothing
+ * to remember.
+ */
+@layer prose {
+    /*
+     * Named-column grid: prose sits in `content` at the reading measure, while
+     * figures and embeds widen into `wide` without breaking the text column.
+     */
+    .prose {
+        display: grid;
+        grid-template-columns:
+            [full-start] minmax(var(--space-m), 1fr)
+            [wide-start] minmax(0, calc((var(--measure-wide) - var(--measure)) / 2))
+            [content-start] min(100% - (var(--space-m) * 2), var(--measure)) [content-end]
+            minmax(0, calc((var(--measure-wide) - var(--measure)) / 2)) [wide-end]
+            minmax(var(--space-m), 1fr) [full-end];
+
+        font-family: var(--font-prose);
+        font-size: var(--step-1);
+        line-height: var(--leading);
+        color: var(--fg);
+
+        /* Book-setting defaults */
+        font-variant-numeric: oldstyle-nums proportional-nums;
+        font-kerning: normal;
+        font-variant-ligatures: common-ligatures contextual;
+        font-optical-sizing: auto;
+        hanging-punctuation: first last;
+        hyphens: auto;
+        hyphenate-limit-chars: 7 3 3;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .prose > * {
+        grid-column: content;
+    }
+
+    .prose > * + * {
+        margin-block-start: var(--rhythm);
+    }
+
+    .prose p {
+        text-wrap: pretty;
+        orphans: 2;
+        widows: 2;
+    }
+
+    /* Headings switch to Iosevka: structure reads as structure. */
+    .prose :is(h1, h2, h3, h4, h5, h6) {
+        font-family: var(--font-ui);
+        font-weight: 600;
+        line-height: var(--leading-tight);
+        text-wrap: balance;
+        hyphens: manual;
+        font-variant-numeric: lining-nums tabular-nums;
+        letter-spacing: -0.015em;
+    }
+
+    .prose h1 { font-size: var(--step-4); margin-block-start: var(--space-xl); }
+    .prose h2 { font-size: var(--step-3); margin-block-start: var(--space-xl); }
+    .prose h3 { font-size: var(--step-2); margin-block-start: var(--space-l); }
+    .prose h4 { font-size: var(--step-1); margin-block-start: var(--space-l); }
+    .prose :is(h5, h6) { font-size: var(--step-0); margin-block-start: var(--space-m); }
+
+    .prose h2 {
+        padding-block-end: var(--space-2xs);
+        border-block-end: 1px solid var(--rule-faint);
+    }
+
+    /* Heading anchors, revealed on hover rather than always-on clutter */
+    .prose :is(h2, h3, h4) > a.heading-anchor {
+        opacity: 0;
+        margin-inline-start: 0.4em;
+        color: var(--fg-muted);
+        text-decoration: none;
+        font-weight: 400;
+        transition: opacity 120ms ease-in;
+    }
+
+    .prose :is(h2, h3, h4):hover > a.heading-anchor,
+    .prose a.heading-anchor:focus-visible {
+        opacity: 1;
+    }
+
+    .prose a {
+        color: var(--link);
+        text-decoration-line: underline;
+        text-decoration-thickness: 0.06em;
+        text-underline-offset: 0.16em;
+        text-decoration-skip-ink: auto;
+    }
+
+    .prose a:hover { color: var(--link-hover); }
+
+    /*
+     * Sorts Mill Goudy ships Regular and Italic only, so weight and slant
+     * synthesis are switched off - the browser must never smear a faux bold or
+     * shear a faux italic out of a face that has no such cut. Small-caps
+     * synthesis stays on, since that is how strong emphasis is set here.
+     *
+     * Emphasis takes the real italic; strong emphasis takes small caps, which
+     * need tracking to breathe. The two stay distinguishable without either
+     * one inventing a cut the family does not have.
+     */
+    .prose {
+        font-synthesis: small-caps;
+    }
+
+    .prose :is(strong, b) {
+        font-weight: inherit;
+        font-variant-caps: small-caps;
+        letter-spacing: 0.06em;
+    }
+
+    .prose :is(em, i) {
+        font-style: italic;
+        font-synthesis: none;
+    }
+
+    .prose blockquote {
+        border-inline-start: 2px solid var(--rule);
+        padding-inline-start: var(--space-m);
+        font-style: italic;
+        color: var(--fg-muted);
+    }
+
+    .prose :is(ul, ol) {
+        padding-inline-start: 1.6em;
+    }
+
+    .prose ul { list-style: disc; }
+    .prose ol { list-style: decimal; font-variant-numeric: oldstyle-nums; }
+    .prose li + li { margin-block-start: var(--space-2xs); }
+    .prose li > p { margin-block: 0; }
+
+    /* Figures are generated from bare Markdown images by remark-figure.mjs */
+    .prose figure {
+        margin-inline: 0;
+        margin-block: var(--space-l);
+    }
+
+    .prose figure img {
+        display: block;
+        inline-size: 100%;
+        block-size: auto;
+        margin-inline: auto;
+        border: 1px solid var(--rule);
+    }
+
+    .prose figcaption {
+        margin-block-start: var(--space-xs);
+        font-family: var(--font-ui);
+        font-size: var(--step--1);
+        line-height: 1.4;
+        color: var(--fg-muted);
+        text-align: center;
+        text-wrap: pretty;
+    }
+
+    /* Prose stays narrow; figures and embeds breathe into the wider column. */
+    .prose > :is(figure, .embed, .table-scroll) {
+        grid-column: wide;
+    }
+
+    .prose :is(code, kbd, samp) {
+        font-family: var(--font-ui);
+        font-size: 0.88em;
+        font-variant-ligatures: none;
+        font-variant-numeric: lining-nums tabular-nums;
+    }
+
+    .prose :not(pre) > code {
+        background: color-mix(in srgb, var(--c-black) 7%, transparent);
+        padding: 0.12em 0.34em;
+        border-radius: 2px;
+    }
+
+    .prose pre {
+        font-size: var(--step--1);
+        padding: var(--space-m);
+        overflow-x: auto;
+        border: 1px solid var(--rule);
+        tab-size: 4;
+    }
+
+    .prose pre code { background: none; padding: 0; }
+
+    .prose table {
+        inline-size: 100%;
+        border-collapse: collapse;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-size: var(--step-0);
+    }
+
+    .prose :is(th, td) {
+        padding: var(--space-xs) var(--space-s);
+        border-block-end: 1px solid var(--rule-faint);
+        text-align: start;
+    }
+
+    .prose th {
+        font-family: var(--font-ui);
+        font-weight: 600;
+        font-size: var(--step--1);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        border-block-end: 1px solid var(--rule);
+    }
+
+    .prose hr {
+        border: 0;
+        border-block-start: 1px solid var(--rule);
+        margin-block: var(--space-xl);
+    }
+
+    /* Long display equations scroll rather than overflow the page. */
+    .prose .katex-display {
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-block: var(--space-2xs);
+    }
+
+    .prose .footnotes {
+        font-size: var(--step-0);
+        color: var(--fg-muted);
+        border-block-start: 1px solid var(--rule);
+        margin-block-start: var(--space-xl);
+    }
+}
