@@ -1,3 +1,7 @@
+import { readFileSync, readdirSync, existsSync } from 'node:fs'
+import { join } from 'node:path'
+
+import matter from 'gray-matter'
 import { defineConfig } from 'astro/config'
 import { unified } from '@astrojs/markdown-remark'
 import mdx from '@astrojs/mdx'
@@ -15,10 +19,22 @@ import {
     rehypeExternalLinks,
 } from './src/plugins/rehype-enhance.mjs'
 
+/*
+ * Draft posts are still built, so a legacy URL pointing at one keeps
+ * resolving, but they are unlisted: kept out of the sitemap here and marked
+ * noindex by the post route.
+ */
+const draftUrls = readdirSync('./src/content/posts', { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => [entry.name, join('./src/content/posts', entry.name, 'index.md')])
+    .filter(([, file]) => existsSync(file))
+    .filter(([, file]) => matter(readFileSync(file, 'utf8')).data.draft)
+    .map(([slug]) => `https://willcforte.com/posts/${slug}/`)
+
 export default defineConfig({
     site: 'https://willcforte.com',
     output: 'static',
-    integrations: [mdx(), sitemap()],
+    integrations: [mdx(), sitemap({ filter: (page) => !draftUrls.includes(page) })],
     markdown: {
         /*
          * Order matters: the title reconciliation before slugs so a demoted
