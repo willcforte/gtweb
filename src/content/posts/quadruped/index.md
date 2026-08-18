@@ -4,7 +4,7 @@ description: "A fully-actuated, low-cost quadruped that I made in high school."
 type: project
 date: 2023-09-24
 tags: [robotics, locomotion, simulation]
-hero: ./quad_canon_iso.JPG
+hero: ./quad_canon_iso.jpg
 heroAlt: "Isometric standing view of the v4 quadruped robot"
 status: done
 draft: true
@@ -13,7 +13,7 @@ legacyPath: ["/robotics/quadruped"]
 
 ## Fully-Actuated Quadruped
 
-![v4 Robot in Prone Position](./quad_canon_prone.JPG)
+![v4 Robot in Prone Position](./quad_canon_prone.jpg)
 
 Beta Prototype v4
 
@@ -57,9 +57,9 @@ This project allowed me to learn a considerable amount of new skills which I hop
 
 Some more photos:
 
-![Isometric Standing View of v4 Robot](./quad_canon_iso.JPG)
+![Isometric Standing View of v4 Robot](./quad_canon_iso.jpg)
 
-![MDF Gears of v4 Robot](./quad_canon_gear.JPG)
+![MDF Gears of v4 Robot](./quad_canon_gear.jpg)
 
 Beta Prototype:
 

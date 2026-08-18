@@ -4,7 +4,7 @@ description: "Unconventional blade geometries to improve drone aeroacoustics in 
 type: project
 date: 2023-01-01
 tags: [robotics, physics, simulation]
-hero: ./props.PNG
+hero: ./props.png
 heroAlt: "Propeller geometries studied in TUBAA"
 status: done
 legacyPath: ["/robotics/tubaa"]
@@ -18,7 +18,7 @@ I was the CFD lead of a large undergraduate research project in which we compare
 
 ![Lattice-Boltzmann simulation of a toroidal propeller](/media/tormore.webp)
 
-![Toroidal propeller gif](./props.PNG)
+![Toroidal propeller gif](./props.png)
 
 I was the CFD lead of an 8-person undergraduate research project in which we compared the aeroacoustics of various propeller designs (including a modified MIT Toroidal Propeller) against traditional alternatives using ANSYS Fluent and FFT spectra. You can read the manuscript on our website:
 
