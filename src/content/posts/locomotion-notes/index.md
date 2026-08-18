@@ -1,5 +1,5 @@
 ---
-title: "locomotion test"
+title: "Notes on the Locomotion of Quadruped Robots"
 description: "Raw notes on whole-body control and model-predictive control approaches to quadruped locomotion."
 type: note
 date: 2023-11-01
@@ -9,7 +9,7 @@ status: done
 legacyPath: ["/robotics/locomotion_notes"]
 ---
 
-# Notes on the Locomotion of Quadrupted Robots
+# Notes on the Locomotion of Quadruped Robots
 
 ## Raw Notes
 

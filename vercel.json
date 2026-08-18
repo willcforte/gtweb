@@ -149,7 +149,7 @@
     },
     {
       "source": "/self-study/courses/uar/lectn",
-      "destination": "/posts/uar-lectn/",
+      "destination": "/posts/uar/",
       "permanent": true
     },
     {

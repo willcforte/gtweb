@@ -22,6 +22,8 @@ const SECTION_REDIRECTS = [
     ['/self-study', '/notes'],
     ['/self-study/courses', '/notes'],
     ['/feed.rss', '/rss.xml'],
+    /* An empty lecture stub that no longer exists; its series index replaces it. */
+    ['/self-study/courses/uar/lectn', '/posts/uar/'],
 ]
 
 function collectPostRedirects() {

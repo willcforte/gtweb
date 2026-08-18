@@ -1,5 +1,5 @@
 ---
-title: "MIT PCB"
+title: "MIT The Art and Science of PCB Design"
 description: "Notes and lecture index for MIT's The Art and Science of PCB Design course, IAP 2025."
 type: note
 date: 2025-06-17

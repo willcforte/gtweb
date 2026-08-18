@@ -8,7 +8,12 @@ import rehypeKatex from 'rehype-katex'
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 
-import { rehypeFigure, rehypeEmbed, rehypeExternalLinks } from './src/plugins/rehype-enhance.mjs'
+import {
+    rehypeDocumentTitle,
+    rehypeFigure,
+    rehypeEmbed,
+    rehypeExternalLinks,
+} from './src/plugins/rehype-enhance.mjs'
 
 export default defineConfig({
     site: 'https://willcforte.com',
@@ -16,13 +21,16 @@ export default defineConfig({
     integrations: [mdx(), sitemap()],
     markdown: {
         /*
-         * Order matters: slugs before autolinks, and the figure/embed rewrites
-         * after KaTeX so they only ever see real content nodes.
+         * Order matters: the title reconciliation before slugs so a demoted
+         * heading is anchored as the h2 it became, slugs before autolinks, and
+         * the figure/embed rewrites after KaTeX so they only ever see real
+         * content nodes.
          */
         processor: unified({
             remarkPlugins: [remarkMath],
             rehypePlugins: [
                 [rehypeKatex, { output: 'html' }],
+                rehypeDocumentTitle,
                 rehypeSlug,
                 [
                     rehypeAutolinkHeadings,

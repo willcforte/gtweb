@@ -1,5 +1,5 @@
 ---
-title: "Open Hardware Bible"
+title: "Open-Source Hardware Bible"
 description: "Standardization of high-quality components keeps open-source hardware accessible and reproducible for years to come."
 type: note
 date: 2026-03-30

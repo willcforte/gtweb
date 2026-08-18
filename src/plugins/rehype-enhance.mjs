@@ -46,6 +46,45 @@ export function rehypeFigure() {
     }
 }
 
+const normalise = (s) =>
+    s
+        .toLowerCase()
+        .replace(/[‐-―]/g, '-')
+        .replace(/[^a-z0-9]+/g, ' ')
+        .trim()
+
+const textOf = (node) =>
+    node.type === 'text'
+        ? node.value
+        : (node.children ?? []).map(textOf).join('')
+
+/*
+ * The post layout already prints the frontmatter title as the page <h1>, so a
+ * body that opens with its own `# Title` yields two h1s and a broken outline.
+ * A leading h1 that restates the title is dropped; any other h1 is demoted to
+ * h2, which keeps a heading that carries information the title does not.
+ */
+export function rehypeDocumentTitle() {
+    return (tree, file) => {
+        const title = normalise(String(file?.data?.astro?.frontmatter?.title ?? ''))
+        if (!title) return
+
+        const lead = tree.children.findIndex((n) => n.type === 'element')
+        const node = tree.children[lead]
+
+        if (node?.tagName === 'h1') {
+            const heading = normalise(textOf(node))
+            if (heading.startsWith(title) || title.startsWith(heading)) {
+                tree.children.splice(lead, 1)
+            }
+        }
+
+        visit(tree, 'element', (n) => {
+            if (n.tagName === 'h1') n.tagName = 'h2'
+        })
+    }
+}
+
 const YOUTUBE =
     /(?:youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|live\/|shorts\/)|youtu\.be\/)([\w-]{11})/
 

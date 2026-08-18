@@ -1,5 +1,5 @@
 ---
-title: "Inverted Pendulum Project Log (WIP)"
+title: "Inverted Pendulum Project Log #1"
 description: "Creating a Fusion 360 assembly and bill of materials for my inverted pendulum project."
 type: log
 date: 2024-08-17
