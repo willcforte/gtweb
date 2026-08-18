@@ -29,6 +29,8 @@
     "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
-    "gray-matter": "^4.0.3"
+    "@astrojs/check": "^0.9.10",
+    "gray-matter": "^4.0.3",
+    "typescript": "^6.0.3"
   }
 }

@@ -15,7 +15,7 @@
  * The full-resolution originals remain recoverable from git history under the
  * old `content/` directory.
  */
-import { readdirSync, statSync, renameSync, mkdirSync, existsSync, unlinkSync } from 'node:fs'
+import { readdirSync, statSync, mkdirSync, existsSync, unlinkSync } from 'node:fs'
 import { join, extname, basename, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import sharp from 'sharp'

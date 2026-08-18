@@ -3,7 +3,7 @@ import { Image } from 'astro:assets'
 import BaseLayout from '../layouts/BaseLayout.astro'
 import PostCard from '../components/PostCard.astro'
 import { SITE } from '../consts'
-import { allPosts, postsOfType, writingTypes } from '../utils/posts'
+import { postsOfType, writingTypes } from '../utils/posts'
 import willQuadSq from '../assets/img/will_quad_sq.png'
 
 const writing = (await postsOfType(...writingTypes)).slice(0, 3)
