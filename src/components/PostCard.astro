@@ -1,0 +1,69 @@
+---
+import type { Post } from '../utils/posts'
+import { postUrl, formatDate, readTime } from '../utils/posts'
+
+interface Props {
+    post: Post
+    showType?: boolean
+}
+
+const { post, showType = false } = Astro.props
+const { data } = post
+---
+
+<article class="post-card">
+    <h3><a href={postUrl(post)}>{data.title}</a></h3>
+    {data.description && <p class="description">{data.description}</p>}
+    <div class="meta label">
+        <time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>
+        <span aria-hidden="true">·</span>
+        <span>{readTime(post)}</span>
+        {
+            showType && (
+                <>
+                    <span aria-hidden="true">·</span>
+                    <span class="type">{data.type}</span>
+                </>
+            )
+        }
+    </div>
+</article>
+
+<style>
+    .post-card h3 {
+        font-family: var(--font-ui);
+        font-size: var(--step-1);
+        font-weight: 600;
+        line-height: var(--leading-tight);
+    }
+
+    .post-card h3 a {
+        color: var(--fg);
+        text-decoration: none;
+    }
+
+    .post-card h3 a:hover {
+        color: var(--link-hover);
+        text-decoration: underline;
+    }
+
+    .description {
+        font-family: var(--font-prose);
+        font-size: var(--step-0);
+        color: var(--fg-muted);
+        margin-block-start: var(--space-2xs);
+    }
+
+    .meta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--space-xs);
+        margin-block-start: var(--space-xs);
+    }
+
+    .type {
+        color: var(--link);
+        font-weight: 600;
+    }
+</style>

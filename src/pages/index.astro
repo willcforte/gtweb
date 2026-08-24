@@ -1,0 +1,433 @@
+---
+import { Image } from 'astro:assets'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import PostCard from '../components/PostCard.astro'
+import { SITE } from '../consts'
+import { postsOfType, writingTypes } from '../utils/posts'
+import willQuadSq from '../assets/img/will_quad_sq.png'
+
+const writing = (await postsOfType(...writingTypes)).slice(0, 3)
+const projects = (await postsOfType('project')).slice(0, 3)
+const notes = (await postsOfType('note')).slice(0, 3)
+---
+
+<BaseLayout title={SITE.title} description={SITE.description}>
+    <section class="hero">
+        <div class="wrap hero-inner">
+            <Image
+                src={willQuadSq}
+                alt="Will C. Forte"
+                widths={[400, 800, 1200]}
+                sizes="(min-width: 40em) 220px, 60vw"
+                class="portrait"
+            />
+            <div class="hero-text">
+                <h1>Will C. Forte</h1>
+                <p class="tagline">a mechanical &amp; computational roboticist</p>
+                <p class="lede">Welcome to my self-coded website!</p>
+                <div class="cta-row">
+                    <a class="cta" href="https://resume.willcforte.com">CV</a>
+                    <a class="cta" href="https://www.linkedin.com/in/willcforte/">LinkedIn</a>
+                    <a class="cta" href="https://bsky.app/profile/willcforte.com">Bluesky</a>
+                    <a class="cta" href={`mailto:${SITE.email}`}>Contact me</a>
+                    <a class="cta" href="/writing">Writing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap blurb">
+        <img src="/img/rud.png" alt="Rutgers Dynamics" width="100" height="100" />
+        <p>
+            I'm the President &amp; Founder of{' '}
+            <a href="https://rudynamics.vercel.app/">Rutgers Dynamics</a>, an
+            extremely-ambitious student-run robot dog &amp; humanoid lab. Part of a collaboration{' '}
+            <a href="https://ccbr-humanoid.github.io/wiki/docs/home/">democratizing legged robotics</a>{' '}
+            with friends from Caltech, Columbia, Rutgers, and Berkeley.
+        </p>
+    </section>
+
+    <section class="wrap blurb">
+        <img src="/img/ru_shield.svg" alt="Rutgers University" width="100" height="100" />
+        <p>
+            I'm an undergrad robotics + AI researcher &amp; Aresty Fellow at Rutgers' Honors
+            College under <a href="https://pracsys.cs.rutgers.edu/">Prof. Kostas Bekris</a>.
+            <br />
+            Aside from my B.S. in MechE, I was a PI on a{' '}
+            <a href="https://www.lspace.asu.edu/proposal-writing-academy">NASA NPWEE</a> grant
+            proposal.
+        </p>
+    </section>
+
+    <section class="wrap featured">
+        <h2>
+            <a href="/posts/quadruped/">LCFAQ: A Low-Cost, Fully-Actuated Quadruped</a> (2023)
+        </h2>
+        <div class="feature">
+            <a href="/posts/quadruped/">
+                <img src="/media/quad_gif.webp" alt="Quadruped Prototype" loading="lazy" />
+            </a>
+            <div>
+                <p>
+                    The summer after junior year of HS, I used spare parts to built a low-cost
+                    (&asymp;$500), 12-motor quadrupedal robot intended to increase the
+                    accessibility of advanced robotics to educators and students already
+                    participating in FTC Robotics.
+                </p>
+                <a class="cta" href="/posts/quadruped/">View Project &rarr;</a>
+            </div>
+        </div>
+
+        <h2>
+            <a href="/posts/cufflink/">Cuff-Link: An Electromyographic Input Device</a> (2024)
+        </h2>
+        <div class="feature">
+            <a href="/posts/cufflink/">
+                <img
+                    src="/media/lowres_cufflinkgif.webp"
+                    alt="CuffLink Prototype"
+                    loading="lazy"
+                />
+            </a>
+            <div>
+                <p>
+                    The Cuff-Link&trade; allows amputees and those suffering from nerve damage to
+                    control a computer using nothing but the muscles in their arm. A similar
+                    design cost Meta{' '}
+                    <a
+                        href="https://www.theverge.com/2019/9/23/20881032/facebook-ctrl-labs-acquisition-neural-interface-armband-ar-vr-deal"
+                        >$500 million</a
+                    >. It cost us $150.
+                </p>
+                <p>
+                    We presented the project in front of a crowd of 200+ at the Academy of Math,
+                    Science, &amp; Engineering 2024 Showcase.
+                </p>
+                <a class="cta" href="/posts/cufflink/">Read the Proposal &rarr;</a>
+            </div>
+        </div>
+
+        <h2>
+            <a href="https://tubaa.dev/">
+                TUBAA: Aeroacoustic Analysis of the MIT Toroidal Propeller
+            </a> (2023)
+        </h2>
+        <div class="feature">
+            <a href="https://tubaa.dev/">
+                <img
+                    src="/media/tormore.webp"
+                    alt="CFD simulation of toroidal propeller"
+                    loading="lazy"
+                />
+            </a>
+            <div>
+                <p>
+                    I was the CFD lead of a large undergraduate research project in which we
+                    compared the aeroacoustics of the MIT Lincoln Lab toroidal propeller against
+                    traditional alternatives using ANSYS Fluent and FFT spectra. The manuscript is
+                    available on arXiv.
+                </p>
+                <a class="cta" href="https://tubaa.dev/">Visit Our Website &rarr;</a>
+            </div>
+        </div>
+
+        <h2><a href="https://www.youtube.com/watch?v=h3W5pSzrWO8">MuJoCo Simulator Tutorial</a></h2>
+        <div class="feature">
+            <div class="embed">
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/h3W5pSzrWO8"
+                    title="Introduction to the MuJoCo Simulator"
+                    loading="lazy"
+                    allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <div>
+                <p>
+                    I gave a workshop at the Rutgers University{' '}
+                    <a href="https://robotics.rutgers.edu/pages/n2e_robotics.html">
+                        N2E Robotics Club
+                    </a>{' '}
+                    to share my enthusiasm for the MuJoCo simulator and help people build and
+                    control a 2R manipulator using PID control.
+                </p>
+                <a class="cta" href="https://www.youtube.com/watch?v=h3W5pSzrWO8">
+                    Watch Video &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap education">
+        <img src="/img/RENGHON_V_RED_BLACK.svg" alt="Rutgers Engineering Honors Academy" />
+        <p>
+            Rutgers University&mdash;New Brunswick<br />
+            <em>B.S. Mechanical Engineering</em><br />
+            <em>Minors in Computer Science &amp; Mathematics</em><br />
+            Engineering Honors Academy Scholar
+        </p>
+    </section>
+
+    <section class="wrap post-section">
+        <div class="section-head">
+            <h2>Recent writing</h2>
+            <a href="/writing" class="see-all">See all &rarr;</a>
+        </div>
+        <div class="card-grid">
+            {writing.map((post) => <PostCard post={post} />)}
+        </div>
+    </section>
+
+    <section class="wrap post-section">
+        <div class="section-head">
+            <h2>Projects</h2>
+            <a href="/projects" class="see-all">See all &rarr;</a>
+        </div>
+        <div class="card-grid">
+            {projects.map((post) => <PostCard post={post} />)}
+        </div>
+    </section>
+
+    <section class="wrap post-section">
+        <div class="section-head">
+            <h2>Recent notes</h2>
+            <a href="/notes" class="see-all">See all &rarr;</a>
+        </div>
+        <div class="card-grid">
+            {notes.map((post) => <PostCard post={post} />)}
+        </div>
+    </section>
+
+    <section class="wrap-narrow contact-cta">
+        <p>
+            If you want to say hi or talk robotics, email me at{' '}
+            <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+        </p>
+    </section>
+</BaseLayout>
+
+<style>
+    .hero {
+        padding-block: var(--space-xl) var(--space-l);
+    }
+
+    .blurb {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-l);
+        padding-block: var(--space-m);
+    }
+
+    .blurb img {
+        inline-size: 100px;
+        block-size: auto;
+        flex: none;
+    }
+
+    .blurb p {
+        flex: 1 1 30ch;
+        font-family: var(--font-prose);
+        font-size: var(--step-1);
+        text-wrap: pretty;
+    }
+
+    .featured {
+        padding-block: var(--space-l);
+    }
+
+    .featured h2 {
+        font-family: var(--font-ui);
+        font-size: var(--step-2);
+        font-weight: 600;
+        line-height: var(--leading-tight);
+        text-wrap: balance;
+        margin-block: var(--space-xl) var(--space-m);
+    }
+
+    .feature {
+        display: grid;
+        gap: var(--space-l);
+        align-items: center;
+    }
+
+    @media (min-width: 60em) {
+        .feature {
+            grid-template-columns: 1.1fr 1fr;
+        }
+    }
+
+    .feature img {
+        inline-size: 100%;
+        block-size: auto;
+        border: 1px solid var(--rule);
+    }
+
+    .feature p {
+        font-family: var(--font-prose);
+        font-size: var(--step-1);
+        text-wrap: pretty;
+    }
+
+    .feature p + p {
+        margin-block-start: var(--rhythm);
+    }
+
+    .feature .cta {
+        display: inline-block;
+        margin-block-start: var(--space-m);
+    }
+
+    .embed {
+        position: relative;
+        aspect-ratio: 16 / 9;
+    }
+
+    .embed iframe {
+        position: absolute;
+        inset: 0;
+        inline-size: 100%;
+        block-size: 100%;
+        border: 1px solid var(--rule);
+    }
+
+    .education {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-m) var(--space-l);
+        padding-block: var(--space-l);
+        text-align: center;
+        font-family: var(--font-prose);
+        font-size: var(--step-0);
+    }
+
+    .education img {
+        inline-size: 128px;
+        block-size: auto;
+    }
+
+    .hero-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-l);
+        text-align: center;
+    }
+
+    .portrait {
+        inline-size: min(60vw, 220px);
+        block-size: auto;
+    }
+
+    .hero-text h1 {
+        font-family: var(--font-ui);
+        font-size: var(--step-4);
+        font-weight: 700;
+        line-height: var(--leading-tight);
+        letter-spacing: -0.03em;
+    }
+
+    .tagline {
+        font-family: var(--font-prose);
+        font-style: italic;
+        font-size: var(--step-1);
+        color: var(--fg-muted);
+        margin-block-start: var(--space-2xs);
+    }
+
+    .lede {
+        font-family: var(--font-prose);
+        font-size: var(--step-0);
+        line-height: var(--leading);
+        max-inline-size: var(--measure);
+        margin-inline: auto;
+        margin-block-start: var(--space-m);
+        text-wrap: pretty;
+    }
+
+    .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--space-xs);
+        margin-block-start: var(--space-m);
+    }
+
+    .cta {
+        display: inline-block;
+        padding: var(--space-xs) var(--space-m);
+        background: var(--inverse-bg);
+        color: var(--inverse-fg);
+        text-decoration: none;
+        font-family: var(--font-ui);
+        font-weight: 600;
+        font-size: var(--step--1);
+    }
+
+    .cta:hover {
+        background: var(--link-hover);
+        color: var(--inverse-fg);
+    }
+
+    .post-section {
+        padding-block: var(--space-l);
+        border-block-start: 1px solid var(--rule);
+    }
+
+    .section-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: var(--space-m);
+        margin-block-end: var(--space-m);
+    }
+
+    .section-head h2 {
+        font-family: var(--font-ui);
+        font-size: var(--step-2);
+        font-weight: 700;
+    }
+
+    .see-all {
+        font-family: var(--font-ui);
+        font-size: var(--step--1);
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    .see-all:hover {
+        text-decoration: underline;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 22ch), 1fr));
+        gap: var(--space-l);
+    }
+
+    .contact-cta {
+        padding-block: var(--space-xl);
+        text-align: center;
+        font-family: var(--font-prose);
+        font-size: var(--step-1);
+    }
+
+    @media (min-width: 40em) {
+        .hero-inner {
+            flex-direction: row;
+            align-items: flex-start;
+            text-align: start;
+        }
+
+        .lede {
+            margin-inline: 0;
+        }
+
+        .cta-row {
+            justify-content: flex-start;
+        }
+    }
+</style>

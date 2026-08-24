@@ -1,0 +1,49 @@
+---
+import '@fontsource/sorts-mill-goudy/latin-400.css'
+import '@fontsource/sorts-mill-goudy/latin-400-italic.css'
+import '@fontsource/space-mono/latin-400-italic.css'
+import '@fontsource/space-mono/latin-700.css'
+import '@fontsource/space-mono/latin-700-italic.css'
+import '@fontsource/iosevka/400.css'
+import '@fontsource/iosevka/600.css'
+import '@fontsource/iosevka/700.css'
+import 'katex/dist/katex.min.css'
+import '../styles/global.css'
+
+import Seo from '../components/Seo.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+
+interface Props {
+    title: string
+    description: string
+    kind?: 'website' | 'article'
+    published?: Date
+    updated?: Date
+    tags?: string[]
+    ogImage?: string
+    noindex?: boolean
+    bare?: boolean
+}
+
+const { bare = false, ...seo } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="alternate" type="application/rss+xml" title="GTWeb" href="/rss.xml" />
+        <Seo {...seo} />
+    </head>
+    <body>
+        {!bare && <a class="skip-link" href="#main">Skip to content</a>}
+        {!bare && <Header />}
+        <main id="main">
+            <slot />
+        </main>
+        {!bare && <Footer />}
+    </body>
+</html>

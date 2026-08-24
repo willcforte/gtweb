@@ -1,0 +1,63 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import PostCard from '../../components/PostCard.astro'
+import { postsOfType, writingTypes } from '../../utils/posts'
+
+const posts = await postsOfType(...writingTypes)
+---
+
+<BaseLayout
+    title="Writing"
+    description="Essays and logs — Will's own words, arguing a position or reporting what happened."
+>
+    <div class="wrap-narrow stack">
+        <header>
+            <h1>Writing</h1>
+        </header>
+
+        {
+            posts.length === 0 ? (
+                <p class="empty">Nothing published yet.</p>
+            ) : (
+                <ul role="list" class="posts">
+                    {posts.map((post) => (
+                        <li>
+                            <PostCard post={post} showType />
+                        </li>
+                    ))}
+                </ul>
+            )
+        }
+    </div>
+</BaseLayout>
+
+<style>
+    header {
+        padding-block: var(--space-xl) var(--space-l);
+    }
+
+    h1 {
+        font-family: var(--font-ui);
+        font-size: var(--step-4);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+    }
+
+
+    .posts {
+        padding: 0;
+        margin-block-end: var(--space-2xl);
+    }
+
+    .posts li {
+        padding-block: var(--space-m);
+        border-block-end: 1px solid var(--rule-faint);
+    }
+
+    .empty {
+        font-family: var(--font-prose);
+        color: var(--fg-muted);
+        font-style: italic;
+        padding-block: var(--space-l);
+    }
+</style>

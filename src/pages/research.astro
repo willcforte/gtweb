@@ -1,0 +1,214 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+
+const manuscripts = [
+    {
+        title: 'Toroidal and Uneven Blade Aeroacoustic Analysis (TUBAA)',
+        href: 'https://tubaa.dev/',
+        year: '2023',
+        authors:
+            'Nikhil Vijay*, Will C. Forte*, Ishan Gajjar*, Sarvesh Patham*, Syon Gupta*, Sahil Shah*, Prathamesh Trivedi*, Rishit Arora*',
+        mentors: 'Mentors: Gao Jun Wu†, Seongkyu Lee‡',
+        affiliations: [
+            '*The Academy for Math, Science, and Engineering — Rockaway, NJ, USA',
+            '†Flow Physics & Aeroacoustics Laboratory, Stanford University — Stanford, CA, USA',
+            '‡Computational Flow Physics and Aeroacoustics Laboratory, UC Davis — Davis, CA, USA',
+        ],
+        links: [
+            { label: 'View website', href: 'https://tubaa.dev/' },
+            {
+                label: 'View manuscript',
+                href: 'https://tubaa.dev/assets/VijayEtAl_2023_AcousticAnalysis.pdf',
+            },
+        ],
+        description:
+            'We conducted an aeroacoustic performance of 3D printed drone propellers using experiments to quantify sound annoyance. Acoustics are compared to CFD simulation to detect sources of noise. The propellers are qualitatively compared.',
+        note: 'Will be submitted to the arXiv soon.',
+    },
+    {
+        title: 'Graphene Rotational Acceleration Particle Hall Sensor (GRAPHS)',
+        href: '/research/VijayEtAl_2023_GRAPHS.pdf',
+        year: '2023',
+        authors: 'Nikhil Vijay, Will C. Forte, Eashan Iyer, Rishit Arora, Sahil Shah, Sarvesh Patham',
+        affiliations: ['The Academy for Math, Science, and Engineering — Rockaway, NJ'],
+        links: [{ label: 'View manuscript', href: '/research/VijayEtAl_2023_GRAPHS.pdf' }],
+        description:
+            'GRAPHS is an experimental proposal to CERN to test the feasibility of graphene solar sails at the Super Proton Synchrotron (SPS) in Geneva, Switzerland. A collimated stream of photons applies torque onto a graphene monolayer, suspended by a superconducting magnet.',
+    },
+]
+
+const workshops = [
+    {
+        title: 'Introduction to the MuJoCo Simulator',
+        venue: 'Rutgers University, N2E Robotics Club',
+        venueHref: 'https://www.youtube.com/channel/UCnmMsOfnAggqPvigcjnvIjg',
+        date: 'February 2025',
+        links: [
+            { label: 'View slides', href: '/pdf/mujoco_intro_workshop.pdf' },
+            { label: 'View code', href: 'https://github.com/willcforte/Introduction-to-MuJoCo-Workshop' },
+        ],
+    },
+]
+
+const talks = [
+    {
+        title: 'The Cuff-Link Electromyographic Input Device',
+        venue: 'The Academy for Math, Science, and Engineering, Academy Senior Showcase',
+        date: 'May 2024',
+        links: [
+            {
+                label: 'Watch video',
+                href: 'https://drive.google.com/file/d/1SJNabj0U9kuphewD90xxaf7NGrvliWLt/view',
+            },
+            {
+                label: 'View slides',
+                href: '/pdf/Blue%20Team%20-%20Cuff-Link%20Final%20Presentation%20(Milestone%20%236).pdf',
+            },
+        ],
+    },
+]
+---
+
+<BaseLayout title="Research" description="Published research">
+    <article class="prose wrap-narrow page">
+        <h1>Research</h1>
+
+        <h2>Manuscripts</h2>
+        {
+            manuscripts.map((m) => (
+                <div class="entry">
+                    <h3>
+                        <a href={m.href}>{m.title}</a>
+                        <span class="year">{m.year}</span>
+                    </h3>
+                    <p class="authors">{m.authors}</p>
+                    {m.mentors && <p class="mentors">{m.mentors}</p>}
+                    {m.affiliations.map((a) => (
+                        <p class="affiliation">{a}</p>
+                    ))}
+                    <p class="links">
+                        {m.links.map((l, i) => (
+                            <>
+                                {i > 0 && ' '}
+                                <a class="pdf-link" href={l.href} target="_blank">
+                                    {l.label}
+                                </a>
+                            </>
+                        ))}
+                    </p>
+                    <p>{m.description}</p>
+                    {m.note && <p class="note">{m.note}</p>}
+                </div>
+            ))
+        }
+
+        <h2>Workshops</h2>
+        {
+            workshops.map((w) => (
+                <div class="entry">
+                    <h3>{w.title}</h3>
+                    <p class="authors">
+                        <a href={w.venueHref}>{w.venue}</a>, {w.date}
+                    </p>
+                    <p class="links">
+                        {w.links.map((l, i) => (
+                            <>
+                                {i > 0 && ' '}
+                                <a class="pdf-link" href={l.href} target="_blank">
+                                    {l.label}
+                                </a>
+                            </>
+                        ))}
+                    </p>
+                </div>
+            ))
+        }
+
+        <h2>Invited talks</h2>
+        {
+            talks.map((t) => (
+                <div class="entry">
+                    <h3>{t.title}</h3>
+                    <p class="authors">
+                        {t.venue}, {t.date}
+                    </p>
+                    <p class="links">
+                        {t.links.map((l, i) => (
+                            <>
+                                {i > 0 && ' '}
+                                <a class="pdf-link" href={l.href} target="_blank">
+                                    {l.label}
+                                </a>
+                            </>
+                        ))}
+                    </p>
+                </div>
+            ))
+        }
+    </article>
+</BaseLayout>
+
+<style>
+    .page {
+        padding-block: var(--space-xl) var(--space-2xl);
+    }
+
+    .entry {
+        padding: var(--space-m);
+        background: var(--bg-raised);
+        border: 1px solid var(--rule);
+        margin-block-end: var(--space-m);
+    }
+
+    .entry h3 {
+        font-family: var(--font-ui);
+        font-size: var(--step-1);
+        font-weight: 600;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: var(--space-xs);
+    }
+
+    .year {
+        font-family: var(--font-ui);
+        font-weight: 400;
+        color: var(--fg-muted);
+    }
+
+    .authors {
+        font-style: italic;
+    }
+
+    .mentors,
+    .affiliation {
+        font-size: var(--step--1);
+        color: var(--fg-muted);
+    }
+
+    .links {
+        margin-block: var(--space-xs);
+    }
+
+    .pdf-link {
+        font-family: var(--font-ui);
+        font-size: var(--step--1);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        background: var(--inverse-bg);
+        color: var(--inverse-fg);
+        padding: var(--space-2xs) var(--space-xs);
+        text-decoration: none;
+    }
+
+    .pdf-link:hover {
+        background: var(--link-hover);
+        color: var(--inverse-fg);
+    }
+
+    .note {
+        font-size: var(--step--1);
+        font-style: italic;
+        color: var(--fg-muted);
+    }
+</style>

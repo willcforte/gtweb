@@ -1,0 +1,63 @@
+@layer tokens {
+    :root {
+        /* Brand palette, carried over from the Nuxt site's SCSS variables */
+        --c-black: #000000;
+        --c-gray-0: #333131;
+        --c-gray-1: #d8d8d8;
+        --c-gray-2: #3b3838;
+        --c-green-0: #064d2a;
+        --c-green-1: #038c3e;
+        --c-green-2: #27ce40;
+        --c-cream: #e3ceae;
+        --c-cream-light: #ebd8bf;
+
+        /* Semantic roles */
+        --bg: var(--c-cream);
+        --bg-raised: var(--c-cream-light);
+        --fg: var(--c-black);
+        --fg-muted: var(--c-gray-0);
+        --rule: color-mix(in srgb, var(--c-black) 20%, transparent);
+        --rule-faint: color-mix(in srgb, var(--c-black) 9%, transparent);
+        --link: var(--c-green-0);
+        --link-hover: var(--c-green-1);
+        --mark: #5a5a5a80;
+        --inverse-bg: var(--c-black);
+        --inverse-fg: var(--c-cream);
+
+        /*
+         * Families. Iosevka sets structure; Sorts Mill Goudy sets running
+         * prose. Space Mono is the site's older wordmark face, kept for the
+         * wordmark and the footer's fine print and used nowhere else.
+         */
+        --font-prose: 'Sorts Mill Goudy', Georgia, 'Times New Roman', serif;
+        --font-ui: 'Iosevka', ui-monospace, 'SF Mono', monospace;
+        --font-mark: 'Space Mono', 'Iosevka', ui-monospace, monospace;
+
+        /* Fluid modular scale, 1.2 ratio, 20px prose base */
+        --step--2: clamp(0.72rem, 0.70rem + 0.11vw, 0.79rem);
+        --step--1: clamp(0.87rem, 0.84rem + 0.16vw, 0.95rem);
+        --step-0: clamp(1.05rem, 1.00rem + 0.24vw, 1.19rem);
+        --step-1: clamp(1.26rem, 1.19rem + 0.34vw, 1.48rem);
+        --step-2: clamp(1.51rem, 1.41rem + 0.49vw, 1.86rem);
+        --step-3: clamp(1.81rem, 1.67rem + 0.69vw, 2.32rem);
+        --step-4: clamp(2.18rem, 1.97rem + 0.97vw, 2.90rem);
+        --step-5: clamp(2.61rem, 2.33rem + 1.35vw, 3.62rem);
+
+        /* Vertical rhythm and measure */
+        --measure: 68ch;
+        --measure-wide: 82ch;
+        --leading: 1.58;
+        --leading-tight: 1.12;
+        --rhythm: 1.58rem;
+
+        --space-2xs: 0.25rem;
+        --space-xs: 0.5rem;
+        --space-s: 0.75rem;
+        --space-m: 1.25rem;
+        --space-l: 2rem;
+        --space-xl: 3.25rem;
+        --space-2xl: 5.25rem;
+
+        --border-heavy: 0.5rem;
+    }
+}

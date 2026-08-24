@@ -1,0 +1,122 @@
+---
+import { Image } from 'astro:assets'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import quadCanonProne from '../assets/img/gallery/quad_canon_prone.jpg'
+import quadrupedV1Control from '../assets/img/gallery/quadruped_v1_control.jpg'
+import laserCutMdfClawV3 from '../assets/img/gallery/laser-cut_mdf_claw_v3.jpg'
+import sumoBot from '../assets/img/gallery/sumo_bot.jpg'
+
+const images = [
+    {
+        src: quadCanonProne,
+        alt: 'Quadrupedal Robot v4 in Prone Position',
+        caption: 'Fully-Actuated Quadruped v4',
+        year: '2024',
+        href: '/posts/quadruped/',
+    },
+    {
+        src: quadrupedV1Control,
+        alt: 'Quadrupedal Robot v1',
+        caption: 'Fully-Actuated Quadruped v1',
+        year: '2024',
+        href: '/posts/quadruped/',
+    },
+    {
+        src: laserCutMdfClawV3,
+        alt: 'Laser-Cut MDF Claw v3',
+        caption: 'Fully-MDF Laser-Cut Claw',
+        year: '2023',
+    },
+    {
+        src: sumoBot,
+        alt: 'Sumo Bot Chassis Prototype',
+        caption: 'Sumo Bot Chassis Prototype',
+        year: '2023',
+    },
+]
+---
+
+<BaseLayout title="Gallery" description="Robotics and engineering gallery">
+    <div class="wrap page">
+        <h1>Gallery</h1>
+        <p class="intro">
+            Recently, I got an 11-year-old DSLR to learn <a href="/photography">photography</a>.
+        </p>
+
+        <div class="grid">
+            {
+                images.map((img) => (
+                    <figure class="tile">
+                        <Image
+                            src={img.src}
+                            alt={img.alt}
+                            widths={[400, 800, 1200]}
+                            sizes="(min-width: 24rem) 24rem, 100vw"
+                            loading="lazy"
+                        />
+                        <figcaption>
+                            <span>{img.caption}</span>
+                            {img.href && (
+                                <>
+                                    {' - '}
+                                    <a href={img.href}>Project Page</a>
+                                </>
+                            )}{' '}
+                            <span class="year">({img.year})</span>
+                        </figcaption>
+                    </figure>
+                ))
+            }
+        </div>
+    </div>
+</BaseLayout>
+
+<style>
+    .page {
+        padding-block: var(--space-xl) var(--space-2xl);
+    }
+
+    h1 {
+        font-family: var(--font-ui);
+        font-size: var(--step-4);
+        font-weight: 700;
+    }
+
+    .intro {
+        font-family: var(--font-prose);
+        font-size: var(--step-1);
+        margin-block: var(--space-s) var(--space-l);
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
+        gap: var(--space-l);
+    }
+
+    .tile img {
+        inline-size: 100%;
+        block-size: auto;
+        border: 1px solid var(--rule);
+    }
+
+    figcaption {
+        font-family: var(--font-ui);
+        font-size: var(--step--1);
+        margin-block-start: var(--space-xs);
+        text-align: center;
+    }
+
+    figcaption a {
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    figcaption a:hover {
+        text-decoration: underline;
+    }
+
+    .year {
+        color: var(--fg-muted);
+    }
+</style>

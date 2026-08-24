@@ -1,0 +1,48 @@
+---
+import { GISCUS } from '../consts'
+
+/*
+ * Renders nothing until the repo IDs are filled in (see src/consts.ts).
+ * Giscus needs Discussions enabled on the repo and the Giscus app installed,
+ * which is a manual GitHub step.
+ */
+const configured = Boolean(GISCUS.repoId && GISCUS.categoryId)
+---
+
+{
+    configured && (
+        <section class="comments" aria-label="Comments">
+            <h2 class="label">Comments</h2>
+            <script
+                is:inline
+                src="https://giscus.app/client.js"
+                data-repo={GISCUS.repo}
+                data-repo-id={GISCUS.repoId}
+                data-category={GISCUS.category}
+                data-category-id={GISCUS.categoryId}
+                data-mapping="pathname"
+                data-strict="1"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="top"
+                data-theme="light"
+                data-lang="en"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async
+            />
+        </section>
+    )
+}
+
+<style>
+    .comments {
+        margin-block-start: var(--space-xl);
+        padding-block-start: var(--space-m);
+        border-block-start: 1px solid var(--rule);
+    }
+
+    .comments h2 {
+        margin-block-end: var(--space-m);
+    }
+</style>
