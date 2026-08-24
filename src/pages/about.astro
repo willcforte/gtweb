@@ -13,7 +13,7 @@ const experience = [
         dates: 'October 2024 – Present',
         bullets: [
             'Conducted literature review on approximating regions of attraction of high-dim. dynamical systems.',
-            "Designed and fabricated the first all-metal chassis for Rutgers' two-legged robot.",
+            "Designed and fabricated the first all-metal chassis for Rutgers’ two-legged robot.",
             'Reproduced CMU Lidar-based ROS SLAM stack for autonomous quadruped exploration & obstacle avoidance.',
         ],
     },
@@ -63,12 +63,14 @@ const experience = [
             is a great motivator&mdash;you can apply almost anything!
         </p>
 
+        <p><a href="/notes">Self-study plan</a></p>
+
         <h2>Contact me</h2>
         <p>
             If you'd like to discuss any of my projects or just say hello, please contact me at{' '}
             <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. I'm very open to research
-            opportunities and collaboration. My <a href="/pdf/cv25.pdf">CV</a> is available as a
-            PDF.
+            opportunities and collaboration. My{' '}
+            <a href="https://resume.willcforte.com">CV</a> is kept up to date online.
         </p>
 
         <h2>Experience</h2>
@@ -94,7 +96,7 @@ const experience = [
         <div class="edu-list">
             <div class="edu">
                 <p>
-                    Rutgers University&mdash;New Brunswick, projected '27<br />
+                    Rutgers Univ.&mdash;New Brunswick, projected '27<br />
                     <em>B.S. Mechanical Engineering</em><br />
                     <em>Minor in Mathematics</em><br />
                     Engineering Honors Academy Scholar
@@ -116,25 +118,19 @@ const experience = [
             Now, it's a platform to share my passions and work on fun projects.
         </p>
 
-        <h2>Colophon</h2>
+        <h3>Tech Stack</h3>
         <p>
-            Every page here is a plain Markdown file. The build turns bare images into captioned
-            figures, bare video links into embeds, and dollar-delimited maths into typeset
-            equations, so nothing here is hand-written HTML. Frontmatter is schema-checked, so a
-            post with a missing description or an invented category fails the build rather than
-            reaching you.
+            My website was built using <a href="https://nuxt.com/blog/v3">Nuxt 3</a>, an open source
+            Javascript library that combines the server-side rendering and static site generation of
+            <a href="https://nextjs.org/">Next.js</a> with <a href="https://vuejs.org/">Vue.js</a>,
+            whose logical syntax I admire.
         </p>
         <p>
-            The CSS is hand-written&mdash;no utility framework, and no client-side JavaScript
-            beyond the comment widget. Body text is set in{' '}
-            <a href="https://www.theleagueofmoveabletype.com/sorts-mill-goudy">Sorts Mill Goudy</a>,
-            structure and code in <a href="https://typeof.net/Iosevka/">Iosevka</a>, and the
-            wordmark in <a href="https://fonts.google.com/specimen/Space+Mono">Space Mono</a>, which
-            this site wore for years and which now appears nowhere else. All three are self-hosted.
-            Since Sorts Mill Goudy has no bold cut, emphasis is set in real italics and
-            strong emphasis in small caps, rather than letting a browser fake a weight that the
-            typeface does not have. Source lives on{' '}
-            <a href="https://github.com/willcforte/gtweb">GitHub</a>.
+            The text of the website, written in{' '}
+            <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> that has{' '}
+            <a href="https://katex.org/">KaTeX</a>, HTML, and Vue support, is interpreted by{' '}
+            <a href="https://content.nuxtjs.org/">Nuxt Content</a>. Styling is done via{' '}
+            <a href="https://tailwindcss.com/">Tailwind CSS</a>.
         </p>
 
         <figure class="full">
