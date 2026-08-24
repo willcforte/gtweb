@@ -59,6 +59,45 @@ function wrap(text, maxChars, maxLines) {
 /* DejaVu Sans Mono advances 0.602em per glyph, so the usable line length is exact. */
 const PAD = 90
 const ADVANCE = 0.602
+const CAP = 0.729
+
+/*
+ * The wcf wordmark, taken from the brand SVG so the asset stays the one source
+ * of truth. Its own fills live in a <style> block that librsvg ignores, so the
+ * colours are reapplied here as presentation attributes.
+ *
+ * Within the 370x200 artboard the letterforms occupy a 294.03x150.81 box at
+ * (38.52, 24.72); those constants place and scale the lockup exactly.
+ */
+const BOX_W = 370
+const BOX_H = 200
+const INK_TOP = 24.72 / BOX_H
+const INK_H = 150.81 / BOX_H
+
+const glyphs = readFileSync(join(root, 'src/assets/img/brand/wcf_rast_c.svg'), 'utf8')
+    .match(/<path[^>]*\sd="[^"]+"/g)
+    .map((tag) => tag.match(/\sd="([^"]+)"/)[1])
+
+/** The wcf mark beside "/GTWeb", set so both share a baseline and cap height. */
+function lockup(baselineY, inkHeight) {
+    const boxH = inkHeight / INK_H
+    const boxW = (BOX_W / BOX_H) * boxH
+    const scale = boxH / BOX_H
+    const boxTop = baselineY - (INK_TOP + INK_H) * boxH
+
+    const size = inkHeight / CAP
+    const gap = boxH * 0.09
+    const width = boxW + gap + '/GTWeb'.length * ADVANCE * size
+
+    const svg = `<g transform="translate(0 ${boxTop}) scale(${scale})">
+    <rect width="${BOX_W}" height="${BOX_H}" fill="${BLACK}"/>
+    ${glyphs.map((d) => `<path fill="${CREAM}" d="${d}"/>`).join('\n    ')}
+  </g>
+  <text x="${boxW + gap}" y="${baselineY}" font-family="${FONT}" font-size="${size}"
+        font-weight="bold" fill="${BLACK}">/GTWeb</text>`
+
+    return { svg, width }
+}
 
 function card({ title, eyebrow, footer }) {
     const titleSize = title.length > 60 ? 52 : 64
@@ -76,6 +115,8 @@ function card({ title, eyebrow, footer }) {
         )
         .join('')
 
+    const mark = lockup(H - 62, 26)
+
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
   <rect width="${W}" height="${H}" fill="${CREAM}"/>
   <rect x="0" y="0" width="${W}" height="18" fill="${BLACK}"/>
@@ -84,8 +125,23 @@ function card({ title, eyebrow, footer }) {
         fill="${GREEN}" letter-spacing="4">${escape(eyebrow.toUpperCase())}</text>
   <text font-family="${FONT}" font-size="${titleSize}" font-weight="bold" fill="${BLACK}">${tspans}</text>
   <text x="90" y="${H - 70}" font-family="${FONT}" font-size="28" fill="${MUTED}">${escape(footer)}</text>
-  <text x="${W - 90}" y="${H - 70}" font-family="${FONT}" font-size="32" font-weight="bold"
-        fill="${BLACK}" text-anchor="end">/GTWeb</text>
+  <g transform="translate(${W - PAD - mark.width} 0)">${mark.svg}</g>
+</svg>`
+}
+
+/* The fallback card for every page that is not a post: the wordmark, large. */
+function defaultCard() {
+    const mark = lockup(282, 74)
+
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+  <rect width="${W}" height="${H}" fill="${CREAM}"/>
+  <rect x="0" y="0" width="${W}" height="18" fill="${BLACK}"/>
+  <rect x="0" y="${H - 18}" width="${W}" height="18" fill="${GREEN}"/>
+  <g transform="translate(${(W - mark.width) / 2} 0)">${mark.svg}</g>
+  <text x="${W / 2}" y="382" font-family="${FONT}" font-size="46" font-weight="bold"
+        fill="${BLACK}" text-anchor="middle">Will C. Forte</text>
+  <text x="${W / 2}" y="442" font-family="${FONT}" font-size="28"
+        fill="${MUTED}" text-anchor="middle">robotics engineering, research, and writing</text>
 </svg>`
 }
 
@@ -115,13 +171,6 @@ for (const entry of readdirSync(postsDir, { withFileTypes: true })) {
     count++
 }
 
-await render(
-    card({
-        title: 'Will C. Forte',
-        eyebrow: 'robotics',
-        footer: 'willcforte.com',
-    }),
-    join(root, 'public/og-default.png'),
-)
+await render(defaultCard(), join(root, 'public/og-default.png'))
 
 console.log(`[og] generated ${count} post cards + og-default.png`)
