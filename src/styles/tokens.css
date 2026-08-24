@@ -24,9 +24,14 @@
         --inverse-bg: var(--c-black);
         --inverse-fg: var(--c-cream);
 
-        /* Families. Iosevka sets structure; Sorts Mill Goudy sets running prose. */
+        /*
+         * Families. Iosevka sets structure; Sorts Mill Goudy sets running
+         * prose. Space Mono is the site's older wordmark face, kept for the
+         * wordmark and the footer's fine print and used nowhere else.
+         */
         --font-prose: 'Sorts Mill Goudy', Georgia, 'Times New Roman', serif;
         --font-ui: 'Iosevka', ui-monospace, 'SF Mono', monospace;
+        --font-mark: 'Space Mono', 'Iosevka', ui-monospace, monospace;
 
         /* Fluid modular scale, 1.2 ratio, 20px prose base */
         --step--2: clamp(0.72rem, 0.70rem + 0.11vw, 0.79rem);
