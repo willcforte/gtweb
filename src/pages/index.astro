@@ -24,18 +24,9 @@ const notes = (await postsOfType('note')).slice(0, 3)
             <div class="hero-text">
                 <h1>Will C. Forte</h1>
                 <p class="tagline">a mechanical &amp; computational roboticist</p>
-                <p class="lede">
-                    I've been learning the mechanical, electrical, CS, and mathematical
-                    principles of robotic systems since high school &mdash; the interdisciplinary
-                    nature of the field is a great motivator, since you can apply almost
-                    anything. I'm the President &amp; Founder of{' '}
-                    <a href="https://rudynamics.vercel.app/">Rutgers Dynamics</a>, a student-run
-                    robot dog &amp; humanoid lab, and an undergraduate robotics &amp; AI
-                    researcher and Aresty Fellow at Rutgers' Honors College under{' '}
-                    <a href="https://pracsys.cs.rutgers.edu/">Prof. Kostas Bekris</a>.
-                </p>
+                <p class="lede">Welcome to my self-coded website!</p>
                 <div class="cta-row">
-                    <a class="cta" href="/pdf/cv25.pdf">CV</a>
+                    <a class="cta" href="https://resume.willcforte.com">CV</a>
                     <a class="cta" href="https://www.linkedin.com/in/willcforte/">LinkedIn</a>
                     <a class="cta" href="https://bsky.app/profile/willcforte.com">Bluesky</a>
                     <a class="cta" href={`mailto:${SITE.email}`}>Contact me</a>
@@ -43,6 +34,138 @@ const notes = (await postsOfType('note')).slice(0, 3)
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="wrap blurb">
+        <img src="/img/rud.png" alt="Rutgers Dynamics" width="100" height="100" />
+        <p>
+            I'm the President &amp; Founder of{' '}
+            <a href="https://rudynamics.vercel.app/">Rutgers Dynamics</a>, an
+            extremely-ambitious student-run robot dog &amp; humanoid lab. Part of a collaboration{' '}
+            <a href="https://ccbr-humanoid.github.io/wiki/docs/home/">democratizing legged robotics</a>{' '}
+            with friends from Caltech, Columbia, Rutgers, and Berkeley.
+        </p>
+    </section>
+
+    <section class="wrap blurb">
+        <img src="/img/ru_shield.svg" alt="Rutgers University" width="100" height="100" />
+        <p>
+            I'm an undergrad robotics + AI researcher &amp; Aresty Fellow at Rutgers' Honors
+            College under <a href="https://pracsys.cs.rutgers.edu/">Prof. Kostas Bekris</a>.
+            <br />
+            Aside from my B.S. in MechE, I was a PI on a{' '}
+            <a href="https://www.lspace.asu.edu/proposal-writing-academy">NASA NPWEE</a> grant
+            proposal.
+        </p>
+    </section>
+
+    <section class="wrap featured">
+        <h2>
+            <a href="/posts/quadruped/">LCFAQ: A Low-Cost, Fully-Actuated Quadruped</a> (2023)
+        </h2>
+        <div class="feature">
+            <a href="/posts/quadruped/">
+                <img src="/media/quad_gif.webp" alt="Quadruped Prototype" loading="lazy" />
+            </a>
+            <div>
+                <p>
+                    The summer after junior year of HS, I used spare parts to built a low-cost
+                    (&asymp;$500), 12-motor quadrupedal robot intended to increase the
+                    accessibility of advanced robotics to educators and students already
+                    participating in FTC Robotics.
+                </p>
+                <a class="cta" href="/posts/quadruped/">View Project &rarr;</a>
+            </div>
+        </div>
+
+        <h2>
+            <a href="/posts/cufflink/">Cuff-Link: An Electromyographic Input Device</a> (2024)
+        </h2>
+        <div class="feature">
+            <a href="/posts/cufflink/">
+                <img
+                    src="/media/lowres_cufflinkgif.webp"
+                    alt="CuffLink Prototype"
+                    loading="lazy"
+                />
+            </a>
+            <div>
+                <p>
+                    The Cuff-Link&trade; allows amputees and those suffering from nerve damage to
+                    control a computer using nothing but the muscles in their arm. A similar
+                    design cost Meta{' '}
+                    <a
+                        href="https://www.theverge.com/2019/9/23/20881032/facebook-ctrl-labs-acquisition-neural-interface-armband-ar-vr-deal"
+                        >$500 million</a
+                    >. It cost us $150.
+                </p>
+                <p>
+                    We presented the project in front of a crowd of 200+ at the Academy of Math,
+                    Science, &amp; Engineering 2024 Showcase.
+                </p>
+                <a class="cta" href="/posts/cufflink/">Read the Proposal &rarr;</a>
+            </div>
+        </div>
+
+        <h2>
+            <a href="https://tubaa.dev/">
+                TUBAA: Aeroacoustic Analysis of the MIT Toroidal Propeller
+            </a> (2023)
+        </h2>
+        <div class="feature">
+            <a href="https://tubaa.dev/">
+                <img
+                    src="/media/tormore.webp"
+                    alt="CFD simulation of toroidal propeller"
+                    loading="lazy"
+                />
+            </a>
+            <div>
+                <p>
+                    I was the CFD lead of a large undergraduate research project in which we
+                    compared the aeroacoustics of the MIT Lincoln Lab toroidal propeller against
+                    traditional alternatives using ANSYS Fluent and FFT spectra. The manuscript is
+                    available on arXiv.
+                </p>
+                <a class="cta" href="https://tubaa.dev/">Visit Our Website &rarr;</a>
+            </div>
+        </div>
+
+        <h2><a href="https://www.youtube.com/watch?v=h3W5pSzrWO8">MuJoCo Simulator Tutorial</a></h2>
+        <div class="feature">
+            <div class="embed">
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/h3W5pSzrWO8"
+                    title="Introduction to the MuJoCo Simulator"
+                    loading="lazy"
+                    allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <div>
+                <p>
+                    I gave a workshop at the Rutgers University{' '}
+                    <a href="https://robotics.rutgers.edu/pages/n2e_robotics.html">
+                        N2E Robotics Club
+                    </a>{' '}
+                    to share my enthusiasm for the MuJoCo simulator and help people build and
+                    control a 2R manipulator using PID control.
+                </p>
+                <a class="cta" href="https://www.youtube.com/watch?v=h3W5pSzrWO8">
+                    Watch Video &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap education">
+        <img src="/img/RENGHON_V_RED_BLACK.svg" alt="Rutgers Engineering Honors Academy" />
+        <p>
+            Rutgers University&mdash;New Brunswick<br />
+            <em>B.S. Mechanical Engineering</em><br />
+            <em>Minors in Computer Science &amp; Mathematics</em><br />
+            Engineering Honors Academy Scholar
+        </p>
     </section>
 
     <section class="wrap post-section">
@@ -88,6 +211,104 @@ const notes = (await postsOfType('note')).slice(0, 3)
         padding-block: var(--space-xl) var(--space-l);
     }
 
+    .blurb {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-l);
+        padding-block: var(--space-m);
+    }
+
+    .blurb img {
+        inline-size: 100px;
+        block-size: auto;
+        flex: none;
+    }
+
+    .blurb p {
+        flex: 1 1 30ch;
+        font-family: var(--font-prose);
+        font-size: var(--step-1);
+        text-wrap: pretty;
+    }
+
+    .featured {
+        padding-block: var(--space-l);
+    }
+
+    .featured h2 {
+        font-family: var(--font-ui);
+        font-size: var(--step-2);
+        font-weight: 600;
+        line-height: var(--leading-tight);
+        text-wrap: balance;
+        margin-block: var(--space-xl) var(--space-m);
+    }
+
+    .feature {
+        display: grid;
+        gap: var(--space-l);
+        align-items: center;
+    }
+
+    @media (min-width: 60em) {
+        .feature {
+            grid-template-columns: 1.1fr 1fr;
+        }
+    }
+
+    .feature img {
+        inline-size: 100%;
+        block-size: auto;
+        border: 1px solid var(--rule);
+    }
+
+    .feature p {
+        font-family: var(--font-prose);
+        font-size: var(--step-1);
+        text-wrap: pretty;
+    }
+
+    .feature p + p {
+        margin-block-start: var(--rhythm);
+    }
+
+    .feature .cta {
+        display: inline-block;
+        margin-block-start: var(--space-m);
+    }
+
+    .embed {
+        position: relative;
+        aspect-ratio: 16 / 9;
+    }
+
+    .embed iframe {
+        position: absolute;
+        inset: 0;
+        inline-size: 100%;
+        block-size: 100%;
+        border: 1px solid var(--rule);
+    }
+
+    .education {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-m) var(--space-l);
+        padding-block: var(--space-l);
+        text-align: center;
+        font-family: var(--font-prose);
+        font-size: var(--step-0);
+    }
+
+    .education img {
+        inline-size: 128px;
+        block-size: auto;
+    }
+
     .hero-inner {
         display: flex;
         flex-direction: column;
@@ -99,9 +320,6 @@ const notes = (await postsOfType('note')).slice(0, 3)
     .portrait {
         inline-size: min(60vw, 220px);
         block-size: auto;
-        border: var(--border-heavy) solid var(--fg);
-        border-inline-start-width: 0;
-        border-block-start-width: 0;
     }
 
     .hero-text h1 {
