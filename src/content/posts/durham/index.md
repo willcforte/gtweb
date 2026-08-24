@@ -1,5 +1,5 @@
 ---
-title: "Durham Boxes"
+title: Durham
 description: "A durable storage method for screws and other small components, compatible with Gridfinity-style bins."
 type: note
 date: 2026-03-30

@@ -1,5 +1,5 @@
 ---
-title: "Notes on the Locomotion of Quadruped Robots"
+title: "locomotion test"
 description: "Raw notes on whole-body control and model-predictive control approaches to quadruped locomotion."
 type: note
 date: 2023-11-01
