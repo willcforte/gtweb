@@ -1,6 +1,5 @@
 ---
 title: "UAR Lect. 2"
-description: "Nonlinear dynamical systems, stability definitions, and phase portraits for a simple pendulum."
 type: note
 date: 2025-06-17
 series: uar

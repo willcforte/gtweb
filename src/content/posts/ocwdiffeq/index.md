@@ -1,6 +1,5 @@
 ---
 title: "MIT OCW Diff. Eq. 18.03SC Fa. '11"
-description: "Notes and lecture index for MIT OpenCourseWare's 18.03SC Differential Equations course, Fall 2011."
 type: note
 date: 2025-06-17
 series: ocwdiffeq

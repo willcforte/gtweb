@@ -1,6 +1,5 @@
 ---
 title: "MIT FM & Diff"
-description: "Notes and lecture index for MIT's 6.S184 Flow Matching and Diffusion Models course, Spring 2025."
 type: note
 date: 2025-06-17
 series: mitdiffusion

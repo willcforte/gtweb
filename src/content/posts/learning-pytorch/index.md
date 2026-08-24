@@ -1,6 +1,5 @@
 ---
 title: "Learning Log: PyTorch Deep Learning"
-description: "Notes from working through freeCodeCamp's PyTorch deep learning tutorial in spring 2025."
 type: log
 date: 2025-03-17
 tags: [machine-learning]

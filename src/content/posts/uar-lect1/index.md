@@ -1,6 +1,5 @@
 ---
 title: "UAR Lect. 1"
-description: "Fully- vs. underactuated dynamics, feedback equivalence, and the manipulator equations."
 type: note
 date: 2025-06-17
 series: uar

@@ -13,7 +13,7 @@ const { data } = post
 
 <article class="post-card">
     <h3><a href={postUrl(post)}>{data.title}</a></h3>
-    <p class="description">{data.description}</p>
+    {data.description && <p class="description">{data.description}</p>}
     <div class="meta label">
         <time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>
         <span aria-hidden="true">·</span>

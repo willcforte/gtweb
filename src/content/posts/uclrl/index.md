@@ -1,6 +1,5 @@
 ---
 title: "DeepMind x UCL RL '21"
-description: "Notes and lecture index for the DeepMind x UCL Reinforcement Learning lecture series, 2021."
 type: note
 date: 2025-06-17
 series: uclrl

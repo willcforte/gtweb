@@ -41,10 +41,6 @@ const seriesGroups = [...bySeries.entries()].sort(([, a], [, b]) => {
     <div class="wrap-narrow stack">
         <header>
             <h1>Notes</h1>
-            <p class="lede">
-                Notes taken from someone else's material — courses, papers, catalogs — always
-                citing the source, grouped into a series where they read as a course would.
-            </p>
         </header>
 
         {
@@ -101,12 +97,6 @@ const seriesGroups = [...bySeries.entries()].sort(([, a], [, b]) => {
         letter-spacing: -0.03em;
     }
 
-    .lede {
-        font-family: var(--font-prose);
-        font-size: var(--step-1);
-        color: var(--fg-muted);
-        margin-block-start: var(--space-s);
-    }
 
     .groups {
         margin-block-end: var(--space-2xl);

@@ -23,7 +23,7 @@ const posts = defineCollection({
         z
             .object({
                 title: z.string().min(1),
-                description: z.string().min(1),
+                description: z.string().min(1).optional(),
                 type: z.enum(POST_TYPES),
                 date: z.coerce.date(),
                 updated: z.coerce.date().optional(),

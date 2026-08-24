@@ -20,7 +20,6 @@ const years = [...byYear.entries()].sort(([a], [b]) => b - a)
     <div class="wrap-narrow stack">
         <header>
             <h1>Archive</h1>
-            <p class="lede">Everything published here, in one list, newest first.</p>
         </header>
 
         {
@@ -62,12 +61,6 @@ const years = [...byYear.entries()].sort(([a], [b]) => b - a)
         letter-spacing: -0.03em;
     }
 
-    .lede {
-        font-family: var(--font-prose);
-        font-size: var(--step-1);
-        color: var(--fg-muted);
-        margin-block-start: var(--space-s);
-    }
 
     .years {
         margin-block-end: var(--space-2xl);

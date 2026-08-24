@@ -39,7 +39,7 @@ const showToc = toc.length >= 4
 
 <BaseLayout
     title={data.title}
-    description={data.description}
+    description={data.description ?? data.title}
     kind="article"
     published={data.date}
     updated={data.updated}
@@ -50,7 +50,7 @@ const showToc = toc.length >= 4
     <article>
         <header class="post-header wrap-narrow">
             <h1>{data.title}</h1>
-            <p class="lede">{data.description}</p>
+            {data.description && <p class="lede">{data.description}</p>}
             <PostMeta post={post} />
             {
                 data.source && (

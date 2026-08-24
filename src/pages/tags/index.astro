@@ -9,7 +9,6 @@ const tags = await allTags()
     <div class="wrap-narrow stack">
         <header>
             <h1>Tags</h1>
-            <p class="lede">Every topic tag used on the site, sorted by how often it appears.</p>
         </header>
 
         {
@@ -41,12 +40,6 @@ const tags = await allTags()
         letter-spacing: -0.03em;
     }
 
-    .lede {
-        font-family: var(--font-prose);
-        font-size: var(--step-1);
-        color: var(--fg-muted);
-        margin-block-start: var(--space-s);
-    }
 
     .tags {
         display: flex;

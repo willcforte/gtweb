@@ -1,6 +1,5 @@
 ---
 title: "Stanford CS229 Au. '18"
-description: "Notes and lecture index for Stanford's CS229 Machine Learning course, Autumn 2018."
 type: note
 date: 2025-06-17
 series: cs229
