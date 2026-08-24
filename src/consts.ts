@@ -5,7 +5,7 @@ export const SITE = {
         'Robotics engineering, research notes, and writing by Will C. Forte.',
     url: 'https://willcforte.com',
     author: 'Will C. Forte',
-    email: 'willcforte@gmail.com',
+    email: 'will@willcforte.com',
     locale: 'en_US',
 } as const
 
