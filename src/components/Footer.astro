@@ -26,7 +26,9 @@ const year = new Date().getFullYear()
             </ul>
         </nav>
 
-        <p class="fine">Made from scratch / {SITE.author} © {year}</p>
+        <p class="fine">
+            Made from scratch / {SITE.author} <span class="copy">©</span> {year}
+        </p>
         <p class="fine">
             Contact @ <a href={`mailto:${SITE.email}`}>{SITE.email.replace('@', ' (at) ')}</a>
         </p>
@@ -75,6 +77,15 @@ const year = new Date().getFullYear()
 
     .site-footer a:hover {
         color: var(--c-green-2);
+    }
+
+    /*
+     * Space Mono draws © from y=308 to 804, clear of the baseline, so it reads
+     * as a superscript beside anything else. Iosevka sets it on the baseline.
+     */
+    .copy {
+        font-family: var(--font-ui);
+        font-style: normal;
     }
 
     .fine {
