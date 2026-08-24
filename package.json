@@ -3,14 +3,15 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "build": "node scripts/gen-redirects.mjs && node scripts/gen-og-images.mjs && astro build",
+    "dev": "node scripts/stamp-dates.mjs && astro dev",
+    "build": "node scripts/stamp-dates.mjs && node scripts/gen-redirects.mjs && node scripts/gen-og-images.mjs && astro build",
     "redirects": "node scripts/gen-redirects.mjs",
     "og": "node scripts/gen-og-images.mjs",
     "verify": "npm run build && node scripts/verify-links.mjs",
     "preview": "astro preview",
     "check": "astro check",
-    "new": "node scripts/new-post.mjs"
+    "new": "node scripts/new-post.mjs",
+    "dates": "node scripts/stamp-dates.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^7.0.5",

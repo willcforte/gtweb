@@ -24,10 +24,13 @@ relatively (`![Caption](./photo.jpg)`) so they get resized and converted at buil
 title: Title of the post
 description: One sentence, used in listings, search results, and link previews.
 type: essay          # project | essay | log | note
-date: 2026-08-16
 tags: [robotics, hardware]
 ---
 ```
+
+You do not have to write a `date`. `npm run dev` and `npm run build` stamp any post that lacks
+one, using the date the file first entered git, or today for a file not yet committed. The date is
+written into the file, so it is fixed once and never drifts.
 
 Which `type`? The question is mechanical:
 

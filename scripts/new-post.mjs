@@ -51,7 +51,9 @@ if (existsSync(dir)) {
     process.exit(1)
 }
 
-const today = new Date().toISOString().slice(0, 10)
+/* Local calendar date; toISOString would report tomorrow for an evening write. */
+const now = new Date()
+const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`
 const lines = [
     '---',
     `title: ${JSON.stringify(title)}`,

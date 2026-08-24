@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # stamp-dates.mjs reads first-commit dates, so it needs real history.
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
