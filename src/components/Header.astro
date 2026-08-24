@@ -40,7 +40,7 @@ const isCurrent = (href: string) =>
 
     .mark {
         display: flex;
-        align-items: center;
+        align-items: baseline;
         justify-content: center;
         gap: 0.12em;
         font-family: var(--font-mark);
@@ -51,9 +51,16 @@ const isCurrent = (href: string) =>
         color: var(--fg);
     }
 
+    /*
+     * The wordmark's letterforms fill 150.81 of the SVG's 200 units, centred,
+     * so the box has to be 0.7em / 0.754 for them to stand at Space Mono's
+     * 0.7em cap height. The nudge drops the letterforms' feet onto the text
+     * baseline, which the box's lower padding would otherwise hold them above.
+     */
     .mark-logo {
-        block-size: 0.78em;
+        block-size: 0.928em;
         inline-size: auto;
+        transform: translateY(0.114em);
     }
 
     .mark-slash {
