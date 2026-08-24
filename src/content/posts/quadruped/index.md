@@ -7,7 +7,6 @@ tags: [robotics, locomotion, simulation]
 hero: ./quad_canon_iso.jpg
 heroAlt: "Isometric standing view of the v4 quadruped robot"
 status: done
-draft: true
 legacyPath: ["/robotics/quadruped"]
 ---
 
