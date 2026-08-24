@@ -55,10 +55,12 @@ const images = [
                             loading="lazy"
                         />
                         <figcaption>
-                            {img.href ? (
-                                <a href={img.href}>{img.caption}</a>
-                            ) : (
-                                <span>{img.caption}</span>
+                            <span>{img.caption}</span>
+                            {img.href && (
+                                <>
+                                    {' - '}
+                                    <a href={img.href}>Project Page</a>
+                                </>
                             )}{' '}
                             <span class="year">({img.year})</span>
                         </figcaption>
