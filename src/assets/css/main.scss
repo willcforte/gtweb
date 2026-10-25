@@ -246,7 +246,8 @@ $rule: '';
 
 .divider {
     display: flex;
-    width: round(down, 100%, 1ch);
+    margin-left: -0.085em;
+    width: calc(round(down, 100%, 1ch) + 0.085em);
     white-space: pre;
 
     &::after {
@@ -261,7 +262,7 @@ $rule: '';
     width: round(down, 100%, 0.9rem);
     padding: calc(2rem - 10px) calc(2.5rem - 10px);
     border: 10px solid transparent;
-    border-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30'><path fill-rule='evenodd' d='M.408.408H29.592V29.592H.408ZM2.304 2.304V27.696H27.696V2.304ZM5.376 5.376H24.624V24.624H5.376ZM7.272 7.272V22.728H22.728V7.272Z'/></svg>") 10 stretch;
+    border-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30'><path fill-rule='evenodd' d='M0 0H30V30H0ZM1.896 1.896V28.104H28.104V1.896ZM4.968 4.968H25.032V25.032H4.968ZM6.864 6.864V23.136H23.136V6.864Z'/></svg>") 10 stretch;
 }
 
 .bg-cream {
