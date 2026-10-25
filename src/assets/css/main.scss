@@ -73,7 +73,7 @@ nav li + li::before {
     }
 }
 
-header [aria-current='page'] {
+header a[aria-current='page'] {
     color: $green1;
     font-weight: bold;
     font-style: italic;
@@ -85,22 +85,19 @@ p {
     padding: 0.5rem 0 0.5rem 0;
 }
 
-p a, ol a, ul a, table a, th a, td a, .yesh {
+a:not(.noh) {
     color: $green0;
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-skip-ink: none;
 }
 
-.noh { // no highlight
-    text-decoration: none;
+a:not(.noh):hover {
+    color: $green1;
 }
 
-a:not(.noh):hover .yesh,
-h1 a .yesh:hover,
-h2 a .yesh:hover,
-h3 a .yesh:hover {
-    color: $green1;
+.noh { // no highlight
+    text-decoration: none;
 }
 
 blockquote {
