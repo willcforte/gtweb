@@ -45,6 +45,8 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
   </div>
 </div>
 
+<div class="divider text-2xl mt-6">===&ensp;CURRENT STUFF&ensp;</div>
+
 <div class="flex flex-col sm:grid sm:grid-cols-[auto_1fr] gap-4 sm:gap-8 items-center my-10">
   <img src="/img/rud.png" alt="Description of SVG" class="w-18 sm:w-26">
 
