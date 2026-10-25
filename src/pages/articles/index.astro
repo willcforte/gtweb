@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { entryPath } from '../../utils/entry-path';
 
 const articles = (await getCollection('content', (e) => e.id.startsWith('articles/') && e.data.status === 'done'))
     .sort((a, b) => (a.data.unix! < b.data.unix! ? 1 : -1));
@@ -12,11 +13,11 @@ const articles = (await getCollection('content', (e) => e.id.startsWith('article
 
     <h4>View my finished projects <span class="link"><a href="/robotics" class="yesh">here</a></span>.</h4>
 
-    {articles.map(({ id, data }) => (
+    {articles.map((entry) => (
         <div class="mb-3">
-            <a href={`/${id}`}>{data.image && <img class="medarticleimg" src={data.image} alt="Cover Image" />}</a>
-            <h2 class="link my-0 py-0 text-3xl"><a href={`/${id}`}>{data.title}</a></h2>
-            <p class="text-xs pt-0 my-0 py-0">{data.date} • {data.bytes} • {data.type}</p>
+            <a href={`/${entry.id}`}>{entry.data.image && <img class="medarticleimg" src={entryPath(entry, entry.data.image)} alt="Cover Image" />}</a>
+            <h2 class="link my-0 py-0 text-3xl"><a href={`/${entry.id}`}>{entry.data.title}</a></h2>
+            <p class="text-xs pt-0 my-0 py-0">{entry.data.date} • {entry.data.bytes} • {entry.data.type}</p>
         </div>
     ))}
 </Base>
