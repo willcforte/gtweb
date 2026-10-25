@@ -61,7 +61,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
   <img src="/img/ru_shield.svg" alt="Description of SVG" class="w-24 sm:w-32">
 
   <!-- SMALL DESCRIPTION -->
-  <div class="text-center sm:text-left">
+  <div class="text-center sm:text-left lg:self-start lg:mt-[3px]">
     <h3 class="text-lg">
       I'm an undergrad robotics + AI researcher & Aresty Fellow at Rutgers' Honors College under <a href="https://pracsys.cs.rutgers.edu/">Prof. Kostas Bekris</a>.
       <br>
