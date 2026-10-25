@@ -4,6 +4,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 ---
 
 <!-- HERO -->
+<div class="asciibox">
 <div class="flex flex-col sm:grid sm:grid-cols-[auto_auto] sm:justify-center gap-4 sm:gap-8 items-center">
   <img
     src="/img/will_quad_sq.png"
@@ -43,6 +44,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
         </a> -->
     </div>
   </div>
+</div>
 </div>
 
 <div class="divider text-2xl mt-6">===&ensp;CURRENT STUFF&ensp;</div>

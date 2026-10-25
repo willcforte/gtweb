@@ -256,6 +256,61 @@ $rule: '';
     }
 }
 
+$hbar: '';
+$vbar: '';
+@for $i from 1 through 200 { $hbar: $hbar + '═'; }
+@for $i from 1 through 100 { $vbar: $vbar + '║\A'; }
+
+.asciibox {
+    position: relative;
+    padding: 2rem 2.5rem;
+
+    &::before, &::after, > *::before, > *::after {
+        font-size: 1.5rem;
+        position: absolute;
+        overflow: hidden;
+        white-space: pre;
+        line-height: normal;
+        pointer-events: none;
+    }
+
+    &::before {
+        content: "\2066" + $hbar + "╗\2069";
+        direction: rtl;
+        top: 0;
+        left: 1ch;
+        right: 0;
+        height: 1lh;
+    }
+
+    &::after {
+        content: "╚" + $hbar;
+        bottom: 0;
+        left: 0;
+        right: 1ch;
+        height: 1lh;
+    }
+
+    > *::before {
+        content: "╔\A" + $vbar;
+        top: 0;
+        left: 0;
+        bottom: 1lh;
+        width: 1ch;
+    }
+
+    > *::after {
+        content: $vbar + "╝";
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        top: 1lh;
+        right: 0;
+        bottom: 0;
+        width: 1ch;
+    }
+}
+
 .bg-cream {
     background-color: $cream;
 }
