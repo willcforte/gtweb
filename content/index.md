@@ -77,7 +77,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
 <div class="flex flex-col lg:flex-row gap-8 items-center">
     <a href="/robotics/quadruped">
-        <img src="media/quad_gif.gif" alt="Quadruped Prototype" class="w-full sm:w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 max-w-6xl min-w-[28rem] border-black border-r-8 border-b-8">
+        <img src="robotics/quadruped/media/quad_gif.gif" alt="Quadruped Prototype" class="w-full sm:w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 max-w-6xl min-w-[28rem] border-black border-r-8 border-b-8">
     </a>
     <div>
         <p class="text-lg mb-6">
@@ -95,7 +95,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
 <div class="flex flex-col lg:flex-row gap-8 items-center">
     <a href="/robotics/cufflink">
-        <img src="media/lowres_cufflinkgif.gif" alt="CuffLink Prototype" class="w-full sm:w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 max-w-6xl min-w-[28rem] border-black border-r-8 border-b-8">
+        <img src="robotics/cufflink/media/lowres_cufflinkgif.gif" alt="CuffLink Prototype" class="w-full sm:w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 max-w-6xl min-w-[28rem] border-black border-r-8 border-b-8">
     </a>
     <div>
         <p class="text-lg mb-6">
@@ -116,7 +116,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
 <div class="flex flex-col lg:flex-row gap-8 items-center">
     <a href="https://tubaa.dev/">
-        <img src="media/tormore.gif" alt="CFD simulation of toroidal propeller" class="w-full sm:w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 max-w-6xl min-w-[28rem] border-black border-r-8 border-b-8">
+        <img src="robotics/tubaa/media/tormore.gif" alt="CFD simulation of toroidal propeller" class="w-full sm:w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 max-w-6xl min-w-[28rem] border-black border-r-8 border-b-8">
     </a>
     <div>
         <p class="text-lg mb-6">
@@ -157,7 +157,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
 <!-- EDUCATION -->
 <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 mt-10 centerelement">
-<img src="media/RENGHON_V_RED_BLACK.svg" class="w-32 sm:w-32 mb-4 sm:mb-0 mr-6 centerelement">
+<img src="about/media/RENGHON_V_RED_BLACK.svg" class="w-32 sm:w-32 mb-4 sm:mb-0 mr-6 centerelement">
 <div class="text-center sm:text-left">
 <!-- Rutgers University—New Brunswick, c.o. '27 -->
 Rutgers University—New Brunswick
@@ -195,7 +195,7 @@ If you want to say hi or talk robotics, email me at willcforte@gmail.com.
 <!-- <div class="flex sm:flex-col md:flex-col lg:flex-row mb-10 centerelement">
     <div class="mr-8">
         <a href="/robotics/quadruped">
-            <img src="media/quad_canon_prone.JPG" alt="Quadruped Prototype v4 in Isometric Standing View" class="img border-black border-r-8 border-b-8" style="width: 40em; min-width: 15em;">
+            <img src="robotics/quadruped/media/quad_canon_prone.JPG" alt="Quadruped Prototype v4 in Isometric Standing View" class="img border-black border-r-8 border-b-8" style="width: 40em; min-width: 15em;">
         </a>
     </div>
     <div class="flex flex-col">
@@ -206,6 +206,6 @@ If you want to say hi or talk robotics, email me at willcforte@gmail.com.
 
 <!-- ### <span class="link centerelement">[Featured Project: DIY Quadruped Prototype](/robotics/quadruped) -->
 
-<!-- <a href="/robotics/quadruped">![Quadruped Beta Prototype](media/quadruped_v1.png){.img .border-black .border-r-8 .border-b-8}</a> -->
+<!-- <a href="/robotics/quadruped">![Quadruped Beta Prototype](robotics/quadruped/media/quadruped_v1.png){.img .border-black .border-r-8 .border-b-8}</a> -->
 
 <!-- <span class="centerelement">Over the summer of '23, I developed this robot with 12 servos, fully-actuated legs, and spare FTC parts from my teacher. It is controlled with the MuJoCo physics simulator.</span> -->
