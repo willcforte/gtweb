@@ -1,7 +1,3 @@
-// .latex {
-//     @import './assets/css/latex.scss';
-// }
-
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
@@ -22,15 +18,6 @@ $creamlight: #ebd8bf;
 
 @layer components {
 
-
-// :root {
-//     font-family: 'Fira Code', monospace;
-//     font-weight: 400;
-//     background-color: $cream;
-//     box-sizing: border-box;
-//     @apply text-lg;
-// }
-
 :root {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 500;
@@ -42,11 +29,6 @@ $creamlight: #ebd8bf;
 .robotomono {
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
-}
-
-.code {
-    font-family: 'Fira Code', monospace;
-    font-weight: 300;
 }
 
 .space {
@@ -69,10 +51,6 @@ $creamlight: #ebd8bf;
 
 .text-cream {
     color: $cream;
-}
-
-.text-creamlight {
-    color: $creamlight;
 }
 
 .fa-vertalign {
@@ -107,7 +85,7 @@ p {
     padding: 0.5rem 0 0.5rem 0;
 }
 
-p a, ol a, ul a, table a, th a, td a {
+p a, ol a, ul a, table a, th a, td a, .yesh {
     color: $green0;
     text-decoration: underline;
     text-decoration-style: dotted;
@@ -118,46 +96,11 @@ p a, ol a, ul a, table a, th a, td a {
     text-decoration: none;
 }
 
-.yesh { // yes highlight
-    color: $green0;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-skip-ink: none;
-    hover:text-blue-700;
-}
-
-// .link a {
-a:not(.noh) .yesh,
-h1 a .yesh,
-h2 a .yesh,
-h3 a .yesh {
-    color: $green0;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-skip-ink: none;
-    hover:text-blue-700;
-}
-
-// .link a:hover {
 a:not(.noh):hover .yesh,
 h1 a .yesh:hover,
 h2 a .yesh:hover,
 h3 a .yesh:hover {
     color: $green1;
-}
-
-.nuxt-link-exact-active {
-    color: $green0;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-skip-ink: none;
-}
-
-.linkall {
-    color: $green0;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-skip-ink: none;
 }
 
 blockquote {
@@ -177,10 +120,6 @@ table, th, td {
 
 h1 {
     @apply text-5xl;
-    margin-top: 0.67em;
-    /* margin-bottom reduced from 0.67em */
-    margin-bottom: 0.335em;
-
     font-family: 'Space Mono', monospace;
     font-weight: 600;
 
@@ -206,16 +145,6 @@ h3 {
 
     font-family: 'Space Mono', monospace;
     font-weight: 600;
-}
-
-h3-f {
-    @apply text-lg;
-    margin-top: 0.5em;
-    /* margin-bottom reduced from 0.5em */
-    margin-bottom: 0.5em;
-
-    font-family: 'Fira Code', monospace;
-    font-weight: 500;
 }
 
 h4 {
@@ -249,14 +178,6 @@ h6 {
     font-weight: 500;
 }
 
-.text-md {
-    @apply text-base;
-}
-
-.zeromt {
-    margin-top: 0 !important;
-}
-
 .img {
     width: 40em;
     display: block;
@@ -283,11 +204,6 @@ h6 {
     display: block;
 }
 
-.medlgarticleimg {
-    width: 45em;
-    display: block;
-}
-
 .largeimg {
     width: 65em;
     display: block;
@@ -302,22 +218,12 @@ h6 {
     margin-right: auto;
 }
 
-content {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
 footer {
     background-color: $gray0;
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-top: auto;
-}
-
-.footerlogo {
-    height: 20em;
 }
 
 .footertext {
@@ -329,15 +235,6 @@ footer {
     display: flex;
     justify-content: center; 
     align-items: center;
-}
-
-.centerelement2 {
-    display: flex;
-    justify-content: center;
-}
-
-.bg-gray0 {
-    background-color: $gray0;
 }
 
 .bg-cream {
