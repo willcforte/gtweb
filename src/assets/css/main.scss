@@ -256,59 +256,10 @@ $rule: '';
     }
 }
 
-$hbar: '';
-$vbar: '';
-@for $i from 1 through 200 { $hbar: $hbar + '═'; }
-@for $i from 1 through 100 { $vbar: $vbar + '║\A'; }
-
 .asciibox {
-    position: relative;
-    padding: 2rem 2.5rem;
-
-    &::before, &::after, > *::before, > *::after {
-        font-size: 1.5rem;
-        position: absolute;
-        overflow: hidden;
-        white-space: pre;
-        line-height: normal;
-        pointer-events: none;
-    }
-
-    &::before {
-        content: "\2066" + $hbar + "╗\2069";
-        direction: rtl;
-        top: 0;
-        left: 1ch;
-        right: 0;
-        height: 1lh;
-    }
-
-    &::after {
-        content: "╚" + $hbar;
-        bottom: 0;
-        left: 0;
-        right: 1ch;
-        height: 1lh;
-    }
-
-    > *::before {
-        content: "╔\A" + $vbar;
-        top: 0;
-        left: 0;
-        bottom: 1lh;
-        width: 1ch;
-    }
-
-    > *::after {
-        content: $vbar + "╝";
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        top: 1lh;
-        right: 0;
-        bottom: 0;
-        width: 1ch;
-    }
+    padding: calc(2rem - 10px) calc(2.5rem - 10px);
+    border: 10px solid transparent;
+    border-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30'><path fill-rule='evenodd' d='M.408.408H29.592V29.592H.408ZM2.304 2.304V27.696H27.696V2.304ZM5.376 5.376H24.624V24.624H5.376ZM7.272 7.272V22.728H22.728V7.272Z'/></svg>") 10 stretch;
 }
 
 .bg-cream {
