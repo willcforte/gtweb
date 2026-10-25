@@ -34,11 +34,8 @@ const links = [
                 <h1 class="flex text-center  justify-center text-7xl mb-6 mt-8"><a href="/" class="robotomono noh"><img src={logo.src} alt="wcf" class="inlinesvg">/GTWeb</a></h1>
                 <nav class="grid place-items-center">
                     <ul class="float-left flex flex-wrap flex-col md:flex-row text-3xl md:text-lg space list-none whitespace-nowrap">
-                        {links.map(([href, label], i) => (
-                            <>
-                                {i > 0 && <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>}
-                                <li class="float-left px-1 lg:px-2 m-0"><a href={href} class:list={{ 'router-link-exact-active': path === href }}>{label}</a></li>
-                            </>
+                        {links.map(([href, label]) => (
+                            <li class="float-left px-1 lg:px-2 m-0"><a href={href} class:list={{ 'router-link-exact-active': path === href }}>{label}</a></li>
                         ))}
                     </ul>
                 </nav>

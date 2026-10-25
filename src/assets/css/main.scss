@@ -79,6 +79,22 @@ $creamlight: #ebd8bf;
     vertical-align: middle;
 }
 
+nav li + li::before {
+    display: none;
+    content: '|';
+    padding-right: 0.5rem;
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+
+    @media (min-width: 48rem) {
+        display: inline;
+    }
+
+    @media (min-width: 64rem) {
+        padding-right: 1rem;
+    }
+}
+
 header .router-link-exact-active {
     color: $green1 !important;
     font-weight: bold;
