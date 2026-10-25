@@ -5,15 +5,15 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
 <!-- HERO -->
 <div class="flex flex-col sm:flex-row px-4 sm:px-20 items-center sm:items-start justify-center sm:justify-between">
-  <img 
-    src="/img/will_quad_sq.png" 
+  <img
+    src="/img/will_quad_sq.png"
     alt="Profile picture"
     class="w-40 sm:w-48 lg:w-52 border-black border-r-8 border-b-8 mb-4 sm:mb-0 mt-4 sm:mt-0"
   >
   <div class="sm:ml-8 flex-grow sm:basis-2/3">
     <h2 class="mt-0 mb-4 text-2xl sm:text-4xl lg:text-4xl font-bold leading-snug">
-      I'm 
-      <span class="text-cream px-3 leading-tight italic bg-black hover:bg-green-900">Will C. Forte</span>, 
+      I'm
+      <span class="text-cream px-3 leading-tight italic bg-black hover:bg-green-900">Will C. Forte</span>,
       a mechanical & computational roboticist.
     </h2>
     <h3 class="text-lg sm:text-xl lg:text-2xl font-semibold my-2 leading-normal">
@@ -21,23 +21,23 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
     </h3>
     <div class="flex flex-wrap gap-3 sm:gap-4 mt-4 justify-start">
         <!-- Buttons -->
-        <a href="/pdf/cv25.pdf" 
+        <a href="https://resume.willcforte.com"
            class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-solid fa-file-pdf"></i> CV
         </a>
-        <a href="https://www.linkedin.com/in/willcforte/" 
+        <a href="https://www.linkedin.com/in/willcforte/"
            class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-brands fa-linkedin"></i>
         </a>
-        <a href="https://bsky.app/profile/willcforte.com" 
+        <a href="https://bsky.app/profile/willcforte.com"
            class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-brands fa-bluesky"></i>
         </a>
-        <a href="mailto:willcforte@gmail.com" 
+        <a href="mailto:willcforte@gmail.com"
            class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-solid fa-paper-plane"></i> Contact me!
         </a>
-        <a href="/articles" 
+        <a href="/articles"
            class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-solid fa-square-rss"></i> Blog
         </a>
@@ -133,11 +133,11 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 <h3 class="mb-4"><a href="https://www.youtube.com/embed/h3W5pSzrWO8">MuJoCo Simulator Tutorial</a></h3>
 
 <div class="flex flex-col lg:flex-row gap-8 items-center">
-    <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/h3W5pSzrWO8" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/h3W5pSzrWO8"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
         class="w-full sm:w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 max-w-6xl min-w-[28rem] border-black border-r-8 border-b-8">
     </iframe>
@@ -174,7 +174,7 @@ Engineering Honors Academy Scholar
 <br>
 
 <!-- CALLS TO ACTION -->
-If you want to say hi or talk robotics, email me at willcforte@gmail.com.
+If you want to say hi or talk robotics, email me at <willcforte@gmail.com>.
 
 <!-- <div class="text-center my-10">
   <a href="/articles" class="bg-black text-white px-6 py-3 text-xl space italic shadow-xl hover:bg-gray-800 inline-block mb-4 noh">
@@ -187,7 +187,6 @@ If you want to say hi or talk robotics, email me at willcforte@gmail.com.
 </div> -->
 
 <br>
-
 
 <!-- <h3><span class="link"><a href="/robotics/quadruped">Electromyography Assitive Device: The Cuff-Link</a></span></h3> -->
 <!-- <h4>LCFAQ: Low-Cost Fully-Actuated Quadruped</h4> -->
