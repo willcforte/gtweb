@@ -55,12 +55,12 @@ Books
 
 Programs
 
-* <span class="link">[Drake](https://drake.mit.edu/)</span>
-* <span class="link">[Isaac Sim](https://developer.nvidia.com/isaac/sim)</span>
+* [Drake](https://drake.mit.edu/)
+* [Isaac Sim](https://developer.nvidia.com/isaac/sim)
 
 ## Past Success
 
-* <span class="link">[HKUST ELEC5660: Introduction to Aerial Robots](https://gaowenliang.github.io/HKUST-ELEC5660-Introduction-to-Aerial-Robots/)</span> (lost notes)
+* [HKUST ELEC5660: Introduction to Aerial Robots](https://gaowenliang.github.io/HKUST-ELEC5660-Introduction-to-Aerial-Robots/) (lost notes)
 
 <br>
 

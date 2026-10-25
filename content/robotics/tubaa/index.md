@@ -37,7 +37,7 @@ Visit Our Website <i class="fa-sharp fa-solid fa-chevron-right"></i>
 
 <div class="bg-cream-dark-accent border-4 border-black px-3 py-2 mb-6">
 
-### <span class="link text-2xl">[Toroidal and Uneven Blade Aeroacoustic Analysis (TUBAA)](https://tubaa.dev/)</span> <span class="float-right m-0">2023</span>
+### <span class="text-2xl">[Toroidal and Uneven Blade Aeroacoustic Analysis (TUBAA)](https://tubaa.dev/)</span> <span class="float-right m-0">2023</span>
 
 Nikhil Vijay\*, **Will C. Forte**\*, Ishan Gajjar\*, Sarvesh Patham\*, Syon Gupta\*, Sahil Shah\*, Prathamesh Trivedi\*, Rishit Arora\*
 
@@ -45,9 +45,9 @@ Nikhil Vijay\*, **Will C. Forte**\*, Ishan Gajjar\*, Sarvesh Patham\*, Syon Gupt
 
 *The Academy for Math, Science, and Engineering——Rockaway, NJ, USA
 
-†<span class="link">[Flow Physics & Aeroacoustics Laboratory](https://fpal.stanford.edu/)</span>, Stanford University——Stanford, CA, USA
+†[Flow Physics & Aeroacoustics Laboratory](https://fpal.stanford.edu/), Stanford University——Stanford, CA, USA
 
-‡<span class="link">[Computational Flow Physics and Aeroacoustics Laboratory](https://faculty.engineering.ucdavis.edu/slee/research/)</span>, UC Davis——Davis, CA, USA
+‡[Computational Flow Physics and Aeroacoustics Laboratory](https://faculty.engineering.ucdavis.edu/slee/research/), UC Davis——Davis, CA, USA
 
 <a href="https://tubaa.dev/" target="_blank"><div class="bg-black ml-1 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-up-right-from-square fa-vertalign"></i> View Website</div></a> <a href="https://tubaa.dev/assets/VijayEtAl_2023_AcousticAnalysis.pdf" target="_blank"><div class="bg-black px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-file-lines fa-vertalign"></i> View Manuscript</div></a>
 

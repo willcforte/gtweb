@@ -8,7 +8,7 @@ type: "biology"
 status: "done"
 ---
 
-## <div class="link">[View Video](https://drive.google.com/file/d/1gMaA7KSYBmabOV5tulFCJlSb4RaeIVkm/view?usp=sharing)</div>
+## [View Video](https://drive.google.com/file/d/1gMaA7KSYBmabOV5tulFCJlSb4RaeIVkm/view?usp=sharing)
 
 Created for AP Biology Unit 4 - Communication and Cell Cycle.
 
@@ -17,8 +17,6 @@ Created for AP Biology Unit 4 - Communication and Cell Cycle.
 <br>
 
 References:
-
-<div class="link">
 
 1. $1.\:$[PubChem - Gibberellin A12](https://pubchem.ncbi.nlm.nih.gov/compound/Gibberellin-A12)
 2. $2.\:$[PubChem - ent-Kaurene](https://pubchem.ncbi.nlm.nih.gov/compound/ent-Kaurene)
@@ -32,5 +30,3 @@ References:
 10. $10.\:$[funRiceGenes (I can't believe that's an actual website name) - OsKS2 Information](https://funricegenes.github.io/KS2~OsKS2~OsKSL2/)
 11. $11.\:$[RAP-DB - OsKS2 Nucleotide Sequence](https://rapdb.dna.affrc.go.jp/locus/?name=Os04g0612000)
 12. $12.\:$[Ebony Coveney - Gibberellins: Regulators of Plant Height and Seed Germination (Figure 20.4)](https://slideplayer.com/slide/3852405/)
-
-</div>

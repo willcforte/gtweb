@@ -26,9 +26,9 @@ const parent = dir.includes('/') ? `/browse/${dir.slice(0, dir.lastIndexOf('/'))
 <Base title={`content/${dir}`}>
     <h1 class="mb-4">content/{dir && `${dir}/`}</h1>
     <ul class="list-none">
-        {dir && <li><span class="link"><a href={parent}>../</a></span></li>}
+        {dir && <li><a href={parent}>../</a></li>}
         {items.map(({ name, href, title }) => (
-            <li><span class="link"><a href={href}>{name}</a></span>{title && <span> — {title}</span>}</li>
+            <li><a href={href}>{name}</a>{title && <span> — {title}</span>}</li>
         ))}
     </ul>
 </Base>
