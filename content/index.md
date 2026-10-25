@@ -37,10 +37,10 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
            class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-solid fa-paper-plane"></i> Contact me!
         </a>
-        <a href="/articles"
+        <!-- <a href="/articles"
            class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-solid fa-square-rss"></i> Blog
-        </a>
+        </a> -->
     </div>
   </div>
 </div>
