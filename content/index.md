@@ -9,7 +9,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
   <img
     src="/img/will_quad_sq.png"
     alt="Profile picture"
-    class="w-40 sm:w-52 lg:w-64 border-black border-r-8 border-b-8"
+    class="w-40 sm:w-52 lg:w-64 dither"
   >
   <div class="text-center sm:text-left">
     <h2 class="mt-0 mb-4 text-2xl lg:text-4xl font-bold leading-snug">
