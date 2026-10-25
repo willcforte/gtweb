@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const articles = (await getCollection('content', (e) => e.id.startsWith('articles/') && e.data.status === 'done'))
+    .sort((a, b) => (a.data.unix! < b.data.unix! ? 1 : -1));
+---
+<Base>
+    <h1 class="mb-4">Logs</h1>
+
+    Here are some work-in-progress engineering projects and trains of thought.  <span class="link"><a href="/feed.rss">RSS Feed</a></span>
+
+    <h4>View my finished projects <span class="link"><a href="/robotics" class="yesh">here</a></span>.</h4>
+
+    {articles.map(({ id, data }) => (
+        <div class="mb-3">
+            <a href={`/${id}`}>{data.image && <img class="medarticleimg" src={data.image} alt="Cover Image" />}</a>
+            <h2 class="link my-0 py-0 text-3xl"><a href={`/${id}`}>{data.title}</a></h2>
+            <p class="text-xs pt-0 my-0 py-0">{data.date} • {data.bytes} • {data.type}</p>
+        </div>
+    ))}
+</Base>
