@@ -16,9 +16,10 @@ This is my personal website where I share things that interest me! It's been a c
 
 ### [Research](https://willcforte.com/research)
 
-Requires node.js `>=22.23.4`.
+Node.js 24 comes from the Nix flake (`nix develop`, or automatically with direnv).
 
 ```sh
+nix develop
 npm install
 npm run dev
 npm run new -- articles/my-post/  # scaffold content/articles/my-post/index.md

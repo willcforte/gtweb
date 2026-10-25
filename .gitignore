@@ -116,3 +116,6 @@ dist
 
 # Astro
 .astro
+
+# Nix
+.direnv
