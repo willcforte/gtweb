@@ -246,6 +246,7 @@ $rule: '';
 
 .divider {
     display: flex;
+    width: round(down, 100%, 1ch);
     white-space: pre;
 
     &::after {
@@ -257,6 +258,7 @@ $rule: '';
 }
 
 .asciibox {
+    width: round(down, 100%, 0.9rem);
     padding: calc(2rem - 10px) calc(2.5rem - 10px);
     border: 10px solid transparent;
     border-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30'><path fill-rule='evenodd' d='M.408.408H29.592V29.592H.408ZM2.304 2.304V27.696H27.696V2.304ZM5.376 5.376H24.624V24.624H5.376ZM7.272 7.272V22.728H22.728V7.272Z'/></svg>") 10 stretch;
