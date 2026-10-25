@@ -37,7 +37,7 @@ const links = [
                     <label for="navtoggle" class="lg:hidden font-bold text-2xl cursor-pointer"><i class="fa-solid fa-bars"></i> menu</label>
                     <ul class="hidden peer-checked:flex lg:flex flex-wrap flex-col lg:flex-row items-center mt-2 lg:mt-0 text-2xl lg:text-lg font-bold list-none whitespace-nowrap">
                         {links.map(([href, label]) => (
-                            <li class="px-1"><a href={href} aria-current={path === href ? 'page' : undefined}>{label}</a></li>
+                            <li class="px-1"><a href={href} class="no-underline" aria-current={path === href ? 'page' : undefined}>{label}</a></li>
                         ))}
                     </ul>
                 </nav>
