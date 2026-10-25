@@ -53,7 +53,7 @@ _Introduction to the MuJoCo Simulator_, Rutgers University, [N2E Robotics Club](
 
 <!-- <a href="" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-video fa-vertalign"></i> Watch Video</div></a> -->
 
-<a href="/pdf/mujoco_intro_workshop.pdf" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-chalkboard fa-vertalign"></i> View Slides</div></a> <a href="https://github.com/willcforte/Introduction-to-MuJoCo-Workshop" target="_blank"><div class="bg-black ml-1 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-code fa-vertalign"></i> View Code</div></a>
+<a href="mujoco_intro_workshop.pdf" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-chalkboard fa-vertalign"></i> View Slides</div></a> <a href="https://github.com/willcforte/Introduction-to-MuJoCo-Workshop" target="_blank"><div class="bg-black ml-1 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-code fa-vertalign"></i> View Code</div></a>
 
 </div>
 
