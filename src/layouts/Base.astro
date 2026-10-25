@@ -1,0 +1,67 @@
+---
+import 'katex/dist/katex.min.css';
+import '../../assets/css/tailwind.css';
+import '../../assets/css/main.scss';
+import logo from '../../assets/img/wcf_rast_c.svg';
+
+const { title, description } = Astro.props;
+const path = Astro.url.pathname.replace(/(.)\/$/, '$1');
+const links = [
+    ['/', 'home'],
+    ['/about', 'about'],
+    ['/robotics', 'engineering'],
+    ['/gallery', 'gallery'],
+    ['/articles', 'logs'],
+    ['/research', 'research'],
+    ['/self-study', 'self-study'],
+];
+---
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {title && <title>{title}</title>}
+        {description && <meta name="description" content={description} />}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+        <link rel="preload" href={logo.src} as="image" />
+        <link rel="me" href="https://sigmoid.social/@willcforte" />
+    </head>
+    <body>
+        <div class="xl:px-64 lg:px-64 md:px-24 px-0 w-full mb-10">
+            <header>
+                <h1 class="flex text-center  justify-center text-7xl mb-6 mt-8"><a href="/" class="robotomono noh"><img src={logo.src} alt="wcf" class="inlinesvg">/GTWeb</a></h1>
+                <nav class="grid place-items-center">
+                    <ul class="float-left flex flex-wrap flex-col md:flex-row text-3xl md:text-lg space list-none whitespace-nowrap">
+                        {links.map(([href, label], i) => (
+                            <>
+                                {i > 0 && <h4 class="float-left px-1 lg:px-2 m-0 invisible md:visible"> | </h4>}
+                                <li class="float-left px-1 lg:px-2 m-0"><a href={href} class:list={{ 'router-link-exact-active': path === href }}>{label}</a></li>
+                            </>
+                        ))}
+                    </ul>
+                </nav>
+            </header>
+            <div class="mt-10">
+                <slot />
+            </div>
+        </div>
+        <footer class="p-5 w-full">
+            <div class="mb-2 flex justify-center">
+                <span class="spacei footertext">wcf</span><span class="text-4xl footertext robotomono noh">/GTWeb</span>
+            </div>
+            <div class="mt-5 flex justify-center">
+                <a href="https://www.linkedin.com/in/willcforte/"><i class="fa-brands fa-linkedin w-4 inline-block mx-1 text-white"></i></a>
+                <a href="https://www.youtube.com/@willcforte"><i class="fa-brands fa-youtube w-4 inline-block mx-1 text-white"></i></a>
+                <a href="https://github.com/willcforte"><i class="fa-brands fa-github w-4 inline-block mx-1 text-white"></i></a>
+                <a href="https://bsky.app/profile/willcforte.com"><i class="fa-brands fa-bluesky w-4 inline-block mx-1 text-white"></i></a>
+            </div>
+            <div class="mt-5 flex justify-center text-white italic">
+                MADE FROM SCRATCH / Will C. Forte © 2025
+            </div>
+            <div class="mt-1 flex justify-center text-white italic whitespace-pre">
+                CONTACT @ <a href="mailto:willcforte@gmail.com" class="link noh">willcforte (at) gmail.com</a>
+            </div>
+        </footer>
+    </body>
+</html>
