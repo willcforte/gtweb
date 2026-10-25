@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-@each $weight, $name in (500: 'Medium', 700: 'Bold') {
+@each $weight, $name in (500: 'Medium', 600: 'SemiBold', 700: 'Bold') {
     @each $style, $suffix in (normal: '', italic: 'Italic') {
         @font-face {
             font-family: 'Ioskeley Mono';
@@ -137,7 +137,7 @@ h2 {
     /* margin-bottom reduced from 0.83em */
     margin-bottom: 0.415em;
 
-    font-family: 'Space Mono', monospace;
+    font-family: 'Ioskeley Mono', monospace;
     font-weight: 600;
 }
 
@@ -147,7 +147,7 @@ h3 {
     /* margin-bottom reduced from 0.5em */
     margin-bottom: 0em;
 
-    font-family: 'Space Mono', monospace;
+    font-family: 'Ioskeley Mono', monospace;
     font-weight: 600;
 }
 
