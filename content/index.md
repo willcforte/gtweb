@@ -100,9 +100,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
     <div>
         <p class="text-lg mb-6 lg:pt-0 lg:-mt-2">
         The Cuff-Link™ allows amputees and those suffering from nerve damage to control a computer using nothing but the muscles in their arm. A similar design cost Meta <a href="https://www.theverge.com/2019/9/23/20881032/facebook-ctrl-labs-acquisition-neural-interface-armband-ar-vr-deal">$500 million</a>. It cost us $150.
-        <br>
-        <br>
-        We presented the project in front of a crowd of 200+ at the Academy of Math, Science, & Engineering 2024 Showcase.
+        We presented the project in front of a crowd of 200+ at the AMSE 2024 Senior Showcase.
         </p>
         <a href="/robotics/cufflink" class="bg-black text-cream px-4 py-2 text-2xl shadow-xl hover:bg-green-900 ml-0 md:ml-2 whitespace-nowrap noh">
         Read the Proposal <i class="fa-sharp fa-solid fa-chevron-right"></i>
