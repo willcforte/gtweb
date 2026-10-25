@@ -73,8 +73,8 @@ nav li + li::before {
     }
 }
 
-header .router-link-exact-active {
-    color: $green1 !important;
+header [aria-current='page'] {
+    color: $green1;
     font-weight: bold;
     font-style: italic;
 }
