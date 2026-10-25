@@ -29,10 +29,10 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
            class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-brands fa-linkedin"></i>
         </a>
-        <a href="https://bsky.app/profile/willcforte.com"
+        <!-- <a href="https://bsky.app/profile/willcforte.com"
            class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-brands fa-bluesky"></i>
-        </a>
+        </a> -->
         <a href="mailto:willcforte@gmail.com"
            class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-solid fa-paper-plane"></i> Contact me!
