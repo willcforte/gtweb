@@ -16,9 +16,9 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
       <a href="/about" class="noh"><span class="text-cream px-3 leading-tight italic bg-black hover:bg-green-900">Will C. Forte</span></a>,
       <span class="inline-block text-balance">engineer & roboticist.</span>
     </h2>
-    <h3 class="text-lg sm:text-xl lg:text-2xl font-semibold my-2 leading-normal">
+    <span class="text-lg sm:text-xl lg:text-2xl font-semibold my-2 leading-normal">
       Welcome to my project site!
-    </h3>
+    </span>
     <div class="flex flex-wrap gap-3 sm:gap-4 mt-4 justify-center sm:justify-start">
         <!-- Buttons -->
         <a href="https://resume.willcforte.com"
@@ -50,10 +50,10 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
   <!-- SMALL DESCRIPTION -->
   <div class="text-center sm:text-left">
-    <h3 class="text-lg">
+    <span class="text-lg">
       I'm the President & Founder of <a href="https://rudynamics.org">Rutgers Dynamics</a>, an extremely-ambitious student-run robot dog & humanoid lab.
       Part of a collaboration <a href="https://esra.bot">democratizing legged robotics</a> with friends from Caltech, Columbia, Rutgers, and Berkeley.
-    </h3>
+    </span>
   </div>
 </div>
 
@@ -62,18 +62,18 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
   <!-- SMALL DESCRIPTION -->
   <div class="text-center sm:text-left lg:self-start lg:mt-[3px]">
-    <h3 class="text-lg">
+    <p class="text-lg">
       I'm an undergrad robotics + AI researcher & Aresty Fellow at Rutgers' Honors College under <a href="https://pracsys.cs.rutgers.edu/">Prof. Kostas Bekris</a>.
       <br>
       Aside from my B.S. in MechE, I was a PI on a <a href="https://www.lspace.asu.edu/proposal-writing-academy">NASA NPWEE</a> grant proposal.
-    </h3>
+    </p>
   </div>
 </div>
 
 <!-- FEATURED PROJECTS -->
 <div class="my-8">
 
-<h3 class="mb-4"><a href="/robotics/quadruped">LCFAQ: A Low-Cost, Fully-Actuated Quadruped</a> (2023)</h3>
+<p class="text-lg sm:text-xl lg:text-2xl font-semibold mb-4"><a href="/robotics/quadruped">LCFAQ: A Low-Cost, Fully-Actuated Quadruped</a> (2023)</p>
 
 <div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:items-center">
     <a href="/robotics/quadruped">
@@ -91,7 +91,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
 <br>
 
-<h3 class="mb-4"><a href="/robotics/cufflink">Cuff-Link: An Electromyographic Input Device</a> (2024)</h3>
+<p class="text-lg sm:text-xl lg:text-2xl font-semibold mb-4"><a href="/robotics/cufflink">Cuff-Link: An Electromyographic Input Device</a> (2024)</p>
 
 <div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:items-center">
     <a href="/robotics/cufflink">
