@@ -154,7 +154,7 @@ table, th, td {
     padding-bottom: 3px;
 }
 
-@import 'tailwind.scss';
+@reference './tailwind.css';
 
 h1 {
     @apply text-5xl;
