@@ -22,11 +22,11 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
     <div class="flex flex-wrap gap-3 sm:gap-4 mt-4 justify-center sm:justify-start">
         <!-- Buttons -->
         <a href="https://resume.willcforte.com"
-           class="bg-black text-cream space px-4 py-2 text-lg lg:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
+           class="bg-black text-cream space px-4 py-2 text-lg lg:text-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-solid fa-file-pdf"></i> CV
         </a>
         <a href="https://www.linkedin.com/in/willcforte/"
-           class="bg-black text-cream space px-4 py-2 text-lg lg:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
+           class="bg-black text-cream space px-4 py-2 text-lg lg:text-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-brands fa-linkedin"></i>
         </a>
         <!-- <a href="https://bsky.app/profile/willcforte.com"
@@ -34,7 +34,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
           <i class="fa-brands fa-bluesky"></i>
         </a> -->
         <a href="mailto:willcforte@gmail.com"
-           class="bg-black text-cream space px-4 py-2 text-lg lg:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
+           class="bg-black text-cream space px-4 py-2 text-lg lg:text-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-solid fa-paper-plane"></i> Contact me!
         </a>
         <!-- <a href="/articles"
