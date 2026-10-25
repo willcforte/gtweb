@@ -25,6 +25,10 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
            class="bg-black text-cream font-bold px-4 py-2 text-lg lg:text-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-solid fa-file-pdf"></i> CV
         </a>
+        <a href="mailto:will@willcforte.com"
+           class="bg-black text-cream font-bold px-4 py-2 text-lg lg:text-xl hover:bg-green-900 whitespace-nowrap noh">
+          <i class="fa-solid fa-paper-plane"></i> Email
+        </a>
         <a href="https://www.linkedin.com/in/willcforte/"
            class="bg-black text-cream font-bold px-4 py-2 text-lg lg:text-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-brands fa-linkedin"></i>
@@ -33,10 +37,6 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
            class="bg-black text-cream space px-4 py-2 text-lg lg:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-brands fa-bluesky"></i>
         </a> -->
-        <a href="mailto:willcforte@gmail.com"
-           class="bg-black text-cream font-bold px-4 py-2 text-lg lg:text-xl hover:bg-green-900 whitespace-nowrap noh">
-          <i class="fa-solid fa-paper-plane"></i> Contact me!
-        </a>
         <!-- <a href="/articles"
            class="bg-black text-cream space px-4 py-2 text-lg lg:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-solid fa-square-rss"></i> Blog
