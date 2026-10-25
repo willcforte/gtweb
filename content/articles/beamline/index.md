@@ -14,7 +14,7 @@ GRAPHS $\implies$ Graphene Rotational Acceleration Particle Hall Sensor
 
 <!-- ## <div class="link">[View Original PDF](media/beamline_for_schools.pdf)</div> -->
 
-## <div class="link"><a href="media/beamline_for_schools.pdf" target="_blank" download="beamline_for_schools.pdf" type="application/pdf">View Original PDF</a></div>
+## <div class="link"><a href="media/beamline_for_schools.pdf" target="_blank" type="application/pdf">View Original PDF</a></div>
 
 ### Abstract:
 
