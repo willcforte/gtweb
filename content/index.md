@@ -51,8 +51,8 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
   <!-- SMALL DESCRIPTION -->
   <div class="text-center sm:text-left">
     <h3 class="text-lg">
-      I'm the President & Founder of <a href="https://rudynamics.vercel.app/">Rutgers Dynamics</a>, an extremely-ambitious student-run robot dog & humanoid lab.
-      Part of a collaboration <a href="https://ccbr-humanoid.github.io/wiki/docs/home/">democratizing legged robotics</a> with friends from Caltech, Columbia, Rutgers, and Berkeley.
+      I'm the President & Founder of <a href="https://rudynamics.org">Rutgers Dynamics</a>, an extremely-ambitious student-run robot dog & humanoid lab.
+      Part of a collaboration <a href="https://esra.bot">democratizing legged robotics</a> with friends from Caltech, Columbia, Rutgers, and Berkeley.
     </h3>
   </div>
 </div>
