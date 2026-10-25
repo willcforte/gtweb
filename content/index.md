@@ -4,7 +4,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 ---
 
 <!-- HERO -->
-<div class="flex flex-col sm:grid sm:grid-cols-[auto_1fr] gap-4 sm:gap-8 items-center">
+<div class="flex flex-col sm:grid sm:grid-cols-[auto_auto] sm:justify-center gap-4 sm:gap-8 items-center">
   <img
     src="/img/will_quad_sq.png"
     alt="Profile picture"
@@ -14,7 +14,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
     <h2 class="mt-0 mb-4 text-2xl lg:text-4xl font-bold leading-snug">
       I'm
       <a href="/about" class="noh"><span class="text-cream px-3 leading-tight italic bg-black hover:bg-green-900">Will C. Forte</span></a>,
-      <span class="inline-block text-balance">engineer & roboticist.</span>
+      <span class="block text-balance">engineer & roboticist.</span>
     </h2>
     <span class="text-lg sm:text-xl lg:text-2xl font-semibold my-2 leading-normal">
       Welcome to my project site!
