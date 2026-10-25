@@ -64,12 +64,8 @@ nav li + li::before {
     font-family: 'Fira Code', monospace;
     font-weight: 500;
 
-    @media (min-width: 48rem) {
-        display: inline;
-    }
-
     @media (min-width: 64rem) {
-        padding-right: 1rem;
+        display: inline;
     }
 }
 

@@ -31,11 +31,13 @@ const links = [
     <body>
         <div class="box-content max-w-[60rem] mx-auto px-4 sm:px-8 mb-10">
             <header>
-                <h1 class="flex text-center  justify-center text-7xl mb-6 mt-8"><a href="/" class="robotomono noh"><img src={logo.src} alt="wcf" class="inlinesvg">/GTWeb</a></h1>
+                <h1 class="flex text-center  justify-center text-5xl sm:text-7xl mb-6 mt-8"><a href="/" class="robotomono noh"><img src={logo.src} alt="wcf" class="inlinesvg">/GTWeb</a></h1>
                 <nav class="grid place-items-center">
-                    <ul class="float-left flex flex-wrap flex-col md:flex-row text-3xl md:text-lg space list-none whitespace-nowrap">
+                    <input type="checkbox" id="navtoggle" class="peer sr-only">
+                    <label for="navtoggle" class="lg:hidden space text-2xl cursor-pointer"><i class="fa-solid fa-bars"></i> menu</label>
+                    <ul class="hidden peer-checked:flex lg:flex flex-wrap flex-col lg:flex-row items-center mt-2 lg:mt-0 text-2xl lg:text-lg space list-none whitespace-nowrap">
                         {links.map(([href, label]) => (
-                            <li class="px-1 lg:px-2"><a href={href} aria-current={path === href ? 'page' : undefined}>{label}</a></li>
+                            <li class="px-1"><a href={href} aria-current={path === href ? 'page' : undefined}>{label}</a></li>
                         ))}
                     </ul>
                 </nav>
