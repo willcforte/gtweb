@@ -16,7 +16,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
       <a href="/about" class="noh"><span class="space text-cream px-3 leading-tight whitespace-nowrap italic bg-black hover:bg-green-900">Will C. Forte</span></a>,
       <span class="block text-balance">engineer & roboticist.</span>
     </h2>
-    <span class="text-lg sm:text-xl lg:text-2xl font-semibold my-2 leading-normal">
+    <span class="text-lg sm:text-xl lg:text-2xl font-bold my-2 leading-normal">
       Welcome to my project site!
     </span>
     <div class="flex flex-wrap gap-3 sm:gap-4 mt-4 justify-center sm:justify-start">
@@ -46,19 +46,19 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 </div>
 
 <div class="flex flex-col sm:grid sm:grid-cols-[auto_1fr] gap-4 sm:gap-8 items-center my-10">
-  <img src="/img/rud.png" alt="Description of SVG" class="w-24 sm:w-32">
+  <img src="/img/rud.png" alt="Description of SVG" class="w-18 sm:w-26">
 
   <!-- SMALL DESCRIPTION -->
   <div class="text-center sm:text-left">
     <span class="text-lg">
       I'm the President & Founder of <a href="https://rudynamics.org">Rutgers Dynamics</a>, an extremely-ambitious student-run robot dog & humanoid lab.
-      Part of a collaboration <a href="https://esra.bot">democratizing legged robotics</a> with friends from Caltech, Columbia, Rutgers, and Berkeley.
+      Part of a <a href="https://esra.bot">collaboration</a> democratizing legged robotics with friends from Caltech, Columbia, Virginia Tech, etc.
     </span>
   </div>
 </div>
 
 <div class="flex flex-col sm:grid sm:grid-cols-[auto_1fr] gap-4 sm:gap-8 items-center my-10">
-  <img src="/img/ru_shield.svg" alt="Description of SVG" class="w-24 sm:w-32">
+  <img src="/img/ru_shield.svg" alt="Description of SVG" class="w-18 sm:w-26">
 
   <!-- SMALL DESCRIPTION -->
   <div class="text-center sm:text-left lg:self-start lg:mt-[3px]">
@@ -69,6 +69,8 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
     </p>
   </div>
 </div>
+
+<div class="text-2xl">===&emsp;PAST WORK&emsp;=====================================</div>
 
 <!-- FEATURED PROJECTS -->
 <div class="my-8">
