@@ -17,7 +17,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
       <span class="inline-block text-balance">engineer & roboticist.</span>
     </h2>
     <h3 class="text-lg sm:text-xl lg:text-2xl font-semibold my-2 leading-normal">
-      <i>Welcome to my self-coded website!</i>
+      Welcome to my project site!
     </h3>
     <div class="flex flex-wrap gap-3 sm:gap-4 mt-4 justify-center sm:justify-start">
         <!-- Buttons -->
