@@ -11,7 +11,7 @@ description: "About Will C. Forte, engineering student"
 
 I'm Will C. Forte, a mechanical engineering student and undergraduate researcher.
 
-![Me with quadruped robot](/img/me/me_with_quadruped.jpg){.medimg}
+![Me with quadruped robot](/img/me/me_with_quadruped.jpg){.smallimg}
 
 <!-- ![Me drilling carbon fiber](DSC09626.jpg){.smallimg} -->
 
@@ -25,7 +25,7 @@ Since high school, I've been learning the mechanical, electrical, CS, and mathem
 
 ## Contact Me
 
-#### If you'd like to discuss any of my projects or just say hello, please contact me at [willcforte@gmail.com](mailto:willcforte@gmail.com). I'm very open to research opportunities and collaboration.
+#### If you'd like to discuss any of my projects or just say hello, please contact me at [willcforte@gmail.com](mailto:willcforte@gmail.com). I'm very open to research opportunities and collaboration
 
 <!-- ## Interests
 
@@ -133,7 +133,7 @@ Adv. Robotics Independent Study Program
 
 ## About GTWeb
 
-#### My website GTWeb started as a log for my senior-year high school robotics program. Now, it's a platform to share my passions and work on fun projects.
+#### My website GTWeb started as a log for my senior-year high school robotics program. Now, it's a platform to share my passions and work on fun projects
 
 ### Tech Stack
 
