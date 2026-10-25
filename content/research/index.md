@@ -33,13 +33,13 @@ Will be submitted to the arXiv soon.
 
 <div class="bg-cream-dark-accent border-4 border-black px-3 py-2">
 
-### <span class="text-2xl">[Graphene Rotational Acceleration Particle Hall Sensor (GRAPHS)](https://willcforte.com/research/VijayEtAl_2023_GRAPHS.pdf)</span> <span class="float-right m-0">2023</span>
+### <span class="text-2xl">[Graphene Rotational Acceleration Particle Hall Sensor (GRAPHS)](/research/VijayEtAl_2023_GRAPHS.pdf)</span> <span class="float-right m-0">2023</span>
 
 Nikhil Vijay, **Will C. Forte**, Eashan Iyer, Rishit Arora, Sahil Shah, Sarvesh Patham
 
 The Academy for Math, Science, and Engineering——Rockaway, NJ
 
-<a href="https://willcforte.com/research/VijayEtAl_2023_GRAPHS.pdf" target="_blank"><div class="bg-black px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-file-lines fa-vertalign"></i> View Manuscript</div></a>
+<a href="/research/VijayEtAl_2023_GRAPHS.pdf" target="_blank"><div class="bg-black px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-file-lines fa-vertalign"></i> View Manuscript</div></a>
 
 GRAPHS is an experimental proposal to CERN to test the feasibility of graphene solar sails at the Super Proton Synchrotron (SPS) in Geneva, Switzerland. A collimated stream of photons applies torque onto a graphene monolayer, suspended by a superconducting magnet.
 
@@ -53,7 +53,7 @@ _Introduction to the MuJoCo Simulator_, Rutgers University, [N2E Robotics Club](
 
 <!-- <a href="" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-video fa-vertalign"></i> Watch Video</div></a> -->
 
-<a href="https://willcforte.com/pdf/mujoco_intro_workshop.pdf" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-chalkboard fa-vertalign"></i> View Slides</div></a> <a href="https://github.com/willcforte/Introduction-to-MuJoCo-Workshop" target="_blank"><div class="bg-black ml-1 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-code fa-vertalign"></i> View Code</div></a>
+<a href="/pdf/mujoco_intro_workshop.pdf" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-chalkboard fa-vertalign"></i> View Slides</div></a> <a href="https://github.com/willcforte/Introduction-to-MuJoCo-Workshop" target="_blank"><div class="bg-black ml-1 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-code fa-vertalign"></i> View Code</div></a>
 
 </div>
 
@@ -63,7 +63,7 @@ _Introduction to the MuJoCo Simulator_, Rutgers University, [N2E Robotics Club](
 
 _The Cuff-Link Electromyographic Input Device_, The Academy for Math, Science, and Engineering, Academy Senior Showcase, May 2024
 
-<a href="https://drive.google.com/file/d/1SJNabj0U9kuphewD90xxaf7NGrvliWLt/view" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-video fa-vertalign"></i> Watch Video</div></a> <a href="https://willcforte.com/pdf/Blue Team - Cuff-Link Final Presentation (Milestone #6).pdf" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-chalkboard fa-vertalign"></i> View Slides</div></a>
+<a href="https://drive.google.com/file/d/1SJNabj0U9kuphewD90xxaf7NGrvliWLt/view" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-video fa-vertalign"></i> Watch Video</div></a> <a href="/pdf/Blue Team - Cuff-Link Final Presentation (Milestone %236).pdf" target="_blank"><div class="bg-black ml-0 px-2 py-1 text-l text-white inline-block"><i class="fa-solid fa-chalkboard fa-vertalign"></i> View Slides</div></a>
 
 </div>
 

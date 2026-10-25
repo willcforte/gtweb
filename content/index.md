@@ -21,7 +21,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
     </h3>
     <div class="flex flex-wrap gap-3 sm:gap-4 mt-4 justify-start">
         <!-- Buttons -->
-        <a href="https://willcforte.com/pdf/cv25.pdf" 
+        <a href="/pdf/cv25.pdf" 
            class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-solid fa-file-pdf"></i> CV
         </a>
