@@ -261,81 +261,81 @@ $rule: '';
     }
 }
 
-.asciibox {
-    width: round(down, 100%, 0.9rem);
-    padding: calc(2rem - 10px) calc(2.5rem - 10px);
-    border: 10px solid transparent;
-    border-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30'><path fill-rule='evenodd' d='M0 0H30V30H0ZM1.896 1.896V28.104H28.104V1.896ZM4.968 4.968H25.032V25.032H4.968ZM6.864 6.864V23.136H23.136V6.864Z'/></svg>") 10 stretch;
-}
+// .asciibox {
+//     width: round(down, 100%, 0.9rem);
+//     padding: calc(2rem - 10px) calc(2.5rem - 10px);
+//     border: 10px solid transparent;
+//     border-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30'><path fill-rule='evenodd' d='M0 0H30V30H0ZM1.896 1.896V28.104H28.104V1.896ZM4.968 4.968H25.032V25.032H4.968ZM6.864 6.864V23.136H23.136V6.864Z'/></svg>") 10 stretch;
+// }
 
-$dither-n: 8;
-$dither-px: 2;
-$dither-rows: 16;
+// $dither-n: 8;
+// $dither-px: 2;
+// $dither-rows: 16;
 
-$dither-w: $dither-n * $dither-px;
+// $dither-w: $dither-n * $dither-px;
 
-@function dither-fs() {
-    $n: $dither-n;
-    $rows: $dither-rows * 2;
-    $g: ();
-    @for $j from 0 to $rows {
-        @for $k from 0 to $n { $g: list.append($g, math.div($n - $k, $n)); }
-    }
-    $on: ();
-    @for $j from 0 to $rows {
-        @for $k from 0 to $n {
-            $v: list.nth($g, $j * $n + $k + 1);
-            $o: 0;
-            @if $v >= 0.5 { $o: 1; }
-            $e: $v - $o;
-            @each $dk, $dj, $f in (1 0 7) (-1 1 3) (0 1 5) (1 1 1) {
-                @if $k + $dk >= 0 and $k + $dk < $n and $j + $dj < $rows {
-                    $i: ($j + $dj) * $n + $k + $dk + 1;
-                    $g: list.set-nth($g, $i, list.nth($g, $i) + math.div($e * $f, 16));
-                }
-            }
-            @if $j >= $dither-rows { $on: list.append($on, $o == 1); }
-        }
-    }
-    @return $on;
-}
+// @function dither-fs() {
+//     $n: $dither-n;
+//     $rows: $dither-rows * 2;
+//     $g: ();
+//     @for $j from 0 to $rows {
+//         @for $k from 0 to $n { $g: list.append($g, math.div($n - $k, $n)); }
+//     }
+//     $on: ();
+//     @for $j from 0 to $rows {
+//         @for $k from 0 to $n {
+//             $v: list.nth($g, $j * $n + $k + 1);
+//             $o: 0;
+//             @if $v >= 0.5 { $o: 1; }
+//             $e: $v - $o;
+//             @each $dk, $dj, $f in (1 0 7) (-1 1 3) (0 1 5) (1 1 1) {
+//                 @if $k + $dk >= 0 and $k + $dk < $n and $j + $dj < $rows {
+//                     $i: ($j + $dj) * $n + $k + $dk + 1;
+//                     $g: list.set-nth($g, $i, list.nth($g, $i) + math.div($e * $f, 16));
+//                 }
+//             }
+//             @if $j >= $dither-rows { $on: list.append($on, $o == 1); }
+//         }
+//     }
+//     @return $on;
+// }
 
-$dither-on: dither-fs();
+// $dither-on: dither-fs();
 
-@function dither-pattern($id, $x, $y, $axis, $rise) {
-    $w: $dither-rows; $h: $dither-rows;
-    @if $axis == x { $w: $dither-n; } @else { $h: $dither-n; }
-    $d: '';
-    @for $j from 0 to $h {
-        @for $i from 0 to $w {
-            $k: $j; $r: $i;
-            @if $axis == x { $k: $i; $r: $j; }
-            @if $rise { $k: $dither-n - 1 - $k; }
-            @if not list.nth($dither-on, $r * $dither-n + $k + 1) {
-                $d: $d + 'M#{$i * $dither-px} #{$j * $dither-px}h#{$dither-px}v#{$dither-px}h-#{$dither-px}z';
-            }
-        }
-    }
-    @return "<pattern id='#{$id}' patternUnits='userSpaceOnUse' x='#{$x}' y='#{$y}' "
-        + "width='#{$w * $dither-px}' height='#{$h * $dither-px}'><path d='#{$d}'/></pattern>";
-}
+// @function dither-pattern($id, $x, $y, $axis, $rise) {
+//     $w: $dither-rows; $h: $dither-rows;
+//     @if $axis == x { $w: $dither-n; } @else { $h: $dither-n; }
+//     $d: '';
+//     @for $j from 0 to $h {
+//         @for $i from 0 to $w {
+//             $k: $j; $r: $i;
+//             @if $axis == x { $k: $i; $r: $j; }
+//             @if $rise { $k: $dither-n - 1 - $k; }
+//             @if not list.nth($dither-on, $r * $dither-n + $k + 1) {
+//                 $d: $d + 'M#{$i * $dither-px} #{$j * $dither-px}h#{$dither-px}v#{$dither-px}h-#{$dither-px}z';
+//             }
+//         }
+//     }
+//     @return "<pattern id='#{$id}' patternUnits='userSpaceOnUse' x='#{$x}' y='#{$y}' "
+//         + "width='#{$w * $dither-px}' height='#{$h * $dither-px}'><path d='#{$d}'/></pattern>";
+// }
 
-$dither-svg: "<svg xmlns='http://www.w3.org/2000/svg' shape-rendering='crispEdges'><defs>"
-    + dither-pattern(l, 0, '100%', x, true) + dither-pattern(t, '100%', 0, y, true)
-    + dither-pattern(r, 0, '100%', x, false) + dither-pattern(b, '100%', 0, y, false)
-    + "<mask id='m'><rect width='100%' height='100%' fill='white'/>"
-    + "<rect width='#{$dither-w}' height='100%' fill='url(%23l)'/>"
-    + "<rect width='100%' height='#{$dither-w}' fill='url(%23t)'/>"
-    + "<svg x='100%' overflow='visible'><rect x='-#{$dither-w}' width='#{$dither-w}' "
-    + "height='100%' fill='url(%23r)'/></svg>"
-    + "<svg y='100%' overflow='visible'><rect y='-#{$dither-w}' width='100%' "
-    + "height='#{$dither-w}' fill='url(%23b)'/></svg>"
-    + "</mask></defs><rect width='100%' height='100%' mask='url(%23m)'/></svg>";
+// $dither-svg: "<svg xmlns='http://www.w3.org/2000/svg' shape-rendering='crispEdges'><defs>"
+//     + dither-pattern(l, 0, '100%', x, true) + dither-pattern(t, '100%', 0, y, true)
+//     + dither-pattern(r, 0, '100%', x, false) + dither-pattern(b, '100%', 0, y, false)
+//     + "<mask id='m'><rect width='100%' height='100%' fill='white'/>"
+//     + "<rect width='#{$dither-w}' height='100%' fill='url(%23l)'/>"
+//     + "<rect width='100%' height='#{$dither-w}' fill='url(%23t)'/>"
+//     + "<svg x='100%' overflow='visible'><rect x='-#{$dither-w}' width='#{$dither-w}' "
+//     + "height='100%' fill='url(%23r)'/></svg>"
+//     + "<svg y='100%' overflow='visible'><rect y='-#{$dither-w}' width='100%' "
+//     + "height='#{$dither-w}' fill='url(%23b)'/></svg>"
+//     + "</mask></defs><rect width='100%' height='100%' mask='url(%23m)'/></svg>";
 
-.dither {
-    padding: 0 $dither-w * 1px $dither-w * 1px 0;
-    background: url("data:image/svg+xml,#{$dither-svg}");
-}
+// .dither {
+//     padding: 0 $dither-w * 1px $dither-w * 1px 0;
+//     background: url("data:image/svg+xml,#{$dither-svg}");
+// }
 
 .bg-cream {
     background-color: $cream;

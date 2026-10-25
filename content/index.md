@@ -4,12 +4,12 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 ---
 
 <!-- HERO -->
-<div class="asciibox">
+<!-- <div class="asciibox"> -->
 <div class="flex flex-col sm:grid sm:grid-cols-[auto_auto] sm:justify-center gap-4 sm:gap-8 items-center">
   <img
     src="/img/will_quad_sq.png"
     alt="Profile picture"
-    class="w-40 sm:w-52 lg:w-64 dither"
+    class="w-40 sm:w-52 lg:w-64 border-black border-r-8 border-b-8"
   >
   <div class="text-center sm:text-left">
     <h2 class="mt-0 mb-4 text-2xl lg:text-4xl font-bold leading-snug">
@@ -45,7 +45,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
     </div>
   </div>
 </div>
-</div>
+<!-- </div> -->
 
 <div class="divider text-2xl mt-6">=== CURRENT STUFF </div>
 
