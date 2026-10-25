@@ -75,12 +75,12 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
 <p class="text-lg sm:text-xl lg:text-2xl font-semibold mb-4"><a href="/robotics/quadruped">LCFAQ: A Low-Cost, Fully-Actuated Quadruped</a> (2023)</p>
 
-<div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:items-center">
+<div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:items-start">
     <a href="/robotics/quadruped">
         <img src="robotics/quadruped/media/quad_gif.gif" alt="Quadruped Prototype" class="w-full border-black border-r-8 border-b-8">
     </a>
     <div>
-        <p class="text-lg mb-6">
+        <p class="text-lg mb-6 lg:pt-0 lg:-mt-2">
         The summer after junior year of HS, I used spare parts to built a low-cost (≈$500), 12-motor quadrupedal robot intended to increase the accessibility of advanced robotics to educators and students already participating in FTC Robotics.
         </p>
         <a href="/robotics/quadruped" class="bg-black text-cream px-4 py-2 text-2xl shadow-xl hover:bg-green-900 ml-0 md:ml-2 whitespace-nowrap noh">
@@ -93,12 +93,12 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
 <p class="text-lg sm:text-xl lg:text-2xl font-semibold mb-4"><a href="/robotics/cufflink">Cuff-Link: An Electromyographic Input Device</a> (2024)</p>
 
-<div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:items-center">
+<div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:items-start">
     <a href="/robotics/cufflink">
         <img src="robotics/cufflink/media/lowres_cufflinkgif.gif" alt="CuffLink Prototype" class="w-full border-black border-r-8 border-b-8">
     </a>
     <div>
-        <p class="text-lg mb-6">
+        <p class="text-lg mb-6 lg:pt-0 lg:-mt-2">
         The Cuff-Link™ allows amputees and those suffering from nerve damage to control a computer using nothing but the muscles in their arm. A similar design cost Meta <a href="https://www.theverge.com/2019/9/23/20881032/facebook-ctrl-labs-acquisition-neural-interface-armband-ar-vr-deal">$500 million</a>. It cost us $150.
         <br>
         <br>
@@ -114,12 +114,12 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
 <h3 class="mb-4"><a href="https://tubaa.dev/">TUBAA: Aeroacoustic Analysis of the MIT Toroidal Propeller</a> (2023)</h3>
 
-<div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:items-center">
+<div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:items-start">
     <a href="https://tubaa.dev/">
         <img src="robotics/tubaa/media/tormore.gif" alt="CFD simulation of toroidal propeller" class="w-full border-black border-r-8 border-b-8">
     </a>
     <div>
-        <p class="text-lg mb-6">
+        <p class="text-lg mb-6 lg:pt-0 lg:-mt-2">
         I was the CFD lead of a large undergraduate research project in which we compared the aeroacoustics of the MIT Lincoln Lab toroidal propeller against traditional alternatives using ANSYS Fluent and FFT spectra. The manuscript is available on arXiv.
         </p>
         <a href="https://tubaa.dev/" class="bg-black text-cream px-4 py-2 text-2xl shadow-xl hover:bg-green-900 ml-0 md:ml-2 whitespace-nowrap noh">
@@ -132,7 +132,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
 <h3 class="mb-4"><a href="https://www.youtube.com/embed/h3W5pSzrWO8">MuJoCo Simulator Tutorial</a></h3>
 
-<div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:items-center">
+<div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:items-start">
     <iframe width="560" height="315"
         src="https://www.youtube.com/embed/h3W5pSzrWO8"
         title="YouTube video player"
@@ -142,7 +142,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
         class="w-full h-auto aspect-video border-black border-r-8 border-b-8">
     </iframe>
     <div>
-        <p class="text-lg mb-6">
+        <p class="text-lg mb-6 lg:pt-0 lg:-mt-2">
         I gave a workshop at the Rutgers University <a href="https://robotics.rutgers.edu/pages/n2e_robotics.html">N2E Robotics Club</a> to share my enthusiasm for the MuJoCo simulator and help people build and control a 2R manipulator using PID control.
         </p>
         <a href="https://www.youtube.com/embed/h3W5pSzrWO8" class="bg-black text-cream px-4 py-2 text-2xl shadow-xl hover:bg-green-900 ml-0 md:ml-2 whitespace-nowrap noh">
