@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import featured from '../../../assets/img/quadruped_v3.jpg';
+import featured from '../../assets/img/quadruped_v3.jpg';
 
 const projects = (await getCollection('content', (e) => e.id.startsWith('robotics/') && e.data.show === true))
     .sort((a, b) => (a.id < b.id ? 1 : -1));
