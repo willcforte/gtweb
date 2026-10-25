@@ -45,11 +45,11 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
   </div>
 </div>
 
-<div class="flex flex-col sm:flex-row px-4 sm:px-20 items-center sm:items-start justify-center sm:justify-between my-10">
-  <img src="/img/rud.png" alt="Description of SVG" width="100vh" class="my-auto">
+<div class="flex flex-col sm:grid sm:grid-cols-[auto_1fr] gap-4 sm:gap-8 items-center my-10">
+  <img src="/img/rud.png" alt="Description of SVG" class="w-24 sm:w-32">
 
   <!-- SMALL DESCRIPTION -->
-  <div class="px-10 text-center sm:text-left">
+  <div class="text-center sm:text-left">
     <h3 class="text-lg">
       I'm the President & Founder of <a href="https://rudynamics.vercel.app/">Rutgers Dynamics</a>, an extremely-ambitious student-run robot dog & humanoid lab.
       Part of a collaboration <a href="https://ccbr-humanoid.github.io/wiki/docs/home/">democratizing legged robotics</a> with friends from Caltech, Columbia, Rutgers, and Berkeley.
@@ -57,11 +57,11 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
   </div>
 </div>
 
-<div class="flex flex-col sm:flex-row px-4 sm:px-20 items-center sm:items-start justify-center sm:justify-between my-10">
-  <img src="/img/ru_shield.svg" alt="Description of SVG" width="100vh" class="my-auto">
+<div class="flex flex-col sm:grid sm:grid-cols-[auto_1fr] gap-4 sm:gap-8 items-center my-10">
+  <img src="/img/ru_shield.svg" alt="Description of SVG" class="w-24 sm:w-32">
 
   <!-- SMALL DESCRIPTION -->
-  <div class="px-10 text-center sm:text-left">
+  <div class="text-center sm:text-left">
     <h3 class="text-lg">
       I'm an undergrad robotics + AI researcher & Aresty Fellow at Rutgers' Honors College under <a href="https://pracsys.cs.rutgers.edu/">Prof. Kostas Bekris</a>.
       <br>
@@ -71,13 +71,13 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 </div>
 
 <!-- FEATURED PROJECTS -->
-<div class="px-4 sm:px-20 my-8">
+<div class="my-8">
 
 <h3 class="mb-4"><a href="/robotics/quadruped">LCFAQ: A Low-Cost, Fully-Actuated Quadruped</a> (2023)</h3>
 
-<div class="flex flex-col lg:flex-row gap-8 items-center">
+<div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:items-center">
     <a href="/robotics/quadruped">
-        <img src="robotics/quadruped/media/quad_gif.gif" alt="Quadruped Prototype" class="w-full sm:w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 max-w-6xl min-w-[28rem] border-black border-r-8 border-b-8">
+        <img src="robotics/quadruped/media/quad_gif.gif" alt="Quadruped Prototype" class="w-full border-black border-r-8 border-b-8">
     </a>
     <div>
         <p class="text-lg mb-6">
@@ -93,9 +93,9 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
 <h3 class="mb-4"><a href="/robotics/cufflink">Cuff-Link: An Electromyographic Input Device</a> (2024)</h3>
 
-<div class="flex flex-col lg:flex-row gap-8 items-center">
+<div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:items-center">
     <a href="/robotics/cufflink">
-        <img src="robotics/cufflink/media/lowres_cufflinkgif.gif" alt="CuffLink Prototype" class="w-full sm:w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 max-w-6xl min-w-[28rem] border-black border-r-8 border-b-8">
+        <img src="robotics/cufflink/media/lowres_cufflinkgif.gif" alt="CuffLink Prototype" class="w-full border-black border-r-8 border-b-8">
     </a>
     <div>
         <p class="text-lg mb-6">
@@ -114,9 +114,9 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
 <h3 class="mb-4"><a href="https://tubaa.dev/">TUBAA: Aeroacoustic Analysis of the MIT Toroidal Propeller</a> (2023)</h3>
 
-<div class="flex flex-col lg:flex-row gap-8 items-center">
+<div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:items-center">
     <a href="https://tubaa.dev/">
-        <img src="robotics/tubaa/media/tormore.gif" alt="CFD simulation of toroidal propeller" class="w-full sm:w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 max-w-6xl min-w-[28rem] border-black border-r-8 border-b-8">
+        <img src="robotics/tubaa/media/tormore.gif" alt="CFD simulation of toroidal propeller" class="w-full border-black border-r-8 border-b-8">
     </a>
     <div>
         <p class="text-lg mb-6">
@@ -132,14 +132,14 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 
 <h3 class="mb-4"><a href="https://www.youtube.com/embed/h3W5pSzrWO8">MuJoCo Simulator Tutorial</a></h3>
 
-<div class="flex flex-col lg:flex-row gap-8 items-center">
+<div class="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:items-center">
     <iframe width="560" height="315"
         src="https://www.youtube.com/embed/h3W5pSzrWO8"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
-        class="w-full sm:w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 max-w-6xl min-w-[28rem] border-black border-r-8 border-b-8">
+        class="w-full h-auto aspect-video border-black border-r-8 border-b-8">
     </iframe>
     <div>
         <p class="text-lg mb-6">
