@@ -237,8 +237,23 @@ footer {
 
 .centerelement {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
+}
+
+$rule: '';
+@for $i from 1 through 200 { $rule: $rule + '='; }
+
+.divider {
+    display: flex;
+    white-space: pre;
+
+    &::after {
+        content: $rule;
+        flex: 1;
+        min-width: 0;
+        overflow: hidden;
+    }
 }
 
 .bg-cream {

@@ -70,7 +70,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
   </div>
 </div>
 
-<div class="text-2xl">===&emsp;PAST WORK&emsp;=====================================</div>
+<div class="divider text-2xl">===&ensp;PAST WORK&ensp;</div>
 
 <!-- FEATURED PROJECTS -->
 <div class="my-8">
