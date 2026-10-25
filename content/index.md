@@ -13,7 +13,7 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
   <div class="text-center sm:text-left">
     <h2 class="mt-0 mb-4 text-2xl lg:text-4xl font-bold leading-snug">
       I'm
-      <span class="text-cream px-3 leading-tight italic bg-black hover:bg-green-900">Will C. Forte</span>,
+      <a href="/about" class="noh"><span class="text-cream px-3 leading-tight italic bg-black hover:bg-green-900">Will C. Forte</span></a>,
       a mechanical & computational roboticist.
     </h2>
     <h3 class="text-lg sm:text-xl lg:text-2xl font-semibold my-2 leading-normal">
