@@ -4,14 +4,14 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
 ---
 
 <!-- HERO -->
-<div class="flex flex-col sm:flex-row px-4 sm:px-20 items-center sm:items-start justify-center sm:justify-between">
+<div class="flex flex-col sm:grid sm:grid-cols-[auto_1fr] gap-4 sm:gap-8 items-center">
   <img
     src="/img/will_quad_sq.png"
     alt="Profile picture"
-    class="w-40 sm:w-48 lg:w-52 border-black border-r-8 border-b-8 mb-4 sm:mb-0 mt-4 sm:mt-0"
+    class="w-40 sm:w-52 lg:w-64 border-black border-r-8 border-b-8"
   >
-  <div class="sm:ml-8 flex-grow sm:basis-2/3">
-    <h2 class="mt-0 mb-4 text-2xl sm:text-4xl lg:text-4xl font-bold leading-snug">
+  <div class="text-center sm:text-left">
+    <h2 class="mt-0 mb-4 text-2xl lg:text-4xl font-bold leading-snug">
       I'm
       <span class="text-cream px-3 leading-tight italic bg-black hover:bg-green-900">Will C. Forte</span>,
       a mechanical & computational roboticist.
@@ -19,26 +19,26 @@ description: "I'm Will C. Forte, a mechanical engineer and robotics researcher."
     <h3 class="text-lg sm:text-xl lg:text-2xl font-semibold my-2 leading-normal">
       <i>Welcome to my self-coded website!</i>
     </h3>
-    <div class="flex flex-wrap gap-3 sm:gap-4 mt-4 justify-start">
+    <div class="flex flex-wrap gap-3 sm:gap-4 mt-4 justify-center sm:justify-start">
         <!-- Buttons -->
         <a href="https://resume.willcforte.com"
-           class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
+           class="bg-black text-cream space px-4 py-2 text-lg lg:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-solid fa-file-pdf"></i> CV
         </a>
         <a href="https://www.linkedin.com/in/willcforte/"
-           class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
+           class="bg-black text-cream space px-4 py-2 text-lg lg:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-brands fa-linkedin"></i>
         </a>
         <!-- <a href="https://bsky.app/profile/willcforte.com"
-           class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
+           class="bg-black text-cream space px-4 py-2 text-lg lg:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-brands fa-bluesky"></i>
         </a> -->
         <a href="mailto:willcforte@gmail.com"
-           class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
+           class="bg-black text-cream space px-4 py-2 text-lg lg:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-solid fa-paper-plane"></i> Contact me!
         </a>
         <!-- <a href="/articles"
-           class="bg-black text-cream space px-4 py-2 text-lg sm:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
+           class="bg-black text-cream space px-4 py-2 text-lg lg:text-xl shadow-xl hover:bg-green-900 whitespace-nowrap noh">
           <i class="fa-solid fa-square-rss"></i> Blog
         </a> -->
     </div>
