@@ -18,6 +18,10 @@ $highlight: #5a5a5a80;
 $cream: #e3ceae; // prev E0D2BD
 $creamlight: #ebd8bf;
 
+@reference './tailwind.css';
+
+@layer components {
+
 
 // :root {
 //     font-family: 'Fira Code', monospace;
@@ -154,7 +158,6 @@ table, th, td {
     padding-bottom: 3px;
 }
 
-@reference './tailwind.css';
 
 h1 {
     @apply text-5xl;
@@ -341,4 +344,6 @@ ol:not(.list-none) {
 
 li p {
     display: inline;
+}
+
 }
