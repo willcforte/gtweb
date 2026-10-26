@@ -1,0 +1,48 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { entryPath } from '../../utils/entry-path';
+import featured from '../../assets/img/quadruped_v3.jpg';
+
+const projects = (await getCollection('content', (e) => e.id.startsWith('robotics/') && e.data.show === true))
+    .sort((a, b) => (a.id < b.id ? 1 : -1));
+---
+<Base>
+    <h1 class="mb-0 mt-10">Engineering Project Reports</h1>
+
+    <div class="flex flex-col-2 centerelement mt-4 mb-10">
+        <div class="mr-10">
+            <a href="/robotics/quadruped">
+                <img src={featured.src} alt="Quadruped Beta Prototype" class="img border-black border-r-8 border-b-8" style="width: 70em;">
+            </a>
+        </div>
+        <div>
+            <h3><a href="/robotics/quadruped">Featured Project: DIY Quadruped Prototype</a></h3>
+            <h4>LCFAQ: Low-Cost Fully-Actuated quadruped (prototype v3)</h4>
+            <p>The LCFAQ is a low-cost quadrupedal robot intended to increase the accessibility of advanced robotics to high school educators and students already participating in FTC Robotics.</p>
+            <a href="/robotics/quadruped"><div class="bg-black text-white pl-4 pr-4 py-2 w-fit text-2xl shadow-xl mb-5 m-auto mt-5 self-center" style="color: #E0D2BD">View Project <i  class="fa-sharp fa-solid fa-chevron-right"></i></div></a>
+        </div>
+    </div>
+
+    {projects.map((entry) => (
+        <div class="m-5">
+            <h3 class="mb-4"><a href={`/${entry.id}`}>{entry.data.title}</a></h3>
+
+            <div class="flex flex-col lg:flex-row gap-8 items-center">
+                <a href={`/${entry.id}`}>
+                    <img src={entryPath(entry, entry.data.img_path)} alt={entry.data.img_alt} class="w-full sm:w-3/4 md:w-4/5 lg:w-3/4 xl:w-2/3 max-w-6xl min-w-[28rem] border-black border-r-8 border-b-8">
+                </a>
+                <div>
+                    <p class="text-lg mb-6">
+                        {entry.data.long_description} {entry.data.date}
+                    </p>
+                    <a href={`/${entry.id}`} class="bg-black text-cream px-4 py-2 text-2xl shadow-xl hover:bg-green-900 ml-0 md:ml-2 whitespace-nowrap">
+                    View Project <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    ))}
+
+    <br>
+</Base>

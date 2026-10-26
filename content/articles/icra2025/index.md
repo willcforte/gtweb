@@ -6,7 +6,7 @@ bytes: "WIP"
 unix: "1751509084"
 type: "robotics"
 status: "done"
-image: "/media/articles/IMG_6377.JPG"
+image: "media/IMG_6377.JPG"
 ---
 
 # ICRA 2025

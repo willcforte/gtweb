@@ -2,7 +2,7 @@
 title: "Fully-Actuated Quadruped"
 description: "A fully-actuated, low-cost quadruped that I made in high school."
 long_description: ""
-img_path: "/media/quad_canon_iso.JPG"
+img_path: "media/quad_canon_iso.JPG"
 date: "2023"
 show: false
 ---

@@ -1,0 +1,362 @@
+@use 'sass:list';
+@use 'sass:math';
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@each $weight, $name in (500: 'Medium', 600: 'SemiBold', 700: 'Bold') {
+    @each $style, $suffix in (normal: '', italic: 'Italic') {
+        @font-face {
+            font-family: 'Ioskeley Mono';
+            src: url('../fonts/IoskeleyMono-#{$name}#{$suffix}.woff2') format('woff2');
+            font-weight: $weight;
+            font-style: $style;
+            font-display: swap;
+        }
+    }
+}
+
+$black: #000000;
+$gray0: #333131;
+$gray1: #d8d8d8;
+$gray2: #3b3838;
+$green0: #064D2A;
+$green1: #038C3E;
+$green2: #27ce40;
+$highlight: #5a5a5a80;
+$cream: #e3ceae; // prev E0D2BD
+$creamlight: #ebd8bf;
+
+@reference './tailwind.css';
+
+@layer components {
+
+:root {
+    font-family: 'Ioskeley Mono', monospace;
+    font-weight: 500;
+    background-color: $cream;
+    box-sizing: border-box;
+    @apply text-base;
+}
+
+.robotomono {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+}
+
+.space {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+.spacei {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.inlinesvg {
+    height: 1em;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text-cream {
+    color: $cream;
+}
+
+.fa-vertalign {
+    vertical-align: middle;
+}
+
+nav li + li::before {
+    display: none;
+    content: '|';
+    padding-right: 0.5rem;
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+
+    @media (min-width: 64rem) {
+        display: inline;
+    }
+}
+
+header a[aria-current='page'] {
+    color: $green1;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+a:not(.noh) {
+    color: $green0;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-skip-ink: none;
+}
+
+a:not(.noh):hover {
+    color: $green1;
+}
+
+.noh { // no highlight
+    text-decoration: none;
+}
+
+blockquote {
+    padding-left: 2rem;
+    text-indent: 1.5rem;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+h1 {
+    @apply text-5xl;
+    font-family: 'Space Mono', monospace;
+    font-weight: 600;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    @apply text-3xl;
+    margin-top: 0.83em;
+    /* margin-bottom reduced from 0.83em */
+    margin-bottom: 0.415em;
+
+    font-family: 'Ioskeley Mono', monospace;
+    font-weight: 600;
+}
+
+h3 {
+    @apply text-2xl;
+    margin-top: 0.66em;
+    /* margin-bottom reduced from 0.5em */
+    margin-bottom: 0em;
+
+    font-family: 'Ioskeley Mono', monospace;
+    font-weight: 600;
+}
+
+h4 {
+    @apply text-lg;
+    margin-top: 0.666em;
+    /* margin-bottom reduced from 1.33em */
+    margin-bottom: 0.666em;
+    
+    font-family: 'Fira Code', monospace;
+    /* fira code starts to be part of the p rather than a header */
+    font-weight: 500; /* 500 p, 600 headers */
+}
+
+h5 {
+    @apply text-base;
+    margin-top: 1.67em;
+    /* margin-bottom reduced from 1.67em */
+    margin-bottom: 0.835em;
+        
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+}
+
+h6 {
+    @apply text-sm;
+    margin-top: 2.33em;
+    /* margin-bottom reduced from 2.33em */
+    margin-bottom: 1.165em;
+        
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+}
+
+.img {
+    width: 40em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.smallimg {
+    width: 20em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.medimg {
+    width: 30em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.medarticleimg {
+    width: 30em;
+    display: block;
+}
+
+.largeimg {
+    width: 65em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fullimg {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: $gray0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footertext {
+    @apply text-4xl;
+    color: white;
+}
+
+.centerelement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$rule: '';
+@for $i from 1 through 200 { $rule: $rule + '='; }
+
+.divider {
+    display: flex;
+    margin-left: -0.085em;
+    width: calc(round(down, 100%, 1ch) + 0.085em);
+    white-space: pre;
+
+    &::after {
+        content: $rule;
+        flex: 1;
+        min-width: 0;
+        overflow: hidden;
+    }
+}
+
+// .asciibox {
+//     width: round(down, 100%, 0.9rem);
+//     padding: calc(2rem - 10px) calc(2.5rem - 10px);
+//     border: 10px solid transparent;
+//     border-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30'><path fill-rule='evenodd' d='M0 0H30V30H0ZM1.896 1.896V28.104H28.104V1.896ZM4.968 4.968H25.032V25.032H4.968ZM6.864 6.864V23.136H23.136V6.864Z'/></svg>") 10 stretch;
+// }
+
+// $dither-n: 8;
+// $dither-px: 2;
+// $dither-rows: 16;
+
+// $dither-w: $dither-n * $dither-px;
+
+// @function dither-fs() {
+//     $n: $dither-n;
+//     $rows: $dither-rows * 2;
+//     $g: ();
+//     @for $j from 0 to $rows {
+//         @for $k from 0 to $n { $g: list.append($g, math.div($n - $k, $n)); }
+//     }
+//     $on: ();
+//     @for $j from 0 to $rows {
+//         @for $k from 0 to $n {
+//             $v: list.nth($g, $j * $n + $k + 1);
+//             $o: 0;
+//             @if $v >= 0.5 { $o: 1; }
+//             $e: $v - $o;
+//             @each $dk, $dj, $f in (1 0 7) (-1 1 3) (0 1 5) (1 1 1) {
+//                 @if $k + $dk >= 0 and $k + $dk < $n and $j + $dj < $rows {
+//                     $i: ($j + $dj) * $n + $k + $dk + 1;
+//                     $g: list.set-nth($g, $i, list.nth($g, $i) + math.div($e * $f, 16));
+//                 }
+//             }
+//             @if $j >= $dither-rows { $on: list.append($on, $o == 1); }
+//         }
+//     }
+//     @return $on;
+// }
+
+// $dither-on: dither-fs();
+
+// @function dither-pattern($id, $x, $y, $axis, $rise) {
+//     $w: $dither-rows; $h: $dither-rows;
+//     @if $axis == x { $w: $dither-n; } @else { $h: $dither-n; }
+//     $d: '';
+//     @for $j from 0 to $h {
+//         @for $i from 0 to $w {
+//             $k: $j; $r: $i;
+//             @if $axis == x { $k: $i; $r: $j; }
+//             @if $rise { $k: $dither-n - 1 - $k; }
+//             @if not list.nth($dither-on, $r * $dither-n + $k + 1) {
+//                 $d: $d + 'M#{$i * $dither-px} #{$j * $dither-px}h#{$dither-px}v#{$dither-px}h-#{$dither-px}z';
+//             }
+//         }
+//     }
+//     @return "<pattern id='#{$id}' patternUnits='userSpaceOnUse' x='#{$x}' y='#{$y}' "
+//         + "width='#{$w * $dither-px}' height='#{$h * $dither-px}'><path d='#{$d}'/></pattern>";
+// }
+
+// $dither-svg: "<svg xmlns='http://www.w3.org/2000/svg' shape-rendering='crispEdges'><defs>"
+//     + dither-pattern(l, 0, '100%', x, true) + dither-pattern(t, '100%', 0, y, true)
+//     + dither-pattern(r, 0, '100%', x, false) + dither-pattern(b, '100%', 0, y, false)
+//     + "<mask id='m'><rect width='100%' height='100%' fill='white'/>"
+//     + "<rect width='#{$dither-w}' height='100%' fill='url(%23l)'/>"
+//     + "<rect width='100%' height='#{$dither-w}' fill='url(%23t)'/>"
+//     + "<svg x='100%' overflow='visible'><rect x='-#{$dither-w}' width='#{$dither-w}' "
+//     + "height='100%' fill='url(%23r)'/></svg>"
+//     + "<svg y='100%' overflow='visible'><rect y='-#{$dither-w}' width='100%' "
+//     + "height='#{$dither-w}' fill='url(%23b)'/></svg>"
+//     + "</mask></defs><rect width='100%' height='100%' mask='url(%23m)'/></svg>";
+
+// .dither {
+//     padding: 0 $dither-w * 1px $dither-w * 1px 0;
+//     background: url("data:image/svg+xml,#{$dither-svg}");
+// }
+
+.bg-cream {
+    background-color: $cream;
+}
+
+.bg-cream-dark-accent {
+    background-color: $creamlight;
+}
+
+ul:not(.list-none) {
+    @apply list-disc;
+    @apply list-inside;
+}
+
+ol:not(.list-none) {
+    @apply list-decimal;
+    @apply list-inside;
+}
+
+li p {
+    display: inline;
+}
+
+}

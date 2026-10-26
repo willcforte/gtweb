@@ -1,23 +1,26 @@
 {
-  "name": "nuxt-app",
+  "name": "gtweb",
   "private": true,
+  "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "new": "node scripts/new.mjs"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.5.2",
-    "@nuxtjs/tailwindcss": "^6.6.5",
-    "nuxt": "^3.3.3",
-    "rehype-katex": "^6.0.2",
-    "remark-math": "^5.1.1",
-    "sass": "^1.62.1",
-    "sass-loader": "^13.2.2"
+    "@astrojs/markdown-remark": "^7.3.4",
+    "@tailwindcss/postcss": "^4.3.3",
+    "astro": "^7.4.2",
+    "katex": "^0.19.1",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
+    "sass": "^1.106.1",
+    "tailwindcss": "^4.3.3",
+    "unist-util-visit": "^5.2.0",
+    "vite-plugin-static-copy": "^4.1.1"
   },
-  "dependencies": {
-    "nuxt-content-assets": "^1.3.3"
+  "engines": {
+    "node": "24.x"
   }
 }

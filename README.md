@@ -1,6 +1,6 @@
 # GTWeb - willcforte.com
 
-This is my self-coded Nuxt website for my projects and research in robotics. I've been working on it since 2023.
+This is my personal website where I share things that interest me! It's been a continual work-in-progress since 2023.
 
 ## Directories
 
@@ -16,5 +16,11 @@ This is my self-coded Nuxt website for my projects and research in robotics. I'v
 
 ### [Research](https://willcforte.com/research)
 
-node.js `v16.14.2`, npm `v8.5.0`
-Switch node version using `nvm use 16.14.2`
+Node.js 24 comes from the Nix flake (`nix develop`, or automatically with direnv).
+
+```sh
+nix develop
+npm install
+npm run dev
+npm run new -- articles/my-post/  # scaffold content/articles/my-post/index.md
+```
